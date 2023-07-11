@@ -3,9 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- IMPORTAMOS LA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Elec-Shop</title>
 </head>
 <body>
-    
+    <!-- EMPIEZA EL HEADER -->
+    <header class="Header">
+        <a href="#" class="Header-Logo">
+            <img src="Images/Logo.png" alt="Elec-Shop Logo">
+            <p>
+                Elec-Shop
+            </p>
+        </a>
+        <div class="Header-Sections">
+            <a href="#">Categorías <ion-icon name="filter-outline"></ion-icon></ion-icon></a>
+            <a href="#">Ofertas</a>
+            <a href="#">Tendencia</a>
+            <a href="#">Comprar ahora</a>
+        </div>
+        <div class="Header-Options">
+            <div class="Header-Option-Search">
+                <input type="text" class="Header-Option-Seach-Input" name="Search-Produtc" id="SearchProdutc" placeholder="Escribe: Graficas">
+                <ion-icon name="search"></ion-icon>
+            </div>
+            <div class="Header-Option-Account">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>
+                    Cuenta
+                </p>
+            </div>
+            <div class="Header-Option-Cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                <p>
+                    Carrito
+                </p>
+            </div>
+        </div>
+    </header>
+    <!-- TERMINA EL HEADER -->
+
+    <!-- EMPIEZA EL MAIN -->
+    <main class="Container">
+        <!-- EMPIEZA SECCION DE BANNERS -->
+        <section class="Banners">
+            <div class="Banners-Information">
+                <div class="Banners-Information-Content">
+                    <p>
+                        ¡Registrate y obtén un descuento del 15% <br> en tu primera compra!
+                    </p>
+                    <button>Registrarse</button>
+                </div>
+                <div class="Banners-Information-Image">
+                    <img src="Images/Banners/Descuento.png" alt="Descuento">
+                </div>
+            </div>
+        </section>
+        <!-- TERMINA SECCION DE BANNERS -->
+
+        <!-- EMPIEZA SECCION DE PRODUCTOS -->
+        <section class="Products">
+            <div class="Products-Category">
+                <button>
+                    Cantidad de ventiladores
+                    <img src="Images/Categories/Ventiladores.png" alt="Filtro ventiladores">
+                </button>
+                <button>
+                    Precio
+                    <img src="Images/Categories/Precio.png" alt="Filtro Precio">
+                </button>
+                <button>
+                    Marca
+                    <img src="Images/Categories/Marca.png" alt="Filtro Marca">
+                </button>
+                <button>
+                    Color
+                    <img src="Images/Categories/Color.png" alt="Filtro Color">
+                </button>
+                <button>
+                    Valoración
+                    <img src="Images/Categories/Valoracion.png" alt="Filtro Valoracion">
+                </button>
+                <button>
+                    Todos los filtros
+                    <img src="Images/Categories/Filtros.png" alt="Filtro Todos los Filtros">
+                </button>
+            </div>
+            <p class="Products-Title">
+                Creemos que te gustaran!
+            </p>
+            <div class="Products-List">
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/6600.png" alt="RX 6600">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            Gigabyte - RX 6600
+                        </p>
+                        <p>
+                            $3,500 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        (124)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/210.png" alt="Grafica 210">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            MSI - GeForce 210
+                        </p>
+                        <p>
+                            $800 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 2560 x 1600 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        (12)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/1660.png" alt="RTX 1660">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            Gigabyte - GTX 1660
+                        </p>
+                        <p>
+                            $5,000 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        (81)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/3060White.png" alt="RTX 3060 White">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            ASUS - RTX 3060 White
+                        </p>
+                        <p>
+                            $6,349 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        (57)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/3060.png" alt="RTX 3060">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            Gigabyte - RTX 3060
+                        </p>
+                        <p>
+                            $7,000 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                        (57)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/6650XT.png" alt="RX 6650 XT">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            MSI - RX 6650 XT
+                        </p>
+                        <p>
+                            $6,400 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                        (32)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/7600.png" alt="RX 7600">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            MSI - RX 7600
+                        </p>
+                        <p>
+                            $6,449 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        (5)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Products-List-Item">
+                    <div class="Products-List-Item-Image">
+                        <img src="Images/Products/4090.png" alt="RTX 4090">
+                    </div>
+                    <div class="Products-List-Item-Name-And-Price">
+                        <p>
+                            Gigabyte - RTX 4090
+                        </p>
+                        <p>
+                            $35,350 MXN
+                        </p>
+                    </div>
+                    <div class="Products-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Products-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        (1)
+                    </div>
+                    <div class="Products-List-Item-Button">
+                        <button>Comprar</button>
+                    </div>
+                    <button class="Products-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+        <!-- TERMINA SECCION DE PRODUCTOS -->
+
+        <!-- EMPIEZA SECCION DE OFERTAS -->
+        <section class="Deals">
+        </section>
+        <!-- TERMINA SECCION DE OFERTAS -->
+
+        <!-- EMPIEZA SECCION DE BANNERS DE MARCAS -->
+        <section class="Banner-Brands">
+            <!-- 2 Brands -->
+        </section>
+        <!-- TERMINA SECCION DE BANNERS DE MARCAS -->
+
+        <!-- EMPIEZA SECCION DE PRODUCTOS EN TENDENCIA -->
+        <section class="Trending">
+        </section>
+        <!-- TERMINA SECCION DE PRODUCTOS EN TENDENCIA -->
+
+        <!-- EMPIEZA SECCION DE PRODUCTOS "RECIEN VISTOS" -->
+        <section class="Viewed">
+        </section>
+        <!-- TERMINA SECCION DE PRODUCTOS "RECIEN VISTOS" -->
+    </main>
+    <!-- TERMINA EL MAIN -->
+
+    <!-- EMPIEZA EL PIE DE PAGINA -->
+    <footer class="Footer"></footer>
+    <!-- TERMINA EL PIE DE PAGINA -->
+
+    <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

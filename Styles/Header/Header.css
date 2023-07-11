@@ -1,0 +1,101 @@
+.Header{
+    width: 150rem;
+    height: 7.5rem;
+    margin: 0 auto;
+    background: var(--White);
+    border-bottom: 1px solid var(--BgColor);
+    display: flex;
+    justify-content: space-between;
+}
+/* EMPIEZAN ESTILOS PARA EL LOGO DE LA TIENDA */
+.Header-Logo{
+    width: auto;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Header-Logo img{
+    width: 5rem;
+    height: 5rem;
+}
+.Header-Logo p{
+    font-size: var(--H3);
+    color: var(--MainColor);
+}
+/* TERMINAN ESTILOS PARA EL LOGO DE LA TIENDA */
+
+/* EMPIEZAN ESTILOS PARA LAS SECCIONES */
+.Header-Sections{
+    width: auto;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.Header-Sections a{
+    color: var(--Black);
+    font-size: var(--H5);
+}
+.Header-Sections a:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.Header-Sections a:nth-child(1) ion-icon{
+    transform: translateY(2.5px);
+    font-size: var(--Icons-2);
+}
+/* TERMINAN ESTILOS PARA LAS SECCIONES */
+
+/* EMPIEZAN ESTILOS PARA LAS OPCIONES */
+.Header-Options{
+    width: auto;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.Header-Option-Search{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Header-Option-Seach-Input{
+    width: 35rem;
+    height: 5rem;
+    font-size: var(--H6);
+    background-color: var(--BgColor);
+    padding: 1rem;
+    border-radius: 2.5rem;
+    border: none;
+}
+.Header-Option-Search ion-icon{
+    position: absolute;
+    font-size: var(--Icons-2);
+    top: calc(50% - 1rem);
+    right: 1rem;
+}
+.Header-Option-Account,
+.Header-Option-Cart{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.Header-Option-Account ion-icon,
+.Header-Option-Cart ion-icon{
+    font-size: var(--Icons-1);
+    color: var(--Black);  
+}
+.Header-Option-Account p,
+.Header-Option-Cart p{
+    font-size: var(--H5);
+}
+/* TERMINAN ESTILOS PARA LAS OPCIONES */
