@@ -1,0 +1,47 @@
+.Banner-2{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    background: var(--BgBanner);
+}
+.Banner-2-Information{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Banner-2-Information-Content,
+.Banner-2-Information-Image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+}
+.Banner-2-Information-Content p{
+    font-size: var(--H1);
+    font-weight: bold;
+    color: var(--MainColor);
+}
+.Banner-2-Information-Content button{
+    color: var(--White);
+    font-size: var(--H5);
+    background-color: var(--MainColor);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+.Banner-2-Information-Content button:hover{
+    background: var(--SecundaryColor);
+}
+.Banner-2-Information-Image{
+    background: url("/Images/Brands/PC.jpg");
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+}
