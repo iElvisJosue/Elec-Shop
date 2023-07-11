@@ -1,6 +1,6 @@
 .Deals{
     width: 100%;
-    height: 50rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -10,12 +10,10 @@
     font-size: var(--H3);
     font-weight: bold;
     color: var(--Black);
-    display: flex;
-    align-items: center;
 }
 .Deals-Title ion-icon{
     font-size: var(--Icons);
-    transform: translateY(.2rem);
+    transform: translateY(.4rem);
     color: var(--Red);
 }
 /* TERMINAN ESTILOS DEL TITULO DE OFERTAS */
@@ -30,7 +28,8 @@
 }
 .Deals-List-Item{
     position: relative;
-    min-width: 350px;
+    min-width: 33.7rem;
+    max-width: 33.7rem;
     height: auto;
     display: flex;
     flex-direction: column;
