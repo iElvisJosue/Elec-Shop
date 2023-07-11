@@ -5,6 +5,8 @@
 @import url(Styles/Container/Banners.css);
 @import url(Styles/Container/Products.css);
 @import url(Styles/Container/Dealds.css);
+@import url(Styles/Container/Banners2.css);
+@import url(Styles/Container/Trending.css);
 /* IMPORTAMOS LOS ESTILOS DEL FOOTER */
 @import url(Styles/Footer/Footer.css);
 
