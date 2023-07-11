@@ -23,6 +23,7 @@
 .Header-Logo p{
     font-size: var(--H3);
     color: var(--MainColor);
+    font-weight: bold;
 }
 /* TERMINAN ESTILOS PARA EL LOGO DE LA TIENDA */
 
@@ -38,6 +39,7 @@
 .Header-Sections a{
     color: var(--Black);
     font-size: var(--H5);
+    font-weight: bold;
 }
 .Header-Sections a:nth-child(1){
     display: flex;
@@ -74,6 +76,7 @@
     padding: 1rem;
     border-radius: 2.5rem;
     border: none;
+    font-weight: bold;
 }
 .Header-Option-Search ion-icon{
     position: absolute;
@@ -88,6 +91,7 @@
     display: flex;
     align-items: center;
     gap: .5rem;
+    font-weight: bold;
 }
 .Header-Option-Account ion-icon,
 .Header-Option-Cart ion-icon{
