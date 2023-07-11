@@ -3,7 +3,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    gap: 5rem;
 }
 
 /* EMPIEZAN ESTILOS DE LOS FILTROS */
@@ -42,14 +42,20 @@
 
 /* EMPIEZAN ESTILOS DEL TITULO DE PRODUCTOS */
 .Products-Title{
-    margin-top: 3rem;
     font-size: var(--H3);
     font-weight: bold;
+    color: var(--Black);
+}
+.Products-Title ion-icon{
+    font-size: var(--Icons);
+    transform: translateY(.4rem);
+    color: var(--Red);
 }
 /* TERMINAN ESTILOS DEL TITULO DE PRODUCTOS */
+
+/* EMPIEZAN ESTILOS DE LOS ITEMS */
 .Products-List{
     width: 100%;
-    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 5rem;
@@ -127,6 +133,5 @@
 .Products-List-Item-Favorite:hover ion-icon{
     color: var(--Red);
 }
-/* EMPIEZAN ESTILOS DEL LOS PRODUCTOS */
-/* TERMINAN ESTILOS DEL LOS PRODUCTOS */
+/* TERMINAN ESTILOS DEL LOS ITEMS */
 
