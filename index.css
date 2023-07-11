@@ -4,6 +4,7 @@
 @import url(Styles/Container/Container.css);
 @import url(Styles/Container/Banners.css);
 @import url(Styles/Container/Products.css);
+@import url(Styles/Container/Dealds.css);
 /* IMPORTAMOS LOS ESTILOS DEL FOOTER */
 @import url(Styles/Footer/Footer.css);
 
@@ -35,9 +36,31 @@
     --H6: 1.5rem;
     --H7: 1rem;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
     display: none;
-} */
+} 
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--MainColor);
+    border-radius: 20px;
+    border: 2px solid var(--White);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 a{
     text-decoration: none;
 }
