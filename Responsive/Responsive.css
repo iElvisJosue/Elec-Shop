@@ -140,16 +140,18 @@
         justify-content: space-between;
     }
 }
+@media (max-width: 500px){
+    /* DISMINUIMOS EL TAMAÑO DE LA IMAGEN DE LOS BANNERS */
+    .Banners-Information-Image img{
+        width: 35rem;
+        height: 15rem;
+    }
+    .Banner-3-Information-Image img{
+        width: 30rem;
+        height: 13rem;
+    }
+}
 @media (max-width: 450px){
-        /* DISMINUIMOS EL TAMAÑO DE LA IMAGEN DE LOS BANNERS */
-        .Banners-Information-Image img{
-            width: 35rem;
-            height: 15rem;
-        }
-        .Banner-3-Information-Image img{
-            width: 30rem;
-            height: 13rem;
-        }
         /* DISMINUIMOS EL TAMAÑO DE LA LETRA DE LA INFORMACION DE LOS BANNERS */
         .Banners-Information-Content p,
         .Banner-2-Information-Content p{
