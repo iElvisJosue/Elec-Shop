@@ -71,6 +71,9 @@
     .Header-Sections, .Header-Options{
         display: none;
     }
+    .Products-Category-Filter button img{
+        transform: translateY(0);
+    }
     /* MOSTRAMOS LA BARRA DEL NUEVO MENU */
 }
 @media (max-width: 1250px){
