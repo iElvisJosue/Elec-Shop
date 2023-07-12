@@ -14,36 +14,38 @@
 <body>
     <!-- EMPIEZA EL HEADER -->
     <header class="Header">
-        <a href="#" class="Header-Logo">
-            <img src="Images/Logo.png" alt="Elec-Shop Logo">
-            <p>
-                Elec-Shop
-            </p>
-        </a>
-        <div class="Header-Sections">
-            <a href="#">Categorías <ion-icon name="filter-outline"></ion-icon></ion-icon></a>
-            <a href="#">Ofertas</a>
-            <a href="#">Tendencia</a>
-            <a href="#">Comprar ahora</a>
-        </div>
-        <div class="Header-Options">
-            <div class="Header-Option-Search">
-                <input type="text" class="Header-Option-Seach-Input" name="Search-Produtc" id="SearchProdutc" placeholder="Escribe: Graficas">
-                <ion-icon name="search"></ion-icon>
-            </div>
-            <div class="Header-Option-Account">
-                <ion-icon name="person-outline"></ion-icon>
+        <nav class="Navbar">
+            <a href="#" class="Header-Logo">
+                <img src="Images/Logo.png" alt="Elec-Shop Logo">
                 <p>
-                    Cuenta
+                    Elec-Shop
                 </p>
+            </a>
+            <div class="Header-Sections">
+                <a href="#">Categorías <ion-icon name="filter-outline"></ion-icon></ion-icon></a>
+                <a href="#">Ofertas</a>
+                <a href="#">Tendencia</a>
+                <a href="#">Comprar ahora</a>
             </div>
-            <div class="Header-Option-Cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                <p>
-                    Carrito
-                </p>
+            <div class="Header-Options">
+                <div class="Header-Option-Search">
+                    <input type="text" class="Header-Option-Seach-Input" name="Search-Produtc" id="SearchProdutc" placeholder="Escribe: Graficas">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <div class="Header-Option-Account">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <a href="#">
+                        Cuenta
+                    </a>
+                </div>
+                <div class="Header-Option-Cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <a href="#">
+                        Carrito
+                    </a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <!-- TERMINA EL HEADER -->
 
@@ -68,30 +70,34 @@
         <!-- EMPIEZA SECCION DE PRODUCTOS -->
         <section class="Products">
             <div class="Products-Category">
-                <button>
-                    Cantidad de ventiladores
-                    <img src="Images/Categories/Ventiladores.png" alt="Filtro ventiladores">
-                </button>
-                <button>
-                    Precio
-                    <img src="Images/Categories/Precio.png" alt="Filtro Precio">
-                </button>
-                <button>
-                    Marca
-                    <img src="Images/Categories/Marca.png" alt="Filtro Marca">
-                </button>
-                <button>
-                    Color
-                    <img src="Images/Categories/Color.png" alt="Filtro Color">
-                </button>
-                <button>
-                    Valoración
-                    <img src="Images/Categories/Valoracion.png" alt="Filtro Valoracion">
-                </button>
-                <button>
-                    Todos los filtros
-                    <img src="Images/Categories/Filtros.png" alt="Filtro Todos los Filtros">
-                </button>
+                <div class="Products-Category-Filter">
+                    <button>
+                        <p>Cantidad de ventiladores</p>
+                        <img src="Images/Categories/Ventiladores.png" alt="Filtro ventiladores">
+                    </button>
+                    <button>
+                        <p>Precio</p>
+                        <img src="Images/Categories/Precio.png" alt="Filtro Precio">
+                    </button>
+                    <button>
+                        <p>Marca</p>
+                        <img src="Images/Categories/Marca.png" alt="Filtro Marca">
+                    </button>
+                </div>
+                <div class="Products-Category-Filter">
+                    <button>
+                        <p>Color</p>
+                        <img src="Images/Categories/Color.png" alt="Filtro Color">
+                    </button>
+                    <button>
+                        <p>Valoración</p>
+                        <img src="Images/Categories/Valoracion.png" alt="Filtro Valoracion">
+                    </button>
+                    <button>
+                        <p>Todos los filtros</p>
+                        <img src="Images/Categories/Filtros.png" alt="Filtro Todos los Filtros">
+                    </button>
+                </div>
             </div>
             <p class="Products-Title">
                 Creemos que te gustaran <ion-icon name="sparkles-outline"></ion-icon>
@@ -714,20 +720,58 @@
         </section>
         <!-- TERMINA SECCION DE PRODUCTOS EN TENDENCIA -->
 
-        <!-- EMPIEZA SECCION DE PRODUCTOS "RECIEN VISTOS" -->
-        <section class="Viewed">
+        <section class="Banner-3">
+            <div class="Banner-3-Information">
+                <div class="Banner-3-Information-Content">
+                    <ul>
+                        <li><ion-icon name="shield-checkmark-outline""></ion-icon> 100% Productos nuevos</li>
+                        <li><ion-icon name="shield-checkmark-outline""></ion-icon> Envío asegurado</li>
+                        <li><ion-icon name="shield-checkmark-outline""></ion-icon> Servicio personalizado</li>
+                        <li><ion-icon name="shield-checkmark-outline""></ion-icon> Precios bajos</li>
+                        <li><ion-icon name="shield-checkmark-outline""></ion-icon> Pago seguro con tarjetas</li>
+                        <li><ion-icon name="shield-checkmark-outline""></ion-icon> Garantía directa con el fabricante</li>
+                    </ul>
+                </div>
+                <div class="Banner-3-Information-Image">
+                    <img src="Images/Safe/SelloConfianza.png" alt="Sello de Confianza">
+                </div>
+            </div>
         </section>
         <!-- TERMINA SECCION DE PRODUCTOS "RECIEN VISTOS" -->
     </main>
     <!-- TERMINA EL MAIN -->
 
     <!-- EMPIEZA EL PIE DE PAGINA -->
-    <footer class="Footer"></footer>
+    <footer class="Footer">
+        <div class="Newsletter">
+            <p>
+                Recibe nuestras promociones
+            </p>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="TuCorreo@correo.com" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div class="Social-Networks">
+                <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.twitch.tv/" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
     <!-- TERMINA EL PIE DE PAGINA -->
 
     <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <!-- <script>
+        var win = window,
+    doc = document,
+    docElem = doc.documentElement,
+    body = doc.getElementsByTagName('body')[0],
+    x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+    y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+alert(x + ' × ' + y);
+    </script> -->
 </body>
 </html>

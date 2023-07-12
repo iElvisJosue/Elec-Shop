@@ -1,6 +1,10 @@
 .Footer{
-    width: 150rem;
-    /* min-height: 50rem; */
+    width: 100%;
     height: auto;
-    margin: auto;
+    margin-top: 5rem;
+    background: var(--MainColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -9,31 +9,39 @@
 /* EMPIEZAN ESTILOS DE LOS FILTROS */
 .Products-Category{
     width: 100%;
-    height: 5rem;
+    height: auto;
     display: flex;
     align-items: center;
     gap: 2.5rem;
 }
-.Products-Category button{
+.Products-Category-Filter{
+    min-height: 5rem;
+    height: 5rem;
+    display: flex;
+    gap: 2.5rem;
+}
+.Products-Category-Filter button{
     height: 100%;
     padding: 0 2.5rem;
     border-radius: 2.5rem;
     border: none;
-    font-weight: bold;
     background: var(--BgColor2);
     border: 2px solid var(--BgColor2);
-    font-size: var(--H6);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
 }
-.Products-Category button:hover{
+.Products-Category-Filter button p{
+    font-weight: bold;
+    font-size: var(--H6);
+}
+.Products-Category-Filter button:hover{
     cursor: pointer;
     background: var(--BgColor);
     border: 2px solid var(--Black);
 }
-.Products-Category button img{
+.Products-Category-Filter button img{
     width: 2rem;
     height: 2rem;
     transform: translateY(.2rem);
@@ -78,8 +86,8 @@
     justify-content: center;
 }
 .Products-List-Item-Image img{
-    width: 65%;
-    height: 65%;
+    width: 25rem;
+    height: 25rem;
 }
 .Products-List-Item-Name-And-Price{
     display: flex;

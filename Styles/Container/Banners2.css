@@ -5,7 +5,6 @@
     background: var(--BgBanner);
 }
 .Banner-2-Information{
-    position: relative;
     min-width: 100%;
     height: 100%;
     display: flex;
@@ -21,6 +20,9 @@
     justify-content: center;
     text-align: center;
     gap: 5rem;
+}
+.Banner-2-Information-Content{
+    padding: 1rem 0;
 }
 .Banner-2-Information-Content p{
     font-size: var(--H1);

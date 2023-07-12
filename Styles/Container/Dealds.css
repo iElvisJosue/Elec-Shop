@@ -25,9 +25,11 @@
     overflow: auto;
     display: flex;
     gap: 5rem;
+    scroll-snap-type: x mandatory;
 }
 .Deals-List-Item{
     position: relative;
+    scroll-snap-align: center;
     min-width: 33.7rem;
     max-width: 33.7rem;
     height: auto;
@@ -47,8 +49,8 @@
     justify-content: center;
 }
 .Deals-List-Item-Image img{
-    width: 65%;
-    height: 65%;
+    width: 25rem;
+    height: 25rem;
 }
 .Deals-List-Item-Name-And-Price{
     display: flex;

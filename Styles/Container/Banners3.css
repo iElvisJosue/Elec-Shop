@@ -1,0 +1,39 @@
+.Banner-3{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    background: var(--BgBanner);
+    padding: 1rem 0;
+}
+.Banner-3-Information{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+}
+.Banner-3-Information-Content,
+.Banner-3-Information-Image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.Banner-3-Information-Content ul{
+    list-style: none;
+}
+.Banner-3-Information-Content ul li{
+    color: var(--MainColor);
+    font-size: var(--H2);
+    font-weight: bold;
+}
+.Banner-3-Information-Content ul li ion-icon{
+    color: var(--MainColor);
+    font-size: var(--H1);
+    transform: translateY(.6rem);
+}
+.Banner-3-Information-Image img{
+    width: 65rem;
+    height: 25rem;
+}

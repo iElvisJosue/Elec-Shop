@@ -1,12 +1,21 @@
 .Header{
-    width: 150rem;
+    position: fixed;
+    width: 100%;
     height: 7.5rem;
-    margin: 0 auto;
     background: var(--White);
-    border-bottom: 1px solid var(--BgColor);
+    z-index: 999;
+}
+/* EMPIEZAN ESTILOS DEL NAVBAR */
+.Navbar{
+    width: 150rem;
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--BgColor);
 }
+/* TERMINAN ESTILOS DEL NAVBAR */
+
 /* EMPIEZAN ESTILOS PARA EL LOGO DE LA TIENDA */
 .Header-Logo{
     width: auto;
@@ -98,8 +107,9 @@
     font-size: var(--Icons-1);
     color: var(--Black);  
 }
-.Header-Option-Account p,
-.Header-Option-Cart p{
+.Header-Option-Account a,
+.Header-Option-Cart a{
     font-size: var(--H5);
+    color: var(--Black);
 }
 /* TERMINAN ESTILOS PARA LAS OPCIONES */

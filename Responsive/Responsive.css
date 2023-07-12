@@ -1,0 +1,171 @@
+@media (max-width: 1550px){
+    /* -------------------------------------------------------------- */
+    .Navbar, .Container, .Newsletter{
+        width: 100%;
+    }
+    /* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* DEJAMOS QUE LOS BANNERS SE ADAPTEN A SUS SECCIONES */
+    .Banners, .Banner-2, .Banner-3{
+        height: auto;
+    }
+    /* ORDENAMOS EN TIPO COLUMNA DE LOS BANNERS */
+    .Banners-Information,
+    .Banner-2-Information,
+    .Banner-3-Information{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    /* LE DAMOS UN TAMAÑO DEL 100% A AMBAS PARTES DE LOS BANNERS
+    PARA QUE SE VEA CORRECTAMENTE */
+    .Banners-Information-Content,
+    .Banners-Information-Image,
+    .Banner-2-Information-Content,
+    .Banner-2-Information-Image,
+    .Banner-3-Information-Content,
+    .Banner-3-Information-Image{
+        width: 100%;
+        min-height: 25rem;
+    }
+    /* DISMINUIMOS EL TAMAÑO DE LA IMAGEN DE LOS BANNERS */
+    .Banners-Information-Image img{
+        width: 50rem;
+        height: 20rem;
+    }
+    .Banner-3-Information-Image img{
+        width: 35rem;
+        height: 15rem;
+    }
+    /* DISMINUIMOS EL TAMAÑO DE LA LETRA DE LA INFORMACION DE LOS BANNERS */
+    .Banners-Information-Content p,
+    .Banner-2-Information-Content p{
+        font-size: var(--H2);
+    }
+    .Banner-3-Information-Content ul li{
+        font-size: var(--H4);
+    }
+    .Banner-3-Information-Content ul li ion-icon{
+        font-size: var(--H3);
+    }
+    /* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* DISMINUIMOS EL TAMAÑO DE LA LETRA DEL TITULO DE LAS SECCIONES */
+    .Products-Title, .Deals-Title, .Trending-Title{
+        font-size: var(--H4);
+    }
+    /* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* AGREGAMOS UN PADDING PARA QUE EL CONTENIDO NO QUEDE PEGADO */
+    .Products, .Deals, .Trending{
+        padding: 0 1rem;
+    }
+    /* -------------------------------------------------------------- */
+}
+
+@media (max-width: 1330px){
+    /* OCULTAMOS LOS ELEMENTOS DEL NAVBAR */
+    .Header-Sections, .Header-Options{
+        display: none;
+    }
+    /* MOSTRAMOS LA BARRA DEL NUEVO MENU */
+}
+@media (max-width: 1250px){
+    /* MOSTRAMOS 3 PRODUCTOS EN LUGAR DE 4 */
+    .Products-List{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 980px){
+    /* CAMBIAMOS EL TAMAÑO DE LA FUENTE */
+
+    /* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
+    .Products-Category{
+        flex-direction: column;
+        height: 10rem;
+    } 
+    .Products-Category-Filter{
+        width: 100%;
+        justify-content: center;
+    }
+     /* MOSTRAMOS 2 PRODUCTOS EN LUGAR DE 3 */
+    .Products-List{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* DISMINUIMOS EL TAMAÑO DE LA LETRA DEL FOOTER */
+    .Newsletter p{
+        font-size: var(--H4);
+    }
+}
+@media (max-width: 600px){
+     /* MOSTRAMOS 1 PRODUCTO EN LUGAR DE 2 */
+    .Products-List{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ADAPTAMOS LOS PRODUCTOS EN DESCUENTO Y TENDENDICIA AL 100% */
+    .Deals-List-Item, .Trending-List-Item{
+        min-width: 100%;
+    }
+    /* ORDENAMOS EN TIPO COLUMNA DE EL FORMULARIO */
+    .Newsletter form {
+        flex-direction: column;
+    }
+    /* ADAPTAMOS EL INPUT AL TAMAÑO COMPLETO DEL CONTENEDOR,
+    TAMBIEN CAMBIAREMOS SU ALTURA Y TAMAÑO DE LETRA */
+    .Newsletter form input{
+        width: 100%;
+        height: 4.5rem;
+        font-size: var(--H6);
+    }
+    /* CAMBIAMOS EL TAMAÑO DEL BOTON DEL FORMULARIO */
+    .Newsletter form button{ 
+        width: 10rem;
+        height: 4rem;
+        font-size: var(--H6);
+    }
+    /* CAMBIAMOS EL TAMAÑO DE LOS ICONOS DE LAS REDES SOCIALES */
+    .Social-Networks ion-icon{
+        font-size: var(--Icons-2);
+    }
+}
+/* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
+@media (max-width: 550px){
+    .Products-Category-Filter p{
+        display: none;
+    }
+    .Products-Category-Filter{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 450px){
+        /* DISMINUIMOS EL TAMAÑO DE LA IMAGEN DE LOS BANNERS */
+        .Banners-Information-Image img{
+            width: 35rem;
+            height: 15rem;
+        }
+        .Banner-3-Information-Image img{
+            width: 30rem;
+            height: 13rem;
+        }
+        /* DISMINUIMOS EL TAMAÑO DE LA LETRA DE LA INFORMACION DE LOS BANNERS */
+        .Banners-Information-Content p,
+        .Banner-2-Information-Content p{
+            font-size: var(--H4);
+        }
+        .Banner-3-Information-Content ul li{
+            font-size: var(--H5);
+        }
+        .Banner-3-Information-Content ul li ion-icon{
+            font-size: var(--H5);
+            transform: translateY(.2rem);
+        }
+}
+@media (max-width: 350px){
+    .Banner-3-Information-Image img{
+        width: 25rem;
+        height: 12rem;
+    }
+}
