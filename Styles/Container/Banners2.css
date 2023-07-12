@@ -42,7 +42,7 @@
     background: var(--SecundaryColor);
 }
 .Banner-2-Information-Image{
-    background: url("/Images/Brands/PC.jpg");
+    background: url("../../Images/Brands/PC.jpg");
     background-position: center center;
     background-repeat: no repeat;
     background-size: cover;
