@@ -4,6 +4,8 @@
 @import url(Styles/GeneralSettings/Variables.css);
 /* IMPORTAMOS LOS ESTILOS DEL HEADER */
 @import url(Styles/Header/Header.css);
+/* IMPORTAMOS LOS ESTILOS DEL CARRITO */
+@import url(Styles/Cart/Cart.css);
 /* IMPORTAMOS LOS ESTILOS DEL CONTAINER Y SUS SECCIONES */
 @import url(Styles/Container/Container.css);
 /* IMPORTAMOS LOS ESTILOS DEL FOOTER */
