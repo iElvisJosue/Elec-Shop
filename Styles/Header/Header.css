@@ -93,6 +93,7 @@
     top: calc(50% - 1rem);
     right: 1rem;
 }
+.Header-Option-Categories,
 .Header-Option-Account,
 .Header-Option-Cart{
     width: auto;
@@ -101,15 +102,21 @@
     align-items: center;
     gap: .5rem;
     font-weight: bold;
+    cursor: pointer;
 }
+.Header-Option-Categories ion-icon,
 .Header-Option-Account ion-icon,
 .Header-Option-Cart ion-icon{
     font-size: var(--Icons-1);
     color: var(--Black);  
 }
-.Header-Option-Account a,
-.Header-Option-Cart a{
+.Header-Option-Categories p,
+.Header-Option-Account p,
+.Header-Option-Cart p{
     font-size: var(--H5);
     color: var(--Black);
+}
+.Header-Option-Categories{
+    display: none;
 }
 /* TERMINAN ESTILOS PARA LAS OPCIONES */
