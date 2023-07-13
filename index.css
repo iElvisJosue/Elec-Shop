@@ -1,76 +1,12 @@
+/* IMPORTAMOS LAS CONFIGURACIONES CREADAS */
+@import url(Styles/GeneralSettings/Settings.css);
+/* IMPORTAMOS LAS VARIABLES */
+@import url(Styles/GeneralSettings/Variables.css);
 /* IMPORTAMOS LOS ESTILOS DEL HEADER */
 @import url(Styles/Header/Header.css);
 /* IMPORTAMOS LOS ESTILOS DEL CONTAINER Y SUS SECCIONES */
 @import url(Styles/Container/Container.css);
-@import url(Styles/Container/Banners.css);
-@import url(Styles/Container/Products.css);
-@import url(Styles/Container/Dealds.css);
-@import url(Styles/Container/Banners2.css);
-@import url(Styles/Container/Trending.css);
-@import url(Styles/Container/Banners3.css);
 /* IMPORTAMOS LOS ESTILOS DEL FOOTER */
 @import url(Styles/Footer/Footer.css);
-@import url(Styles/Footer/Mail.css);
 /* IMPORTAMOS LOS ESTILOS RESPONSIVOS */
 @import url(Responsive/Responsive.css);
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 10px;
-    font-family: 'Oswald', sans-serif;
-    transition: .5s all;
-}
-:root{
-    --MainColor: #013d29;
-    --SecundaryColor: #36b037;
-    --BgColor: #f6f6f6;
-    --BgColor2: #ecedec;
-    --BgBanner: #fcf0e4;
-    --Black: #2f3640;
-    --White: #ffffff;
-    --Red: #ff6961;
-    --Icons-1: 2.5rem;
-    --Icons-2: 2rem;
-    --Icons-3: 1.5rem;
-    --H1: 4rem;
-    --H2: 3.5rem;
-    --H3: 3rem;
-    --H4: 2.5rem;
-    --H5: 2rem;
-    --H6: 1.5rem;
-    --H7: 1rem;
-}
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-    width:10px;
-}
-
-::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
-    display: none;
-} 
-
-::-webkit-scrollbar:horizontal {
-    height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--MainColor);
-    border-radius: 20px;
-    border: 2px solid var(--White);
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;  
-}
-a{
-    text-decoration: none;
-}
-a:focus, button:focus, input[type="text"]:focus, input[type="email"]:focus{
-    outline: none;
-    box-shadow: none;
-}
