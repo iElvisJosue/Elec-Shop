@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Images/Logo.ico">
+    <link rel="stylesheet" href="../Styles/Account/Account.css">
+    <title>Elec-Shop - Iniciar Sesión</title>
+</head>
+<body>
+    <main class="Main">
+        <div class="Form-Account">
+            <div class="Form-Account-Title">
+                <img src="../Images/Logo.png" alt="Logo Empresa">
+                Elec-Shop
+            </div>
+            <div class="Form-Account-Welcome">
+                <p>Bienvenido de nuevo</p>
+                <p>Por favor ingresa tus datos de acceso</p>
+            </div>
+            <div class="Form-Account-Selection">
+                <button class="Sign-In">Iniciar Sesión</button>
+                <button class="Sign-Up">Crear Cuenta</button>
+                <span></span>
+            </div>
+            <div class="Form-Account-Access">
+                <div class="Form-Account-Access-Email">
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" name="email" id="email" autocomplete="off">
+                    <ion-icon name="checkmark-circle" class="Email-Correct"></ion-icon>
+                    <p>Correo electrónico</p>
+                </div>
+                <div class="Form-Account-Access-Password">
+                    <span><ion-icon name="key-outline"></ion-icon></span>
+                    <input type="password" name="password" id="password">
+                    <ion-icon name="checkmark-circle" class="Password-Correct"></ion-icon>
+                    <p>Contraseña</p>
+                </div>
+            </div>
+            <button class="Form-Account-Continue">Continuar</button>
+            <div class="Form-Account-Line">
+                <hr>
+                <p>O continua con</p>
+            </div>
+            <div class="Form-Account-Options">
+                <button>
+                    <img src="../Images/Account/Google.png" alt="Google">
+                </button>
+                <button>
+                    <img src="../Images/Account/Apple.png" alt="Apple">
+                </button>
+                <button>
+                    <img src="../Images/Account/Facebook.png" alt="Facebook">
+                </button>
+            </div>
+            <div class="Form-Account-Description">
+                Únete a los miles de usuarios que confían en nuestros productos. Inicia sesión para acceder a tu historial de productos y carrito de compras. De nuestra parte va un cupón del 15% de descuento en tu primera compra, ¡Animate!
+            </div>
+        </div>
+    </main>
+    <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- IMPORTAMOS LAS ANIMACIONES -->
+    <script src="../Functions/Account.js"></script>
+</body>
+</html>
