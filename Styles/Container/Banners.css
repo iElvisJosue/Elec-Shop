@@ -27,7 +27,7 @@
     font-weight: bold;
     color: var(--MainColor);
 }
-.Banners-Information-Content button{
+.Banners-Information-Content a{
     color: var(--White);
     font-size: var(--H5);
     background-color: var(--MainColor);
@@ -36,7 +36,7 @@
     border-radius: 2.5rem;
     cursor: pointer;
 }
-.Banners-Information-Content button:hover{
+.Banners-Information-Content a:hover{
     background: var(--SecundaryColor);
 }
 .Banners-Information-Image img{
