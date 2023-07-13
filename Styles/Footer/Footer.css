@@ -1,3 +1,6 @@
+/* IMPORTAMOS TODAS LAS SECCIONES DEL FOOTER */
+@import url(../../Styles/Footer/Mail.css);
+
 .Footer{
     width: 100%;
     height: auto;
