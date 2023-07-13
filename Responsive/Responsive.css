@@ -67,14 +67,20 @@
 }
 
 @media (max-width: 1330px){
-    /* OCULTAMOS LOS ELEMENTOS DEL NAVBAR */
-    .Header-Sections, .Header-Options{
+    /* OCULTAMOS LAS SECCIONES DEL NAVBAR */
+    .Header-Sections{
         display: none;
+    }
+    .Header-Options{
+        gap: 1rem;
+    }
+    /* MOSTRAMOS EL NUEVO BOTON DE CATEGORIAS */
+    .Header-Option-Categories{
+        display: flex;
     }
     .Products-Category-Filter button img{
         transform: translateY(0);
     }
-    /* MOSTRAMOS LA BARRA DEL NUEVO MENU */
 }
 @media (max-width: 1250px){
     /* MOSTRAMOS 3 PRODUCTOS EN LUGAR DE 4 */
@@ -83,7 +89,10 @@
     }
 }
 @media (max-width: 980px){
-    /* CAMBIAMOS EL TAMAÑO DE LA FUENTE */
+    /* OCULTAMOS LA BARRA DE BUSQUEDA */
+    .Header-Option-Search{
+        display: none;
+    }
 
     /* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
     .Products-Category{
@@ -104,6 +113,18 @@
     }
 }
 @media (max-width: 600px){
+    /* OCULTAMOS EL NOMBRE DE LA EMPRESA */
+    .Header-Logo p{
+        display: none;
+    }
+    /* OCULTAMOS SIEMPRE EL LAYOUT TRANSPARENTE */
+    .Layout{
+        display: none;
+    }
+    /* ASIGNAMOS EL TAMAÑO COMPLETO A LA SECCION DEL CARRITO */
+    .Cart-Empty{
+        width: 100%;
+    }
      /* MOSTRAMOS 1 PRODUCTO EN LUGAR DE 2 */
     .Products-List{
         grid-template-columns: repeat(1,1fr);
@@ -155,18 +176,27 @@
     }
 }
 @media (max-width: 450px){
-        /* DISMINUIMOS EL TAMAÑO DE LA LETRA DE LA INFORMACION DE LOS BANNERS */
-        .Banners-Information-Content p,
-        .Banner-2-Information-Content p{
-            font-size: var(--H4);
-        }
-        .Banner-3-Information-Content ul li{
-            font-size: var(--H5);
-        }
-        .Banner-3-Information-Content ul li ion-icon{
-            font-size: var(--H5);
-            transform: translateY(.2rem);
-        }
+    /* OCULTAMOS EL TEXTO DE CATEGORIAS, CUENTA Y CARRITO */
+    .Header-Option-Categories p, .Header-Option-Account p, .Header-Option-Cart a{
+        display: none;
+    }
+    /* AUMENTAMOS EL TAMAÑO DE LOS ICONOS DE CUENTA Y CARRITO */
+    .Header-Option-Account ion-icon,
+    .Header-Option-Cart ion-icon{
+        font-size: var(--H3);
+    }
+    /* DISMINUIMOS EL TAMAÑO DE LA LETRA DE LA INFORMACION DE LOS BANNERS */
+    .Banners-Information-Content p,
+    .Banner-2-Information-Content p{
+        font-size: var(--H4);
+    }
+    .Banner-3-Information-Content ul li{
+        font-size: var(--H5);
+    }
+    .Banner-3-Information-Content ul li ion-icon{
+        font-size: var(--H5);
+        transform: translateY(.2rem);
+    }
 }
 @media (max-width: 350px){
     .Banner-3-Information-Image img{
