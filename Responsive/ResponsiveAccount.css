@@ -1,0 +1,18 @@
+@media (max-width: 768px){
+    .Main, 
+    .Form-Account-Selection,
+    .Form-Account-Access,
+    .Form-Account-Continue,
+    .Form-Account-Line,
+    .Form-Account-Options
+    {
+        width: 100% !important;
+    }
+    .Main{
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    .Form-Account-Description{
+        padding: 1rem !important; 
+    }
+}
