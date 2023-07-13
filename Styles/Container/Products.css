@@ -143,3 +143,44 @@
 }
 /* TERMINAN ESTILOS DEL LOS ITEMS */
 
+/* EMPIEZAN ESTILOS DE LA PAGINACION */
+.Products-Pagination{
+    min-height: 5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.Products-Pagination button{
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    font-size: var(--H6);
+    background-color: var(--BgColor2);
+    border: 2px solid var(--BgColor2);
+    color: var(--Black);
+    border-radius: 50%;
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+}
+.Products-Pagination button:nth-child(1){
+    border: 2px solid var(--MainColor);
+    background: var(--MainColor);
+    color: var(--White);
+}
+.Products-Pagination button:nth-child(4){
+    background-color: var(--White);
+    color: var(--MainColor);
+    border: 2px solid var(--MainColor);
+}
+.Products-Pagination button:nth-child(4) ion-icon{
+    font-size: var(--H5);
+}
+.Products-Pagination button:hover{
+    cursor: pointer;
+    background: var(--White);
+    color: var(--MainColor);
+    border-color: var(--MainColor);
+}
+/* TERMINAN ESTILOS DE LA PAGINACION */
