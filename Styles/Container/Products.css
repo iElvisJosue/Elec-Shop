@@ -168,11 +168,7 @@
     border: 2px solid var(--MainColor);
     background: var(--MainColor);
     color: var(--White);
-}
-.Products-Pagination button:nth-child(4){
-    background-color: var(--White);
-    color: var(--MainColor);
-    border: 2px solid var(--MainColor);
+    pointer-events: none;
 }
 .Products-Pagination button:nth-child(4) ion-icon{
     font-size: var(--H5);
