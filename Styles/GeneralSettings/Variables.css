@@ -1,0 +1,22 @@
+:root{
+    --MainColor: #013d29;
+    --SecundaryColor: #36b037;
+    --BgColor: #f6f6f6;
+    --BgColor2: #ecedec;
+    --BgBanner: #fcf0e4;
+    --Black: #2f3640;
+    --White: #ffffff;
+    --Red: #ff6961;
+    --Blue: #0266ff;
+    --Gray: #aaaaaa;
+    --Icons-1: 2.5rem;
+    --Icons-2: 2rem;
+    --Icons-3: 1.5rem;
+    --H1: 4rem;
+    --H2: 3.5rem;
+    --H3: 3rem;
+    --H4: 2.5rem;
+    --H5: 2rem;
+    --H6: 1.5rem;
+    --H7: 1rem;
+}
