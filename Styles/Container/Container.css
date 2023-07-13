@@ -1,3 +1,11 @@
+/* IMPORTAMOS TODAS LAS SECCIONES DEL CONTENIDO */
+@import url(../../Styles/Container/Banners.css);
+@import url(../../Styles/Container/Products.css);
+@import url(../../Styles/Container/Dealds.css);
+@import url(../../Styles/Container/Banners2.css);
+@import url(../../Styles/Container/Trending.css);
+@import url(../../Styles/Container/Banners3.css);
+
 .Container{
     width: 150rem;
     min-height: 50rem;
