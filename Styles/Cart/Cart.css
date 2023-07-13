@@ -1,0 +1,85 @@
+/* ESTILOS PARA UN LAYOUT TRANSPARANTE Y QUE ESTE SOBRE TODO EL CONTENIDO PRINCIPAL */
+.Layout{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: flex-end;
+    transition: 0s;
+    opacity: 0;
+    z-index: -1;
+}
+/* CLASE AGREGADA DESDE EL JS */
+.Layout.Active{
+    opacity: 1;
+    z-index: 1000;
+}
+/* ESTILOS PARA LA SECCION DEL CARRITO VACIO */
+.Cart-Empty{
+    position: fixed;
+    right: -100%;
+    width: 50rem;
+    min-height: 100%;
+    height: auto;
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s all;
+    padding: 1rem;
+    z-index: 1000;
+}
+/* CLASE AGREGADA DESDE EL JS */
+.Cart-Empty.Active{
+    right: 0rem;
+}
+/* ESTILOS PARA EL TITULO DE LA SECCION */
+.Cart-Empty-Title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Cart-Empty-Title p{
+    transform: translateY(-.2rem);
+    font-size: var(--H4);
+    font-weight: bold;
+}
+.Cart-Empty-Title {
+    font-size: var(--H4);
+    font-weight: bold;
+}
+/* ESTILOS PARA EL BOTON DE CERRAR CARRITO */
+.Cart-Empty-Close{
+    font-size: var(--H4);
+}
+.Cart-Empty-Close:hover{
+    cursor: pointer;
+}
+/* ESTILOS PARA LA IMAGEN DEL CARRITO VACIO */
+.Cart-Empty img{
+    margin-top: 15rem;
+    width: 20rem;
+    height: 20rem;
+}
+.Cart-Empty p:nth-child(3){
+    width: 100%;
+    font-size: var(--H5);
+    text-align: center;
+    font-weight: bold;
+}
+/* ESTILOS PARA EL BOTON DE SEGUIR BUSCANDO */
+.Cart-Empty-Searching{
+    margin-top: 2rem;
+    font-size: var(--H5);
+    padding: 1rem 2.5rem;
+    color: var(--White);
+    background-color: var(--MainColor);
+    border: 2px solid var(--MainColor);
+}
+.Cart-Empty-Searching:hover{
+    cursor: pointer;
+    color: var(--MainColor);
+    background-color: var(--White);
+}
