@@ -177,7 +177,7 @@
 }
 @media (max-width: 450px){
     /* OCULTAMOS EL TEXTO DE CATEGORIAS, CUENTA Y CARRITO */
-    .Header-Option-Categories p, .Header-Option-Account p, .Header-Option-Cart a{
+    .Header-Option-Categories p, .Header-Option-Account p, .Header-Option-Cart p{
         display: none;
     }
     /* AUMENTAMOS EL TAMAÑO DE LOS ICONOS DE CUENTA Y CARRITO */
