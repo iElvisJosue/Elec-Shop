@@ -1,0 +1,83 @@
+/* EMPIEZAN ESTILOS DE LOS ITEMS */
+.Categories-Products{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+}
+.Categories-Products-Item{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+.Categories-Products-Item-Image{
+    cursor: pointer;
+    width: 100%;
+    height: 35rem;
+    background: var(--BgColor);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Categories-Products-Item-Image img{
+    width: 25rem;
+    height: 25rem;
+}
+.Categories-Products-Item-Name-And-Price{
+    display: flex;
+    justify-content: space-between;
+}
+.Categories-Products-Item-Name-And-Price p{
+    font-size: var(--H5);
+    font-weight: bold;
+}
+.Categories-Products-Item-Description{
+    font-size: var(--H6);
+}
+.Categories-Products-Item-Rate{
+    font-size: var(--H6);
+}
+.Categories-Products-Item-Rate ion-icon{
+    font-size: var(--H6);
+    color: var(--SecundaryColor);
+}
+.Categories-Products-Item-Button button{
+    padding: 1rem 3rem;
+    font-size: var(--H6);
+    border: 2px solid var(--Black);
+    background-color: var(--White);
+    border-radius: 2.5rem;
+    font-weight: bold;
+}
+.Categories-Products-Item-Button button:hover{
+    border-color: var(--MainColor);
+    background: var(--MainColor);
+    color: var(--White);
+    cursor: pointer;
+}
+.Categories-Products-Item-Favorite{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--White);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Categories-Products-Item-Favorite ion-icon{
+    font-size: var(--Icons-2);
+}
+.Categories-Products-Item-Favorite:hover ion-icon{
+    color: var(--Red);
+}
+/* TERMINAN ESTILOS DEL LOS ITEMS */

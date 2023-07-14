@@ -11,6 +11,7 @@
 @import url(../../Responsive/ResponsiveCategories.css);
 /* IMPORTAMOS TODAS LAS SECCIONES DE CATEGORIAS */
 @import url(../../Styles/Categories/List.css);
+@import url(../../Styles/Categories/CategoriesProducts.css);
 
 
 .Header-Option-Categories, .Header-Sections, .Header-Option-Search{

@@ -2,7 +2,7 @@
     .Categories{
         width: 100% !important;
     }
-    .Categories-List{
+    .Categories-List, .Categories-Products{
         padding: 1rem !important;
     }
 }
@@ -19,6 +19,24 @@
 @media (max-width: 670px){
     .Categories-Filter{
         grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+@media (max-width: 1250px){
+    /* MOSTRAMOS 3 PRODUCTOS EN LUGAR DE 4 */
+    .Categories-Products{
+        grid-template-columns: repeat(3,1fr) !important;
+    }
+}
+@media (max-width: 980px){
+     /* MOSTRAMOS 2 PRODUCTOS EN LUGAR DE 3 */
+    .Categories-Products{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+@media (max-width: 600px){
+     /* MOSTRAMOS 1 PRODUCTO EN LUGAR DE 2 */
+    .Categories-Products{
+        grid-template-columns: repeat(1,1fr) !important;
     }
 }
 @media (max-width: 500px){
