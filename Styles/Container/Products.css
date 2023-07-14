@@ -5,6 +5,18 @@
     flex-direction: column;
     gap: 5rem;
 }
+/* EMPIEZAN ESTILOS DEL TITULO DE PRODUCTOS */
+.Products-Filters-Title{
+    font-size: var(--H3);
+    font-weight: bold;
+    color: var(--Black);
+}
+.Products-Filters-Title ion-icon{
+    font-size: var(--Icons);
+    transform: translateY(.4rem);
+    color: var(--Red);
+}
+/* TERMINAN ESTILOS DEL TITULO DE PRODUCTOS */
 
 /* EMPIEZAN ESTILOS DE LOS FILTROS */
 .Products-Category{
@@ -14,14 +26,15 @@
     align-items: center;
     gap: 2.5rem;
 }
-.Products-Category-Filter{
+.Products-Category{
     min-height: 5rem;
-    height: 5rem;
-    display: flex;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 2.5rem;
 }
-.Products-Category-Filter button{
-    height: 100%;
+.Products-Category button{
+    min-height: 5rem;
     padding: 0 2.5rem;
     border-radius: 2.5rem;
     border: none;
@@ -32,16 +45,16 @@
     justify-content: center;
     gap: .5rem;
 }
-.Products-Category-Filter button p{
+.Products-Category button p{
     font-weight: bold;
     font-size: var(--H6);
 }
-.Products-Category-Filter button:hover{
+.Products-Category button:hover{
     cursor: pointer;
     background: var(--BgColor);
     border: 2px solid var(--Black);
 }
-.Products-Category-Filter button img{
+.Products-Category button img{
     width: 2rem;
     height: 2rem;
     transform: translateY(.2rem);
