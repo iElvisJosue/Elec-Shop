@@ -53,7 +53,7 @@
 
     /* -------------------------------------------------------------- */
     /* DISMINUIMOS EL TAMAÑO DE LA LETRA DEL TITULO DE LAS SECCIONES */
-    .Products-Title, .Deals-Title, .Trending-Title{
+    .Products-Filters-Title, .Products-Title, .Deals-Title, .Trending-Title{
         font-size: var(--H4);
     }
     /* -------------------------------------------------------------- */
@@ -78,9 +78,6 @@
     .Header-Option-Categories{
         display: flex;
     }
-    .Products-Category-Filter button img{
-        transform: translateY(0);
-    }
 }
 @media (max-width: 1250px){
     /* MOSTRAMOS 3 PRODUCTOS EN LUGAR DE 4 */
@@ -93,15 +90,9 @@
     .Header-Option-Search{
         display: none;
     }
-
     /* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
     .Products-Category{
-        flex-direction: column;
-        height: 10rem;
-    } 
-    .Products-Category-Filter{
-        width: 100%;
-        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
     }
      /* MOSTRAMOS 2 PRODUCTOS EN LUGAR DE 3 */
     .Products-List{
@@ -124,6 +115,10 @@
     /* ASIGNAMOS EL TAMAÑO COMPLETO A LA SECCION DEL CARRITO */
     .Cart-Empty{
         width: 100%;
+    }
+    /* ADAPTAMOS LOS FILTROS POR PRODUCTO */
+    .Products-Category{
+        grid-template-columns: repeat(3, 1fr);
     }
      /* MOSTRAMOS 1 PRODUCTO EN LUGAR DE 2 */
     .Products-List{
@@ -153,15 +148,6 @@
     /* CAMBIAMOS EL TAMAÑO DE LOS ICONOS DE LAS REDES SOCIALES */
     .Social-Networks ion-icon{
         font-size: var(--Icons-2);
-    }
-}
-/* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
-@media (max-width: 550px){
-    .Products-Category-Filter p{
-        display: none;
-    }
-    .Products-Category-Filter{
-        justify-content: space-between;
     }
 }
 @media (max-width: 500px){
@@ -197,10 +183,18 @@
         font-size: var(--H5);
         transform: translateY(.2rem);
     }
+    /* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
+    .Products-Category{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (max-width: 350px){
     .Banner-3-Information-Image img{
         width: 25rem;
         height: 12rem;
+    }
+    /* ADAPTAMOS LOS FILTROS DE PRODUCTOS */
+    .Products-Category button p{
+        display: none;
     }
 }
