@@ -32,6 +32,9 @@
     .Categories-Filter button p{
         display: none;
     }
+    .Categories-Filter button img{
+        transform: translateY(0) !important;
+    }
 }
 @media (max-width: 330px){
     .Categories-Filter{
