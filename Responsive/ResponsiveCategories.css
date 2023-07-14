@@ -22,6 +22,10 @@
     }
 }
 @media (max-width: 1250px){
+    /* CAMBIAMOS EL TEMAÑO DEL TITULO DE LAS CATEGORIA */
+    .Categories-List-Title{
+        font-size: var(--H3) !important;
+    }
     /* MOSTRAMOS 3 PRODUCTOS EN LUGAR DE 4 */
     .Categories-Products{
         grid-template-columns: repeat(3,1fr) !important;
@@ -34,6 +38,10 @@
     }
 }
 @media (max-width: 600px){
+    /* CAMBIAMOS EL TEMAÑO DEL TITULO DE LAS CATEGORIA */
+    .Categories-List-Title{
+        font-size: var(--H4) !important;
+    }
      /* MOSTRAMOS 1 PRODUCTO EN LUGAR DE 2 */
     .Categories-Products{
         grid-template-columns: repeat(1,1fr) !important;
