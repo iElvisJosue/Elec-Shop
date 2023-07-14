@@ -46,6 +46,10 @@
     background: var(--BgColor);
     border: 2px solid var(--Black);
 }
+.Categories-Filter button:focus{
+    background-color: var(--White);
+    border-color: var(--MainColor);
+}
 .Categories-Filter button img{
     width: 2rem;
     height: 2rem;
