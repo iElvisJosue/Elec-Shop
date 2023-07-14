@@ -1,0 +1,30 @@
+@media (max-width: 1550px){
+    .Categories{
+        width: 100% !important;
+    }
+    .Categories-List{
+        padding: 1rem !important;
+    }
+}
+@media (max-width: 1420px){
+    .Categories-Filter{
+        flex-direction: column !important;
+    }
+    .Categories-Filter-Type{
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+@media (max-width: 730px){
+    .Categories-Filter-Type button p{
+        display: none;
+    }
+    .Categories-Filter-Type{
+        justify-content: space-between   !important;
+    }
+    .Categories-Filter-Type button{
+        padding: 0 !important;
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+}

@@ -18,7 +18,7 @@
 /* ESTILOS PARA LA SECCION DEL CARRITO VACIO */
 .Cart-Empty{
     position: fixed;
-    right: -100%;
+    right: -200%;
     width: 50rem;
     min-height: 100%;
     height: auto;

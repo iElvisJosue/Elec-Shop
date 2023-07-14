@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTAMOS LA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- PONES EL ICONO DEL SITIO -->
+    <link rel="shortcut icon" href="../Images/Logo.ico">
+    <!-- IMPORTAMOS LOS ESTILOS -->
+    <link rel="stylesheet" href="../Styles/Categories/Categories.css">
+    <title>Elec-Shop - Categorías</title>
+</head>
+<body>
+        <!-- EMPIEZA EL HEADER -->
+        <header class="Header">
+            <nav class="Navbar">
+                <a href="#" class="Header-Logo">
+                    <img src="../Images/Logo.png" alt="Elec-Shop Logo">
+                    <p>
+                        Elec-Shop
+                    </p>
+                </a>
+                <div class="Header-Options">
+                    <div class="Header-Option-Search">
+                        <input type="text" class="Header-Option-Seach-Input" name="Search-Produtc" id="SearchProdutc" placeholder="Escribe: Graficas">
+                        <ion-icon name="search"></ion-icon>
+                    </div>
+                    <a href="../Pages/Account.html" class="Header-Option-Account">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p>
+                            Cuenta
+                        </p>
+                    </a>
+                    <div class="Header-Option-Cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <p>
+                            Carrito
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- TERMINA EL HEADER -->
+
+        <!-- EMPIEZA LAYOUT TRANSPARENTE -->
+        <div class="Layout">
+        </div>
+        <!-- TERMINA LAYOUT TRANSPARENTE -->
+
+        <!-- SE CREA LA SECCION DEL CARRITO -->
+        <div class="Cart-Empty">
+            <div class="Cart-Empty-Title">
+                <p>Tu carrito de compras (0)</p>
+                <ion-icon name="close-sharp" class="Cart-Empty-Close"></ion-icon>
+            </div>
+            <img src="../Images/Cart/CarritoVacio.png" alt="Carrtio Vacio">
+            <p>Tu carrito esta vacío</p>
+            <button class="Cart-Empty-Searching">Seguir buscando</button>
+        </div>
+        <!-- TERMINA SECCION DEL CARRITO -->
+
+        <!-- SE CREA LA SECCION DE LAS CATEGORIAS -->
+        <main class="Categories">
+            <section class="Categories-List">
+                <p class="Categories-List-Title">Todas las categorías</p>
+                <div class="Categories-Filter">
+                    <div class="Categories-Filter-Type">
+                        <button>
+                            <p>Graficas</p>
+                            <img src="../Images/Categories/Grafica.png" alt="Categoria Graficas">
+                        </button>
+                        <button>
+                            <p>Monitores</p>
+                            <img src="../Images/Categories/Monitor.png" alt="Categoria Monitores">
+                        </button>
+                        <button>
+                            <p>Procesadores</p>
+                            <img src="../Images/Categories/Procesadores.png" alt="Categoria Procesadores">
+                        </button>
+                        <button>
+                            <p>RAM</p>
+                            <img src="../Images/Categories/Ram.png" alt="Categoria RAM's">
+                        </button>
+                        <button>
+                            <p>Almacenamiento</p>
+                            <img src="../Images/Categories/Almacenamiento.png" alt="Categoria Almacenamiento">
+                        </button>
+                    </div>
+                    <div class="Categories-Filter-Type">
+                        <button>
+                            <p>Gabinetes</p>
+                            <img src="../Images/Categories/Gabinete.png" alt="Categoria Gabinetes">
+                        </button>
+                        <button>
+                            <p>Tarjeta Madre</p>
+                            <img src="../Images/Categories/TarjetaMadre.png" alt="Categoria Tarjetas Madre">
+                        </button>
+                        <button>
+                            <p>PSU</p>
+                            <img src="../Images/Categories/PSU.png" alt="Categoria Fuentes de Poder">
+                        </button>
+                        <button>
+                            <p>Silla Gamer</p>
+                            <img src="../Images/Categories/Silla.png" alt="Categoria Sillas Gamer">
+                        </button>
+                        <button>
+                            <p>Enfriamiento</p>
+                            <img src="../Images/Categories/Enfriamiento.png" alt="Categoria Enfriamientp">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- TERMINA SECCION DE LAS CATEGORIAS -->
+
+        <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
+        <script src="../Functions/Cart.js"></script>
+</body>
+</html>
