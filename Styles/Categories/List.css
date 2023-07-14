@@ -1,4 +1,5 @@
 .Categories-List{
+    width: 100%;
     margin-top: 8.5rem;
     height: auto;
     gap: 1.5rem;
@@ -13,27 +14,19 @@
     font-weight: bold;
     border-bottom: 1px solid var(--BgColor);
 }
-/* ESTILOS PARA EL CONTENEDOR DE LAS CATEGORIAS */
+/* ESTILO LISTA DE CATEGORIAS */
 .Categories-Filter{
-    margin-top: 3rem;
     width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-/* LISTA DE CATEGORIAS */
-.Categories-Filter-Type{
-    width: 50%;
     min-height: 5rem;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
     overflow: hidden;
 }
-.Categories-Filter-Type button{
-    height: 100%;
+.Categories-Filter button{
+    min-height: 5rem;
     padding: 0 2.5rem;
     border-radius: 2.5rem;
     border: none;
@@ -44,16 +37,16 @@
     justify-content: center;
     gap: .5rem;
 }
-.Categories-Filter-Type button p{
+.Categories-Filter button p{
     font-weight: bold;
     font-size: var(--H6);
 }
-.Categories-Filter-Type button:hover{
+.Categories-Filter button:hover{
     cursor: pointer;
     background: var(--BgColor);
     border: 2px solid var(--Black);
 }
-.Categories-Filter-Type button img{
+.Categories-Filter button img{
     width: 2rem;
     height: 2rem;
     transform: translateY(.2rem);
