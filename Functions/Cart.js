@@ -12,8 +12,14 @@ const CartClose = document.querySelectorAll(".Cart-Empty-Close, .Cart-Empty-Sear
 Y DESPUES DE 2MILISEGUNDOS MOSTRAMOS LA SECCION DEL
 CARRITO DE COMPRAS*/
 Cart.addEventListener("click", () => {
+    /* DESABILITAMOS EL SCROLL AL MOMENTO DE
+    ABRIR EL CARRITO DE COMPRAS */
+    document.body.classList.add("Active")
+    // MOSTRAMOS EL LAYOUT TRANSPARENTE
     Layout.classList.add("Active")
     setTimeout(() => {
+        /* MOSTRAMOS EL CARRITO DE COMPRAS 
+        DESPUES DE 2 MS*/
         CartEmpty.classList.add("Active")
     }, 200);
 })
@@ -22,7 +28,12 @@ QUE PUEDAN CERRAR EL LAYOUT TRANSPARANTE Y EL
 CARRITO DE COMPRAR */
 CartClose.forEach(e => {
     e.addEventListener("click", () => {
+        /* HABILITAMOS EL SCROLL AL MOMENTO DE
+        CERRAR EL CARRITO DE COMPRAS */
+        document.body.classList.remove("Active")
+        // OCULTAMOS EL LAYOUT TRANSPARENTE
         Layout.classList.remove("Active")
+        /* OCULTAMOS EL CARRITO DE COMPRAS */
         CartEmpty.classList.remove("Active")
     })
 })
