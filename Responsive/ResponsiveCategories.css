@@ -1,22 +1,27 @@
 @media (max-width: 1550px){
+    /* ADAPTAMOS AL 100% DE LA PANTALLA NUESTRO LARGO */
     .Categories{
         width: 100% !important;
     }
+    /* ASIGNAMOS UN PADDING PARA QUE NO QUEDE TODO PEGADO */
     .Categories-List, .Categories-Products{
         padding: 1rem !important;
     }
 }
 @media (max-width: 1450px){
+    /* MOSTRAMOS 5 CATEGORIAS EN LUGAR DE  10 */
     .Categories-Filter{
         grid-template-columns: repeat(5, 1fr) !important;
     }
 }
 @media (max-width: 830px){
+    /* MOSTRAMOS 4 CATEGORIAS EN LUGAR DE  5 */
     .Categories-Filter{
         grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 @media (max-width: 670px){
+    /* MOSTRAMOS 3 CATEGORIAS EN LUGAR DE  4 */
     .Categories-Filter{
         grid-template-columns: repeat(3, 1fr) !important;
     }
@@ -48,21 +53,27 @@
     }
 }
 @media (max-width: 500px){
-    .Categories-Filter{
-        grid-template-columns: repeat(5, 1fr) !important;
-    }
-    .Categories-Filter button{
-        width: 5rem !important;
-        height: 5rem !important;
-    }
+    /* OCULTAMOS EL TEXTO DE LAS CATEGORIAS */
     .Categories-Filter button p{
         display: none;
     }
+    /* VOLVEMOS LOS BOTONES CIRCULARES */
+    .Categories-Filter button{
+        width: 5rem !important;
+        height: 5rem !important;
+        border-radius: 50% !important;
+    }
+    /* MOSTRAMOS 5 CATEGORIAS EN LUGAR DE  3 */
+    .Categories-Filter{
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+    /* VOLVEMOS A SU UBICACION CENTRAL LA IMAGEN DEL ICONO */
     .Categories-Filter button img{
         transform: translateY(0) !important;
     }
 }
 @media (max-width: 330px){
+    /* MOSTRAMOS 4 CATEGORIAS EN LUGAR DE  5 */
     .Categories-Filter{
         grid-template-columns: repeat(4, 1fr) !important;
     }
