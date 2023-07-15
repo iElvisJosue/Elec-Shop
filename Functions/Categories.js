@@ -87,7 +87,7 @@ categoriesBtnFilterCooler.addEventListener("click", () => {
 
 function addGraphic(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
-    categoriesTitle.innerHTML = "Tarjetas Graficas | 9 Productos"
+    categoriesTitle.innerHTML = "Tarjetas Gráficas | 9 Productos"
     // VACIAMOS EL CONTENIDO DE PRODUCTOS TOTALES
     categoriesProducts.innerHTML = ""
     /* CREAMOS UN ARRAY DE OBJETOS CON LOS 
