@@ -31,6 +31,9 @@
 ::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
+body.Active{
+    overflow: hidden;
+}
 html{
     scroll-behavior: smooth;
 }
