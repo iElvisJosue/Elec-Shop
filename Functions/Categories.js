@@ -85,6 +85,8 @@ categoriesBtnFilterCooler.addEventListener("click", () => {
     addCooler()
 })
 
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA TARJETAS GRAFICAS */
 function addGraphic(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Tarjetas Gráficas | 9 Productos"
@@ -242,6 +244,8 @@ function addGraphic(){
         categoriesProducts.innerHTML += graphics
     })
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA MONITORES */
 function addMonitor(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Monitores | 2 Productos"
@@ -308,6 +312,8 @@ function addMonitor(){
         categoriesProducts.innerHTML += monitor
     })
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA PROCESADORES */
 function addCPU(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Procesadores | 1 Productos"
@@ -346,6 +352,8 @@ function addCPU(){
     // AGREGAMOS EL NUEVO CONTENIDO
     categoriesProducts.innerHTML += cpu
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA MEMORIA RAM */
 function addRAM(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Memorias RAM | 1 Productos"
@@ -384,6 +392,8 @@ function addRAM(){
     // AGREGAMOS EL NUEVO CONTENIDO
     categoriesProducts.innerHTML += ram
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA ALMACENAMIENTO */
 function addStorage(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Almacenamiento | 2 Productos"
@@ -448,6 +458,8 @@ function addStorage(){
         categoriesProducts.innerHTML += storage
     })
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA GABINETES */
 function addTower(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Gabinetes | 1 Productos"
@@ -486,6 +498,8 @@ function addTower(){
     // AGREGAMOS EL NUEVO CONTENIDO
     categoriesProducts.innerHTML += tower
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA PLACA MADRES */
 function addMotherboard(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Tarjetas Madre | 1 Productos"
@@ -524,6 +538,8 @@ function addMotherboard(){
     // AGREGAMOS EL NUEVO CONTENIDO
     categoriesProducts.innerHTML += motherboard
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA FUENTES DE PODER */
 function addPSU(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Fuentes de Poder | 1 Productos"
@@ -562,6 +578,8 @@ function addPSU(){
     // AGREGAMOS EL NUEVO CONTENIDO
     categoriesProducts.innerHTML += psu
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA SILLAS GAMER */
 function addChair(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Sillas Gamer | 1 Productos"
@@ -600,6 +618,8 @@ function addChair(){
     // AGREGAMOS EL NUEVO CONTENIDO
     categoriesProducts.innerHTML += chair
 }
+/* ESTA FUNCCION MUESTRA TODOS LOS PRODUCTOS DE 
+LA CATEGORIA ENFRIAMIENTO LIQUIDO */
 function addCooler(){
     // CAMBIAMOS EL TITULO DE LAS CATEGORIAS
     categoriesTitle.innerHTML = "Enfriamientos | 1 Productos"
