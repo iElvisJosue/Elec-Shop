@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTAMOS LA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- PONES EL ICONO DEL SITIO -->
+    <link rel="shortcut icon" href="../../Images/Logo.ico">
+    <!-- IMPORTAMOS LOS ESTILOS -->
+    <link rel="stylesheet" href="../../Styles/Product/Product.css">
+    <title>Elec-Shop - Producto</title>
+</head>
+<body>
+    <!-- EMPIEZA EL HEADER -->
+    <header class="Header">
+        <nav class="Navbar">
+            <a href="../../index.html" class="Header-Logo">
+                <img src="../../Images/Logo.png" alt="Elec-Shop Logo">
+                <p>
+                    Elec-Shop
+                </p>
+            </a>
+            <div class="Header-Sections">
+                <a href="../../Pages/Categories.html">Categorías <ion-icon name="apps-outline"></ion-icon></a>
+                <a href="#Trending">Tendencia</a>
+            </div>
+            <div class="Header-Options">
+                <div class="Header-Option-Search">
+                    <input type="text" class="Header-Option-Seach-Input" name="Search-Produtc" id="SearchProdutc" placeholder="Escribe: Graficas">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <a href="../../Pages/Categories.html" class="Header-Option-Categories">
+                    <ion-icon name="apps-outline"></ion-icon>
+                    <p>
+                        Categorías
+                    </p>
+                </a>
+                <a href="../../Pages/Account.html" class="Header-Option-Account">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <p>
+                        Cuenta
+                    </p>
+                </a>
+                <div class="Header-Option-Cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <p>
+                        Carrito
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- TERMINA EL HEADER -->
+
+    <!-- EMPIEZA LAYOUT TRANSPARENTE -->
+    <div class="Layout">
+    </div>
+    <!-- TERMINA LAYOUT TRANSPARENTE -->
+
+    <!-- SE CREA LA SECCION DEL CARRITO -->
+    <div class="Cart-Empty">
+        <div class="Cart-Empty-Title">
+            <p>Tu carrito de compras (0)</p>
+            <ion-icon name="close-sharp" class="Cart-Empty-Close"></ion-icon>
+        </div>
+        <img src="../../Images/Cart/CarritoVacio.png" alt="Carrtio Vacio">
+        <p>Tu carrito esta vacío</p>
+        <button class="Cart-Empty-Searching">Seguir buscando</button>
+    </div>
+    <!-- TERMINA SECCION DEL CARRITO -->
+
+    <!-- SE CREA LA SECCION DEL PRODUCTO -->
+    <main class="Product">
+        <section class="Product-Description">
+            <div class="Product-Description-Image">
+                <img src="../../Images/Product/Product1/1.png" alt="Imagen Principal">
+            </div>
+            <div class="Product-Description-Text">
+                <div class="Product-Description-Title">
+                    <div class="Product-Description-Title-Important">
+                        <p>Sapphire Pulse - RX 6600</p>
+                        <div class="Product-Description-Title-Important-Rate">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            (203)
+                        </div>
+                    </div>
+                </div>
+                <div class="Product-Description-Price">
+                    <p>$3,450 MXN</p>
+                    <p>O hasta en 6 x $575 MXN (Meses sin intereses)</p>
+                </div>
+                <div class="Product-Description-Colors">
+                    <p>Selecciona un color</p>
+                    <div class="Product-Description-Colors-Buttons">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <div class="Product-Description-Items">
+                    <div class="Product-Description-Items-Add">
+                        <button><ion-icon name="remove"></ion-icon></button>
+                        <p>1</p>
+                        <button><ion-icon name="add"></ion-icon></button>
+                    </div>
+                    <div class="Product-Description-Items-Text">
+                        <p>¡Solo quedan <b>6 piezas</b> disponibles!</p>
+                        <p>No te lo pierdas</p>
+                    </div>
+                </div>
+                <div class="Product-Description-Buy-Cart">
+                    <button>Comprar ahora</button>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Product-Description-Delivery">
+                    <div class="Product-Description-Delivery-Free">
+                        <button><ion-icon name="cart-outline"></ion-icon></button>
+                        <div class="Product-Description-Delivery-Free-Text">
+                            <p>Envio gratis</p>
+                            <u>Ingresa tu codigo postal para ver disponibilidad de envio</u>
+                        </div>
+                    </div>
+                    <div class="Product-Description-Delivery-Return">
+                        <button><ion-icon name="bag-handle-outline"></ion-icon></button>
+                        <div class="Product-Description-Delivery-Free-Text">
+                            <p>Entrega de devolución</p>
+                            <p>Devolución gratuita de 30 días. <u>Detalles</u></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- TERMINA SECCION DEL PRODUCTO -->
+
+    <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
+    <script src="../../Functions/Cart.js"></script>
+</body>
+</html>
