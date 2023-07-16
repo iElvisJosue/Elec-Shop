@@ -8,6 +8,11 @@
 @import url(../../Styles/Cart/Cart.css);
 /* IMPORTAMOS TODAS LAS SECCIONES DE PRODUCT */
 @import url(ProductDescription.css);
+@import url(ProductDetails.css);
+/* IMPORTAMOS LA SECCION DE TENDENCIAS */
+@import url(../../Styles/Container/Trending.css);
+/* IMPORTAMOS EL FOOTER */
+@import url(../../Styles/Footer/Footer.css);
 /* IMPORTAMOS LOS ESTILOS RESPONSIVOS */
 @import url(../../Responsive/ResponsiveIndex.css);
 @import url(../../Responsive/ResponsiveProduct.css);
