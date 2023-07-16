@@ -11,6 +11,10 @@
         gap: 3rem;
         grid-template-columns: repeat(2, 1fr);
     }
+    /* ASIGNAMOS UN PADDIN PARA QUE NO QUEDE TODO PEGADO */
+    .Product-Details{
+        padding: 1rem;
+    }
     /* LA IMAGEN AHORA ABARCARA 1 COLUMNA */
     .Product-Description-Image{
         grid-column: span 1;
@@ -26,6 +30,13 @@
     .Product-Description-Image img{
         width: 70%;
         height: 55%;
+    }
+}
+@media (max-width: 1000px){
+    /* CAMBIAMOS EL TAMAÑO DE
+    LA LISTA DE LAS ESPECIFICACIONES */
+    .Product-Specifications-Text{
+        width: 100%;
     }
 }
 @media (max-width: 780px){
