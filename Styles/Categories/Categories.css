@@ -6,12 +6,12 @@
 @import url(../../Styles/Header/Header.css);
 /* IMPORTAMOS EL DISEÑO DEL CARRITO */
 @import url(../../Styles/Cart/Cart.css);
-/* IMPORTAMOS LOS ESTILOS RESPONSIVOS */
-@import url(../../Responsive/ResponsiveIndex.css);
-@import url(../../Responsive/ResponsiveCategories.css);
 /* IMPORTAMOS TODAS LAS SECCIONES DE CATEGORIAS */
 @import url(List.css);
 @import url(CategoriesProducts.css);
+/* IMPORTAMOS LOS ESTILOS RESPONSIVOS */
+@import url(../../Responsive/ResponsiveIndex.css);
+@import url(../../Responsive/ResponsiveCategories.css);
 
 
 .Header-Option-Categories, .Header-Sections, .Header-Option-Search{
