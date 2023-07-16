@@ -271,7 +271,6 @@ DEVOLUCION DE PRODUCTOS */
     align-items: center;
     gap: 1rem;
     padding: 2rem 1rem;
-    border-bottom: 1px solid var(--BgColor2);
 }
 /* ESTILOS PARA EL ICONO DE ENVIO GRATIS
 Y DEVOLUCION DE PRODUCTO */
