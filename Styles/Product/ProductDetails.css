@@ -1,0 +1,61 @@
+/* ESTILOS PARA EL CONTENEDOR DE LOS DETALLES Y ESPECIFICACIONES DEL PRODUCTO */
+.Product-Details{
+    width: 100%;
+    height: auto;
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 2rem;
+}
+/* ESTILOS PARA EL TITULO DE DETALLES */
+.Product-Details-Title{
+    font-size: var(--H4);
+    color: var(--SecundaryColor);
+    font-weight: bold;
+}
+/* ESTILOS PARA LA LISTA DE LOS DETALLES */
+.Product-Details-Text{
+    height: auto;
+    border: 1px solid var(--BgColor2);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    list-style: none;
+}
+/* ESTILOS PARA EL LISTADO DE DETALLES */
+.Product-Details-Text li{
+    font-size: var(--H6);
+    padding: 1rem;
+}
+
+/* ESTILOS PARA EL TITULO DE ESPECIFICACIONES */
+.Product-Specifications-Title{
+    font-size: var(--H4);
+    color: var(--SecundaryColor);
+    font-weight: bold;
+}
+/* ESTILOS PARA LA LISTA DE LAS ESPECIFICACIONES */
+.Product-Specifications-Text{
+    width: 35%;
+    height: auto;
+    border: 1px solid var(--BgColor2);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    list-style: none;
+}
+/* ESTILOS PARA EL LISTADO DE LAS ESPECIFICACIONES */
+.Product-Specifications-Text li{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Product-Specifications-Text li p{
+    font-size: var(--H6);
+    color: var(--Black);
+}
+.Product-Specifications-Text li p:nth-child(1){
+    font-weight: bold;
+}
+.Product-Specifications-Text li:nth-child(odd){
+    background: var(--BgColor2);
+}
