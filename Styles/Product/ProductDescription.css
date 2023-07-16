@@ -1,0 +1,307 @@
+/* ESTILOS PARA EL CONTENEDOR DE LOS DETALLES/DESCRIPCION
+DEL PRODUCTOS A COMPRAR */
+.Product-Description{
+    width: 100%;
+    margin-top: 8.5rem;
+    height: auto;
+    background: var(--White);
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7.5rem;
+}
+/* --------------- SECCION DE IMAGENES --------------- */
+/* ESTILOS PARA EL CONTENEDOR DE LAS IMAGENES */
+.Product-Description-Image{
+    grid-column: span 2;
+    width: 100%;
+    height: 70rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--BgColor);
+}
+.Product-Description-Image img{
+    width: 70%;
+    height: 80%;
+}
+/* ESTILOS PARA LAS IMAGENES SECUNDARIAS */
+.Product-Description-Image-Secundary{
+    height: 15rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.Product-Description-Image-Secundary button{
+    width: 100%;
+    height: 100%;
+    background: var(--BgColor);
+    border-radius: 1.5rem;
+    border: none;
+}
+.Product-Description-Image-Secundary button img{
+    width: 70%;
+    height: 60%;
+}
+
+/* --------------- SECCION DE TEXTO --------------- */
+/* ESTILOS PARA EL CONTENEDOR DE LA DESCRIPCION */
+.Product-Description-Text{
+    grid-column: span 1;
+    width: 100%;
+    min-height: 70rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+}
+/* ESTILOS PARA EL DEL TITULO DEL PRODUCTO */
+.Product-Description-Title{
+    width: 100%;
+    min-height: 10rem;
+    height: auto;
+    border-bottom: 1px solid var(--BgColor2);
+}
+/* ESTILOS PARA EL DEL TITULO DEL PRODUCTO */
+.Product-Description-Title-Important p:nth-child(1){
+    min-height: 6rem;
+    height: auto;
+    font-size: var(--H2);
+    font-weight: bold;
+}
+/* ESTILOS PARA LA VALORACION DEL PRODUCTO */
+.Product-Description-Title-Important-Rate{
+    min-height: 4rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: var(--H6);
+}
+.Product-Description-Title-Important-Rate ion-icon{
+    font-size: var(--H6);
+    color: var(--SecundaryColor);
+}
+/* ESTILOS PARA EL PRECIO DEL PRODUCTO */
+.Product-Description-Price{
+    min-height: 10rem;
+    height: auto;
+    border-bottom: 1px solid var(--BgColor2);
+}
+/* ESTILOS PARA EL TEXTO DEL PRECIO */
+.Product-Description-Price p:nth-child(1){
+    line-height: 5rem;
+    min-height: 5rem;
+    height: auto;
+    font-size: var(--H3);
+    font-weight: bold;
+}
+/* ESTILOS PARA EL TEXTO DE LOS MESES SIN INTERESES */
+.Product-Description-Price p:nth-child(2){
+    min-height: 5rem;
+    height: auto;
+    font-size: var(--H6);
+    color: var(--Black);
+}
+/* ESTILOS PARA EL PRECIO DEL PRODUCTO */
+.Product-Description-Colors{
+    min-height: 10rem;
+    height: auto;
+    border-bottom: 1px solid var(--BgColor2);
+}
+/* ESTILOS PARA EL TEXTO DE LOS COLORES */
+.Product-Description-Colors p:nth-child(1){
+    min-height: 4rem;
+    height: auto;
+    font-size: var(--H4);
+    font-weight: bold;
+}
+/* ESTILOS PARA EL CONTENEDOR DE LOS BOTONES */
+.Product-Description-Colors-Buttons{
+    min-height: 6rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* ESTILOS PARA LOS BOTONES DE COLORES */
+.Product-Description-Colors-Buttons button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--BgColor2);
+}
+/* ESTILOS PARA LOS BOTONES */
+.Product-Description-Colors-Buttons button:nth-child(1){
+    background: var(--Red);
+}
+.Product-Description-Colors-Buttons button:nth-child(2){
+    background: var(--SecundaryColor);
+}
+.Product-Description-Colors-Buttons button:nth-child(3){
+    background: var(--Blue);
+}
+.Product-Description-Colors-Buttons button:nth-child(4){
+    background: var(--Black);
+}
+.Product-Description-Colors-Buttons button:nth-child(5){
+    background: var(--Orange);
+}
+/* HOVER PARA LOS BOTONES DE COLORES */
+.Product-Description-Colors-Buttons button:hover{
+    border-color: var(--MainColor);
+}
+/* ESTILOS PARA AGREGAR MAS PRODUCTOS */
+.Product-Description-Items{
+    min-height: 5rem;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+}
+/* ESTILOS PARA EL CONTENEDOR DE LOS BOTONES DE + - */
+.Product-Description-Items-Add{
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+/* ESTILOS PARA LOS BOTONES DE + - */
+.Product-Description-Items-Add button{
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    border: none;
+    background: var(--BgColor2);
+    cursor: pointer;
+}
+/* ESTILOS PARA LOS ICONOS DE + - */
+.Product-Description-Items-Add button ion-icon{
+    font-size: var(--Icons-2);
+    color: var(--MainColor);
+}
+/* REDONDEAMOS LOS BOTONES DE + - */
+.Product-Description-Items-Add button:nth-child(1){
+    border-radius: 50% 0 0 50%;
+}
+.Product-Description-Items-Add button:nth-child(3){
+    border-radius: 0 50% 50% 0;
+}
+/* ESTILOS AL TEXTO DE LA CANTIDAD DE PRODUCTOS */
+.Product-Description-Items-Add p{
+    height: 100%;
+    width: 5rem;
+    background: var(--BgColor2);
+    color: var(--MainColor);
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    font-size: var(--H6);
+}
+/* ESTILOS AL TEXTO DE CANTIDAD LIMITADAS */
+.Product-Description-Items-Text{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Product-Description-Items-Text p{
+    font-size: var(--H6);
+    font-weight: bold;
+}
+.Product-Description-Items-Text p b{
+    font-size: var(--H6);
+    color: var(--SecundaryColor);
+}
+/* ESTILOS PARA EL CONTENEDOR DE LOS BOTONES
+ DE COMPRAR Y AGREGAR AL CARRITO */
+.Product-Description-Buy-Cart{
+    min-height: 5rem;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+}
+/* ESTILOS PARA LOS BOTONES DE COMPRAR Y AGREGAR AL CARRITO */
+.Product-Description-Buy-Cart button{
+    height: 5rem;
+    width: 50%;
+    font-size: var(--H6);
+    font-weight: bold;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+/* ESTILOS PARA EL BOTON DE COMPRAR */
+.Product-Description-Buy-Cart button:nth-child(1){
+    background: var(--MainColor);
+    border: 2px solid var(--MainColor);
+    color: var(--White);
+}
+/* ESTILOS PARA EL BOTON DE AGREGAR AL CARRITO */
+.Product-Description-Buy-Cart button:nth-child(2){
+    background: var(--White);
+    border: 2px solid var(--SecundaryColor);
+    color: var(--SecundaryColor);
+}
+/* ESTILOS PARA LOS HOVER DEL BOTON DE COMPRAR */
+.Product-Description-Buy-Cart button:nth-child(1):hover{
+    background: var(--White);
+    color: var(--MainColor);
+}
+/* ESTILOS PARA LOS HOVER DEL BOTON DE AGREGAR AL CARRITO */
+.Product-Description-Buy-Cart button:nth-child(2):hover{
+    background: var(--SecundaryColor);
+    color: var(--White);
+}
+/* ESTILOS PARA EL CONTENEDOR DE ENTREGA */
+.Product-Description-Delivery{
+    min-height: 20rem;
+    height: auto;
+    border-radius: 1rem;
+    border: 1px solid var(--BgColor2);
+}
+/* ESTILOS PARA EL MENSAJE DE ENVIO GRATIS Y 
+DEVOLUCION DE PRODUCTOS */
+.Product-Description-Delivery-Free,
+.Product-Description-Delivery-Return{
+    min-height: 10rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid var(--BgColor2);
+}
+/* ESTILOS PARA EL ICONO DE ENVIO GRATIS
+Y DEVOLUCION DE PRODUCTO */
+.Product-Description-Delivery-Free button,
+.Product-Description-Delivery-Return button{
+    min-width: 5.5rem;
+    border: none;
+    border-right: 1px solid var(--BgColor2);
+    background: var(--White);
+}
+.Product-Description-Delivery-Free button ion-icon,
+.Product-Description-Delivery-Return button ion-icon{
+    font-size: var(--Icons-1);
+    color: var(--SecundaryColor);
+}
+/* ESTILOS PARA EL TEXTO DE ENVIO GRATIS 
+Y DEVOLUCION DE PRODUCTO */
+.Product-Description-Delivery-Free p,
+.Product-Description-Delivery-Return p:nth-child(1){
+    font-size: var(--H5);
+    font-weight: bold;
+}
+.Product-Description-Delivery-Free u{
+    cursor: pointer;
+    font-size: var(--H6);
+}
+.Product-Description-Delivery-Return p:nth-child(2){
+    font-size: var(--H6);
+}
+.Product-Description-Delivery-Return p:nth-child(2) u{
+    font-size: var(--H6);
+    cursor: pointer;
+}
