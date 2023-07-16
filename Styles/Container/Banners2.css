@@ -29,7 +29,7 @@
     font-weight: bold;
     color: var(--MainColor);
 }
-.Banner-2-Information-Content button{
+.Banner-2-Information-Content a{
     color: var(--White);
     font-size: var(--H5);
     background-color: var(--MainColor);
@@ -38,7 +38,7 @@
     border-radius: 2.5rem;
     cursor: pointer;
 }
-.Banner-2-Information-Content button:hover{
+.Banner-2-Information-Content a:hover{
     background: var(--SecundaryColor);
 }
 .Banner-2-Information-Image{
