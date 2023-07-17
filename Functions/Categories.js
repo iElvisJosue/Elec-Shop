@@ -97,6 +97,7 @@ function addGraphic(){
     const graphicsDetails = [
         {
         image: "../Images/Categories/Products/Grafica1.png",
+        page: "Product7.html",
         alt: "Grafica 1",
         name: "MSI - GeForce 210",
         price: "$800 MXN",
@@ -106,10 +107,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (12) '
+            ' (12) ',
+        btnpage: "Product7.html"
         },
         {
         image: "../Images/Categories/Products/Grafica2.png",
+        page: "Product8.html",
         alt: "Grafica 2",
         name: "Gigabyte - GTX 1660",
         price: "$5,000 MXN",
@@ -119,10 +122,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-half-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (81) '
+            ' (81) ',
+        btnpage: "Product8.html"
         },
         {
         image: "../Images/Categories/Products/Grafica3.png",
+        page: "Product9.html",
         alt: "Grafica 3",
         name: "Gigabyte - RTX 3060",
         price: "$7,000 MXN",
@@ -132,10 +137,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-half-outline"></ion-icon>' +
-            ' (57) '
+            ' (57) ',
+        btnpage: "Product9.html",
         },
         {
         image: "../Images/Categories/Products/Grafica4.png",
+        page: "Product10.html",
         alt: "Grafica 4",
         name: "ASUS - RTX 3060 White",
         price: "$6,349 MXN",
@@ -145,10 +152,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (57) '
+            ' (57) ',
+        btnpage: "Product10.html",
         },
         {
         image: "../Images/Categories/Products/Grafica5.png",
+        page: "Product11.html",
         alt: "Grafica 5",
         name: "Gigabyte - RTX 4090",
         price: "$35,350 MXN",
@@ -158,10 +167,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
-            ' (1) '
+            ' (1) ',
+        btnpage: "Product11.html",
         },
         {
         image: "../Images/Categories/Products/Grafica6.png",
+        page: "Product12.html",
         alt: "Grafica 6",
         name: "Gigabyte - RX 6600",
         price: "$3,500 MXN",
@@ -171,10 +182,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
-            ' (124) '
+            ' (124) ',
+        btnpage: "Product12.html",
         },
         {
         image: "../Images/Categories/Products/Grafica7.png",
+        page: "Product13.html",
         alt: "Grafica 7",
         name: "MSI - RX 6650 XT",
         price: "$6,400 MXN",
@@ -184,10 +197,12 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-half-outline"></ion-icon>' +
-            ' (32) '
+            ' (32) ',
+        btnpage: "Product13.html",
         },
         {
         image: "../Images/Categories/Products/Grafica8.png",
+        page: "Product14.html",
         alt: "Grafica 8",
         name: "MSI - RX 7600",
         price: "$6,449 MXN",
@@ -197,10 +212,12 @@ function addGraphic(){
             '<ion-icon name="star-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (5) '
+            ' (5) ',
+        btnpage: "Product14.html", 
         },
         {
         image: "../Images/Categories/Products/Grafica9.png",
+        page: "Product2.html",
         alt: "Grafica 9",
         name: "Sapphire Pulse - RX 6600",
         price: "$3,450 MXN",
@@ -210,36 +227,29 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
-            ' (203) '
+            ' (203) ',
+        btnpage: "Product2.html",
         }
     ]
     // RECORREMOS EL ARRAY DE OBJETOS
     graphicsDetails.forEach(Element => {
         // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
         const graphics = 
-            '<div class="Categories-Products-Item">' +
-                '<div class="Categories-Products-Item-Image">' +
-                    '<img src="'+ Element.image +'" alt="'+ Element.alt +'">'+
-                '</div>' +
-        '        <div class="Categories-Products-Item-Name-And-Price">' +
-                    '<p>' +
-                        Element.name +
-                    '</p>' +
-                    '<p>' +
-                        Element.price +
-                    '</p>' +
-                '</div>' +
-                '<div class="Categories-Products-Item-Description">' +
-                    Element.description +
-                '</div>' +
-                '<div class="Categories-Products-Item-Rate">' +
-                    Element.rate +
-                '</div>' +
-                '<div class="Categories-Products-Item-Button">' +
-                    '<button>Comprar</button>' +
-                '</div>' +
-                '<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>' +
-            '</div>'
+            `<div class="Categories-Products-Item">` +
+                `<a class="Categories-Products-Item-Image" href="../Pages/Products/${Element.page}">` +
+                    `<img src="${Element.image}" alt="${Element.alt}">`+
+                `</a>` +
+                `<div class="Categories-Products-Item-Name-And-Price">` +
+                    `<p>${Element.name}</p>` +
+                    `<p>${Element.price}</p>` +
+                `</div>` +
+                `<div class="Categories-Products-Item-Description">${Element.description}</div>` +
+                `<div class="Categories-Products-Item-Rate">${Element.rate}</div>` +
+                `<div class="Categories-Products-Item-Button">` +
+                    `<button onclick="window.location.href='../Pages/Products/${Element.btnpage}'">Comprar</button>` +
+                `</div>` +
+                `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
+            `</div>`
         // AGREGAMOS EL NUEVO CONTENIDO
         categoriesProducts.innerHTML += graphics
     })
