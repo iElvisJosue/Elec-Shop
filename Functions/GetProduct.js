@@ -20,7 +20,7 @@ const productEspecifications = document.querySelector(".Product-Specifications-T
 /* CREAMOS UN ARREGLO DE OBJETOS QUE CONTIENE TODOS LOS PRODUCTOS */
 const products = [
     {
-        image: `../../Images/Product/Product1.png`,
+        image: `../Images/Product/Product1.png`,
         alt: `Monitor Curvo - G34WQC-A`,
         name: `Monitor Curvo - G34WQC-A`,
         rate: `<ion-icon name="star"></ion-icon>` +
@@ -49,7 +49,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p><p>2</p></li>`
     },
     {
-        image: `../../Images/Product/Product2.png`,
+        image: `../Images/Product/Product2.png`,
         alt: `Sapphire Pulse - RX 6600`,
         name: `Sapphire Pulse - RX 6600`,
         rate: `<ion-icon name="star"></ion-icon>` +
@@ -78,7 +78,7 @@ const products = [
         `<li><p>Versión de DisplayPort</p>`/*--*/+`<p>3</p></li>`,
     },
     {
-        image: `../../Images/Product/Product3.png`,
+        image: `../Images/Product/Product3.png`,
         alt: `Game Factor - Enfriamiento Liquido`,
         name: `Game Factor - Enfriamiento Liquido`,
         rate: `<ion-icon name="star"></ion-icon>` +
@@ -105,7 +105,7 @@ const products = [
         `<li><p>Máximo flujo de aire</p>`/*--*/+`<p>70 cfm2</p></li>`,
     },
     {
-        image: `../../Images/Product/Product4.png`,
+        image: `../Images/Product/Product4.png`,
         alt: `DDI - Seagate Barracuda 3.5`,
         name: `DDI - Seagate Barracuda 3.5`,
         rate: `<ion-icon name="star"></ion-icon>` +
@@ -134,7 +134,7 @@ const products = [
         `<li><p>Tamaño de búfer</p>`/*--*/+`<p>256 MB</p></li>`,
     },
     {
-        image: `../../Images/Product/Product5.png`,
+        image: `../Images/Product/Product5.png`,
         alt: `Gabinete - Aerocool HIVE-G-BK-V1`,
         name: `Gabinete - Aerocool HIVE-G-BK-V1`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -165,7 +165,7 @@ const products = [
         `<li><p>Ventiladores traseros instalados</p>`/*--*/+`<p>1x 120 mm</p></li>`
     },
     {
-        image: `../../Images/Product/Product6.png`,
+        image: `../Images/Product/Product6.png`,
         alt: `Silla Gamer - ROG Destrier Ergo`,
         name: `Silla Gamer - ROG Destrier Ergo`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -196,7 +196,7 @@ const products = [
         `<li><p>Número de ruedas</p>`/*--*/+`<p>5</p></li>`,
     },
     {
-        image: `../../Images/Product/Product7.png`,
+        image: `../Images/Product/Product7.png`,
         alt: `MSI - GeForce 210`,
         name: `MSI - GeForce 210`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -221,7 +221,7 @@ const products = [
         `<li><p>Tipo de interfaz</p>`/*--*/+`<p>PCI Express 2.0</p></li>`,
     },
     {
-        image: `../../Images/Product/Product8.png`,
+        image: `../Images/Product/Product8.png`,
         alt: `Gigabyte - GTX 1660`,
         name: `Gigabyte - GTX 1660`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -246,7 +246,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>3</p></li>`,
     },
     {
-        image: `../../Images/Product/Product9.png`,
+        image: `../Images/Product/Product9.png`,
         alt: `Gigabyte - RTX 3060`,
         name: `Gigabyte - RTX 3060`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -276,7 +276,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>2</p></li>`,
     },
     {
-        image: `../../Images/Product/Product10.png`,
+        image: `../Images/Product/Product10.png`,
         alt: `ASUS - RTX 3060 White`,
         name: `ASUS - RTX 3060 White`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -305,7 +305,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>3</p></li>`,
     },
     {
-        image: `../../Images/Product/Product11.png`,
+        image: `../Images/Product/Product11.png`,
         alt: `Gigabyte - RTX 4090`,
         name: `Gigabyte - RTX 4090`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -336,7 +336,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>3</p></li>`,
     },
     {
-        image: `../../Images/Product/Product12.png`,
+        image: `../Images/Product/Product12.png`,
         alt: `Gigabyte - RX 6600`,
         name: `Gigabyte - RX 6600`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -367,7 +367,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>2</p></li>`,
     },
     {
-        image: `../../Images/Product/Product13.png`,
+        image: `../Images/Product/Product13.png`,
         alt: `MSI - RX 6650 XT`,
         name: `MSI - RX 6650 XT`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -397,7 +397,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>3</p></li>`,
     },
     {
-        image: `../../Images/Product/Product14.png`,
+        image: `../Images/Product/Product14.png`,
         alt: `MSI - RX 7600`,
         name: `MSI - RX 7600`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -425,7 +425,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>3</p></li>`,
     },
     {
-        image: `../../Images/Product/Product15.png`,
+        image: `../Images/Product/Product15.png`,
         alt: `Monitor - Gigabyte G24F 2`,
         name: `Monitor - Gigabyte G24F 2`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -457,7 +457,7 @@ const products = [
         `<li><p>Cantidad de DisplayPorts</p>`/*--*/+`<p>1</p></li>`,
     },
     {
-        image: `../../Images/Product/Product16.png`,
+        image: `../Images/Product/Product16.png`,
         alt: `Tarjeta Madre - Gigabyte A520M`,
         name: `Tarjeta Madre - Gigabyte A520M`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -490,7 +490,7 @@ const products = [
         `<li><p>Interfaces de disco de almacenamiento soportados</p>`/*--*/+`<p>M.2,PCI Express 3.0,SATA</p></li>`,
     },
     {
-        image: `../../Images/Product/Product17.png`,
+        image: `../Images/Product/Product17.png`,
         alt: `Procesador - Ryzen 5 5600G`,
         name: `Procesador - Ryzen 5 5600G`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -515,7 +515,7 @@ const products = [
         `<li><p>Número de núcleos</p>`/*--*/+`<p>6</p></li>`,
     },
     {
-        image: `../../Images/Product/Product18.png`,
+        image: `../Images/Product/Product18.png`,
         alt: `Fuente de Poder - XPG PYLON 80`,
         name: `Fuente de Poder - XPG PYLON 80`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -540,7 +540,7 @@ const products = [
         `<li><p>Número de conectores SATA</p>`/*--*/+`<p>7</p></li>`,
     },
     {
-        image: `../../Images/Product/Product19.png`,
+        image: `../Images/Product/Product19.png`,
         alt: `Kit RAM - XPG Spectrix`,
         name: `Kit RAM - XPG Spectrix`,
         rate: `<ion-icon name='star'></ion-icon>` +
@@ -568,7 +568,7 @@ const products = [
         `<li><p>Intel Extreme Memory Profile (XMP)</p>`/*--*/+`<p>Sí</p></li>`,
     },
     {
-        image: `../../Images/Product/Product20.png`,
+        image: `../Images/Product/Product20.png`,
         alt: `SSD | Samsung 980 PRO`,
         name: `SSD | Samsung 980 PRO`,
         rate: `<ion-icon name='star'></ion-icon>` +
