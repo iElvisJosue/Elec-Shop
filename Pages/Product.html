@@ -161,7 +161,7 @@
             </p>
             <div class="Trending-List">
                 <div class="Trending-List-Item">
-                    <a href="./Product1.html" class="Trending-List-Item-Image">
+                    <a class="Trending-List-Item-Image" onclick="setProduct('1')" href="../Pages/Product.html">
                         <img src="../Images/Trending/Monitor.png" alt="Monitor Gigabyte">
                     </a>
                     <div class="Trending-List-Item-Name-And-Price">
@@ -184,12 +184,12 @@
                         (13)
                     </div>
                     <div class="Trending-List-Item-Button">
-                        <button onclick="window.location.href='./Product1.html'">Comprar</button>
+                        <button onclick="setProduct('1'); window.location.href='../Pages/Product.html'">Comprar</button>
                     </div>
                     <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
                 </div>
                 <div class="Trending-List-Item">
-                    <a class="Trending-List-Item-Image" href="./Product2.html">
+                    <a class="Trending-List-Item-Image" onclick="setProduct('2')" href="../Pages/Product.html">
                         <img src="../Images/Trending/6600.png" alt="RX 6600">
                     </a>
                     <div class="Trending-List-Item-Name-And-Price">
@@ -212,12 +212,12 @@
                         (203)
                     </div>
                     <div class="Trending-List-Item-Button">
-                        <button onclick="window.location.href='./Product2.html'">Comprar</button>
+                        <button onclick="setProduct('2'); window.location.href='../Pages/Product.html'">Comprar</button>
                     </div>
                     <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
                 </div>
                 <div class="Trending-List-Item">
-                    <a href="./Product3.html" class="Trending-List-Item-Image">
+                    <a class="Trending-List-Item-Image" onclick="setProduct('3')" href="../Pages/Product.html">
                         <img src="../Images/Trending/Cooler.png" alt="Game Factor Enfriamiento">
                     </a>
                     <div class="Trending-List-Item-Name-And-Price">
@@ -240,12 +240,12 @@
                         (4)
                     </div>
                     <div class="Trending-List-Item-Button">
-                        <button onclick="window.location.href='./Product3.html'">Comprar</button>
+                        <button onclick="setProduct('3'); window.location.href='../Pages/Product.html'">Comprar</button>
                     </div>
                     <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
                 </div>
                 <div class="Trending-List-Item">    
-                    <a href="./Product4.html" class="Trending-List-Item-Image">
+                    <a class="Trending-List-Item-Image" onclick="setProduct('4')" href="../Pages/Product.html">
                         <img src="../Images/Trending/HDD.png" alt="Disco Duro Interno">
                     </a>
                     <div class="Trending-List-Item-Name-And-Price">
@@ -268,12 +268,12 @@
                         (13)
                     </div>
                     <div class="Trending-List-Item-Button">
-                        <button onclick="window.location.href='./Product4.html'">Comprar</button>
+                        <button onclick="setProduct('4'); window.location.href='../Pages/Product.html'">Comprar</button>
                     </div>
                     <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
                 </div>
                 <div class="Trending-List-Item">
-                    <a href="./Product5.html" class="Trending-List-Item-Image">
+                    <a class="Trending-List-Item-Image" onclick="setProduct('5')" href="../Pages/Product.html">
                         <img src="../Images/Trending/Gabinete.png" alt="Gabinete ">
                     </a>
                     <div class="Trending-List-Item-Name-And-Price">
@@ -296,12 +296,12 @@
                         (45)
                     </div>
                     <div class="Trending-List-Item-Button">
-                        <button onclick="window.location.href='./Product5.html'">Comprar</button>
+                        <button onclick="setProduct('5'); window.location.href='../Pages/Product.html'">Comprar</button>
                     </div>
                     <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
                 </div>
-                <div class="Trending-List-Item"> 
-                    <a href="./Product6.html" class="Trending-List-Item-Image">
+                <div class="Trending-List-Item">
+                    <a class="Trending-List-Item-Image" onclick="setProduct('6')" href="../Pages/Product.html">
                         <img src="../Images/Trending/Silla.png" alt="Silla Gamer ASUS">
                     </a>
                     <div class="Trending-List-Item-Name-And-Price">
@@ -324,7 +324,7 @@
                         (53)
                     </div>
                     <div class="Trending-List-Item-Button">
-                        <button onclick="window.location.href='./Product6.html'">Comprar</button>
+                        <button onclick="setProduct('6'); window.location.href='../Pages/Product.html'">Comprar</button>
                     </div>
                     <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
                 </div>
@@ -361,6 +361,11 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
     <script src="../Functions/Cart.js"></script>
+    <!-- IMPORTAMOS LA FUNCION QUE NOS PERMITE OBTENER EL PRODUCTO
+    QUE FUE SELECCIONADO -->
     <script src="../Functions/GetProduct.js"></script>
+    <!-- IMPORTAMOS LA FUNCION QUE NOS PERMITE ALMACENAR EL PRODUCTO
+    QUE FUE SELECCIONADO -->
+    <script src="../Functions/SetProduct.js"></script>
 </body>
 </html>
