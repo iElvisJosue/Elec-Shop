@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
-    transition: .5s all;
 }
 ::-webkit-scrollbar {
     -webkit-appearance: none;
