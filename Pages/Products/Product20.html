@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTAMOS LA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- PONES EL ICONO DEL SITIO -->
+    <link rel="shortcut icon" href="../../Images/Logo.ico">
+    <!-- IMPORTAMOS LOS ESTILOS -->
+    <link rel="stylesheet" href="../../Styles/Product/Product.css">
+    <title>Elec-Shop - Producto</title>
+</head>
+<body>
+    <!-- EMPIEZA EL HEADER -->
+    <header class="Header">
+        <nav class="Navbar">
+            <a href="../../index.html" class="Header-Logo">
+                <img src="../../Images/Logo.png" alt="Elec-Shop Logo">
+                <p>
+                    Elec-Shop
+                </p>
+            </a>
+            <div class="Header-Sections">
+                <a href="../../Pages/Categories.html">Categorías <ion-icon name="apps-outline"></ion-icon></a>
+                <a href="#Trending">Tendencia</a>
+            </div>
+            <div class="Header-Options">
+                <div class="Header-Option-Search">
+                    <input type="text" class="Header-Option-Seach-Input" name="Search-Produtc" id="SearchProdutc" placeholder="Escribe: Graficas">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <a href="../../Pages/Categories.html" class="Header-Option-Categories">
+                    <ion-icon name="apps-outline"></ion-icon>
+                    <p>
+                        Categorías
+                    </p>
+                </a>
+                <a href="../../Pages/Account.html" class="Header-Option-Account">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <p>
+                        Cuenta
+                    </p>
+                </a>
+                <div class="Header-Option-Cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <p>
+                        Carrito
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- TERMINA EL HEADER -->
+
+    <!-- EMPIEZA LAYOUT TRANSPARENTE -->
+    <div class="Layout">
+    </div>
+    <!-- TERMINA LAYOUT TRANSPARENTE -->
+
+    <!-- SE CREA LA SECCION DEL CARRITO -->
+    <div class="Cart-Empty">
+        <div class="Cart-Empty-Title">
+            <p>Tu carrito de compras (0)</p>
+            <ion-icon name="close-sharp" class="Cart-Empty-Close"></ion-icon>
+        </div>
+        <img src="../../Images/Cart/CarritoVacio.png" alt="Carrtio Vacio">
+        <p>Tu carrito esta vacío</p>
+        <button class="Cart-Empty-Searching">Seguir buscando</button>
+    </div>
+    <!-- TERMINA SECCION DEL CARRITO -->
+
+    <!-- SE CREA LA SECCION DEL PRODUCTO -->
+    <main class="Product">
+        <!-- EMPIEZA LA SECCION QUE CONTIENE LA DESCRIPCION IMPORTANTE DEL PRODUCTO -->
+        <section class="Product-Description">
+            <!-- EMPIEZA IMAGEN DEL PRODUCTO -->
+            <div class="Product-Description-Image">
+                <img src="../../Images/Product/Product20.png" alt="Producto 20">
+            </div>
+            <!-- TERMINA IMAGEN DEL PRODUCTO -->
+
+            <!-- EMPIEZA DESCRIPCION IMPORTANTE DEL PRODUCTO -->
+            <div class="Product-Description-Text">
+                <div class="Product-Description-Title">
+                    <div class="Product-Description-Title-Important">
+                        <p>SSD | Samsung 980 PRO</p>
+                        <div class="Product-Description-Title-Important-Rate">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            (8)
+                        </div>
+                    </div>
+                </div>
+                <div class="Product-Description-Price">
+                    <p style="color: #ff6961">$1,810 MXN <strike style="color: #2f3640;">$1,990</strike></p>
+                    <p>O hasta en 6 x $301 MXN (Meses sin intereses)</p>
+                </div>
+                <div class="Product-Description-Colors">
+                    <p>Selecciona un color</p>
+                    <div class="Product-Description-Colors-Buttons">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <div class="Product-Description-Items">
+                    <div class="Product-Description-Items-Add">
+                        <button><ion-icon name="remove"></ion-icon></button>
+                        <p>1</p>
+                        <button><ion-icon name="add"></ion-icon></button>
+                    </div>
+                    <div class="Product-Description-Items-Text">
+                        <p>¡Solo quedan <b>7 piezas</b> disponibles!</p>
+                        <p>No te lo pierdas</p>
+                    </div>
+                </div>
+                <div class="Product-Description-Buy-Cart">
+                    <button>Comprar ahora</button>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Product-Description-Delivery">
+                    <div class="Product-Description-Delivery-Free">
+                        <button><ion-icon name="cart-outline"></ion-icon></button>
+                        <div class="Product-Description-Delivery-Free-Text">
+                            <p>Envio gratis</p>
+                            <u>Ingresa tu codigo postal para ver disponibilidad de envio</u>
+                        </div>
+                    </div>
+                    <div class="Product-Description-Delivery-Return">
+                        <button><ion-icon name="bag-handle-outline"></ion-icon></button>
+                        <div class="Product-Description-Delivery-Free-Text">
+                            <p>Entrega de devolución</p>
+                            <p>Devolución gratuita de 30 días. <u>Detalles</u></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TERMINA DESCRIPCION IMPORTANTE DEL PRODUCTO -->
+        </section>
+        <!-- TERMINA LA SECCION QUE CONTIENE LA DESCRIPCION IMPORTANTE DEL PRODUCTO -->
+        <section class="Product-Details">
+            <p class="Product-Details-Title">
+                Detalles del producto
+            </p>
+            <ul class="Product-Details-Text">
+                <li>El SSD Samsung 980 PRO NVMe es un dispositivo de almacenamiento interno para PC con una capacidad de 500 GB. Este modelo cuenta con soporte TRIM y S.M.A.R.T., lo que permite optimizar el rendimiento del disco duro y monitorear su estado en tiempo real.</li>
+                <li>La versión NVM Express (NVMe) 1.3c garantiza una alta velocidad de transferencia de datos, mientras que la tecnología V-NAND MLC proporciona mayor durabilidad y fiabilidad al dispositivo. Además, este SSD está equipado con encriptación por hardware AES-256-bit para proteger los datos confidenciales contra posibles amenazas externas.</li>
+                <li>Con una lectura aleatoria (4KB) de hasta 800000 IOPS y escritura aleatoria (4KB) de hasta 1000000 IOPS, el Samsung 980 PRO NVMe ofrece un alto nivel de desempeño incluso bajo cargas intensivas. La velocidad máxima teórica alcanzada por este modelo es impresionante: puede escribir a velocidades sostenidas superiores a los 5GB/s gracias a su interfaz PCI Express Gen4 x4.</li>
+                <li>Este producto tiene un peso ligero de solo nueve gramos y cumple con las especificaciones del factor forma M.2 tipo2280, lo que significa que se adapta perfectamente a cualquier placa madre compatible sin ocupar espacio adicional dentro del gabinete.</li>
+                <li>En cuanto al consumo energético promedio, el Samsung 980 PRO NVMe consume aproximadamente unos6 W durante operaciones normales; esto hace posible ahorrar energía eléctrica sin comprometer la calidad o eficiencia del sistema informático donde esté instalado.</li>
+                <li>Por último cabe destacar sus dimensiones compactas: ancho80 mmxprofundidad2.38 mmxaltura22.1 mm, lo que permite una fácil instalación en cualquier equipo de escritorio o portátil compatible con el factor forma M.2 2280.</li>
+                <li>En resumen, el SSD Samsung 980 PRO NVMe es un dispositivo de almacenamiento interno altamente eficiente y confiable para PC que ofrece velocidades extremadamente rápidas de lectura y escritura aleatoria gracias a su interfaz PCI Express Gen4 x4; además cuenta con características avanzadas como la encriptación por hardware AES-256-bit y soporte TRIM/S.M.A.R.T., entre otras funciones útiles para mejorar la experiencia del usuario al trabajar con grandes cantidades de datos.</li>
+            </ul>
+            <p class="Product-Specifications-Title">
+                Especificaciones
+            </p>
+            <ul class="Product-Specifications-Text">
+                <li>
+                    <p>Altura</p>
+                    <p>22.1 mm</p>
+                </li>
+                <li>
+                    <p>Profundidad</p>
+                    <p>2.38 mm</p>
+                </li>
+                <li>
+                    <p>Ancho</p>
+                    <p>80.2 mm</p>
+                </li>
+                <li>
+                    <p>Peso</p>
+                    <p>9 g</p>
+                </li>
+                <li>
+                    <p>Capacidad</p>
+                    <p>500 GB</p>
+                </li>
+                <li>
+                    <p>Interface</p>
+                    <p>M.2, PCI Express 4.0</p>
+                </li>
+                <li>
+                    <p>Velocidad de lectura</p>
+                    <p>6900 MB/s</p>
+                </li>
+                <li>
+                    <p>Velocidad de escritura</p>
+                    <p>5000 MB/s</p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- EMPIEZA SECCION DE PRODUCTOS EN TENDENCIA -->
+        <section class="Trending" id="Trending">
+            <p class="Trending-Title">
+                En tendencia ahora <ion-icon name="trending-up-outline"></ion-icon>
+            </p>
+            <div class="Trending-List">
+                <div class="Trending-List-Item">
+                    <a href="./Product1.html" class="Trending-List-Item-Image">
+                        <img src="../../Images/Trending/Monitor.png" alt="Monitor Gigabyte">
+                    </a>
+                    <div class="Trending-List-Item-Name-And-Price">
+                        <p>
+                            Monitor Curvo - G34WQC-A
+                        </p>
+                        <p>
+                            $7,300 MXN
+                        </p>
+                    </div>
+                    <div class="Trending-List-Item-Description">
+                        Resolución: 3440 x 1440 pixeles | 144Hz
+                    </div>
+                    <div class="Trending-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                        (13)
+                    </div>
+                    <div class="Trending-List-Item-Button">
+                        <button onclick="window.location.href='./Product1.html'">Comprar</button>
+                    </div>
+                    <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Trending-List-Item">
+                    <a class="Trending-List-Item-Image" href="./Product2.html">
+                        <img src="../../Images/Trending/6600.png" alt="RX 6600">
+                    </a>
+                    <div class="Trending-List-Item-Name-And-Price">
+                        <p>
+                            Sapphire Pulse - RX 6600
+                        </p>
+                        <p>
+                            $3,450 MXN
+                        </p>
+                    </div>
+                    <div class="Trending-List-Item-Description">
+                        Resolución de hasta 7680 x 4320 pixeles.
+                    </div>
+                    <div class="Trending-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        (203)
+                    </div>
+                    <div class="Trending-List-Item-Button">
+                        <button onclick="window.location.href='./Product2.html'">Comprar</button>
+                    </div>
+                    <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Trending-List-Item">
+                    <a href="./Product3.html" class="Trending-List-Item-Image">
+                        <img src="../../Images/Trending/Cooler.png" alt="Game Factor Enfriamiento">
+                    </a>
+                    <div class="Trending-List-Item-Name-And-Price">
+                        <p>
+                            Game Factor - Enfriamiento Liquido
+                        </p>
+                        <p>
+                            $789 MXN
+                        </p>
+                    </div>
+                    <div class="Trending-List-Item-Description">
+                        Modelo LQG501 | 1x 120mm |
+                    </div>
+                    <div class="Trending-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                        (4)
+                    </div>
+                    <div class="Trending-List-Item-Button">
+                        <button onclick="window.location.href='./Product3.html'">Comprar</button>
+                    </div>
+                    <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Trending-List-Item">    
+                    <a href="./Product4.html" class="Trending-List-Item-Image">
+                        <img src="../../Images/Trending/HDD.png" alt="Disco Duro Interno">
+                    </a>
+                    <div class="Trending-List-Item-Name-And-Price">
+                        <p>
+                            DDI - Seagate Barracuda 3.5
+                        </p>
+                        <p>
+                            $789 MXN
+                        </p>
+                    </div>
+                    <div class="Trending-List-Item-Description">
+                        2TB | SATA III | 6 Gbit/s | 7200RPM
+                    </div>
+                    <div class="Trending-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        (13)
+                    </div>
+                    <div class="Trending-List-Item-Button">
+                        <button onclick="window.location.href='./Product4.html'">Comprar</button>
+                    </div>
+                    <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Trending-List-Item">
+                    <a href="./Product5.html" class="Trending-List-Item-Image">
+                        <img src="../../Images/Trending/Gabinete.png" alt="Gabinete ">
+                    </a>
+                    <div class="Trending-List-Item-Name-And-Price">
+                        <p>
+                            Gabinete - Aerocool HIVE-G-BK-V1
+                        </p>
+                        <p>
+                            $909 MXN
+                        </p>
+                    </div>
+                    <div class="Trending-List-Item-Description">
+                        Con ventana | Midi-Tower | ATX/micro | ATX/Mini-ITX
+                    </div>
+                    <div class="Trending-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        (45)
+                    </div>
+                    <div class="Trending-List-Item-Button">
+                        <button onclick="window.location.href='./Product5.html'">Comprar</button>
+                    </div>
+                    <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+                <div class="Trending-List-Item"> 
+                    <a href="./Product6.html" class="Trending-List-Item-Image">
+                        <img src="../../Images/Trending/Silla.png" alt="Silla Gamer ASUS">
+                    </a>
+                    <div class="Trending-List-Item-Name-And-Price">
+                        <p>
+                            Silla Gamer - ROG Destrier Ergo
+                        </p>
+                        <p>
+                            $8,669 MXN
+                        </p>
+                    </div>
+                    <div class="Trending-List-Item-Description">
+                        Marca ASUS | Hasta 150Kg 
+                    </div>
+                    <div class="Trending-List-Item-Rate">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                        (53)
+                    </div>
+                    <div class="Trending-List-Item-Button">
+                        <button onclick="window.location.href='./Product6.html'">Comprar</button>
+                    </div>
+                    <button class="Trending-List-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+        <!-- TERMINA SECCION DE PRODUCTOS EN TENDENCIA -->
+    
+    </main>
+    <!-- TERMINA SECCION DEL PRODUCTO -->
+
+
+    <!-- EMPIEZA EL PIE DE PAGINA -->
+    <footer class="Footer">
+        <div class="Newsletter">
+            <p>
+                Recibe nuestras promociones
+            </p>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="TuCorreo@correo.com" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div class="Social-Networks">
+                <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.twitch.tv/" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+    <!-- TERMINA EL PIE DE PAGINA -->
+
+    <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
+    <script src="../../Functions/Cart.js"></script>
+    <!-- <script>
+        var win = window,
+    doc = document,
+    docElem = doc.documentElement,
+    body = doc.getElementsByTagName('body')[0],
+    x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+    y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+alert(x + ' × ' + y);
+    </script> -->
+</body>
+</html>
