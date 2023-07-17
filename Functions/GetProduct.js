@@ -6,8 +6,6 @@ const productName = document.querySelector(".Product-Name")
 const productRate = document.querySelector(".Product-Description-Title-Important-Rate")
 // OBTENEMOS LA ETIQUETA QUE CONTIENE EL PRECIO DEL PRODUCTO
 const productPrice = document.querySelector(".Product-Price")
-// OBTENEMOS EL DESCUENTO DEL PRODUCTO
-const productPriceDeal = document.querySelector(".Product-Price strike")
 // OBTENEMOS LA ETIQUETA QUE CONTIENE EL TEXTO DE MSI
 const productMSI = document.querySelector(".Product-MSI")
 // OBTENEMOS LA ETIQUETA QUE CONTIENE LOS ITEMS RESTANTES
@@ -434,7 +432,7 @@ const products = [
             `<ion-icon name='star'></ion-icon>` +
             `<ion-icon name='star'></ion-icon>` +
             ` (13) `,
-        price: `$2,800 MXN`,
+        price: `$2,800 MXN <strike>3,300</strike>`,
         msi: `O hasta en 6 x $466 MXN (Meses sin intereses)`,
         piece: `12 piezas`,
         details: `<li>El monitor Gamer Gigabyte G24F 2 LED de 23.8 pulgadas cuenta con una gama de colores del 95% y un tamaño de pixel de 0.2745 x 0.2745 mm, lo que permite una excelente calidad visual en Full HD. Con un ancho total (con soporte) de 541 mm, este dispositivo incluye salidas para auriculares y tecnología Flicker free para reducir la fatiga ocular.</li>` +
@@ -466,7 +464,7 @@ const products = [
             `<ion-icon name='star'></ion-icon>` +
             `<ion-icon name='star-half-outline'></ion-icon>` +
             ` (1) `,
-        price: `$1,149 MXN`,
+        price: `$1,149 MXN <strike>1,359</strike>`,
         msi: `O hasta en 6 x $191  MXN (Meses sin intereses)`,
         piece: `5 piezas`,
         details: `<li>La tarjeta madre Gigabyte Micro ATX A520M DS3H (REV. 1.0) es un componente para PC que cuenta con una versión de BIOS del sistema de gestión SMBIOS 2.7 y controladores incluidos. Esta tarjeta madre está diseñada para procesadores AMD y tiene un tamaño de memoria BIOS de 128 MB/s, así como una versión ACPI 5.0.</li>` +
@@ -499,7 +497,7 @@ const products = [
             `<ion-icon name='star'></ion-icon>` +
             `<ion-icon name='star-half-outline'></ion-icon>` +
             ` (19) `,
-        price: `$1,939 MXN`,
+        price: `$1,939 MXN <strike>2,214</strike>`,
         msi: `O hasta en 6 x $323  MXN (Meses sin intereses)`,
         piece: `26 piezas`,
         details: `<li>El procesador AMD Ryzen 5 5600G con Gráficos Radeon 7 es un componente de escritorio fabricado por AMD. Este procesador cuenta con una litografía de 7 nm y tiene seis núcleos, lo que permite ejecutar múltiples tareas simultáneamente. Además, el número de filamentos del procesador es de doce.</li>` +
@@ -524,7 +522,7 @@ const products = [
             `<ion-icon name='star'></ion-icon>` +
             `<ion-icon name='star-outline'></ion-icon>` +
             ` (23) `,
-        price: `$949 MXN`,
+        price: `$949 MXN <strike>1,179</strike>`,
         msi: `O hasta en 6 x $158 MXN (Meses sin intereses)`,
         piece: `58 piezas`,
         details: `<li>La Fuente de Poder XPG Pylon 80 PLUS Bronze es un componente diseñado para suministrar energía eléctrica a los equipos informáticos. Con una potencia nominal de 650 W, esta fuente cuenta con funciones de protección contra sobrecorriente, sobretensión, sobrevoltaje, sobrecalentamiento y cortocircuito que garantizan la seguridad del equipo conectado.</li>` +
@@ -549,7 +547,7 @@ const products = [
             `<ion-icon name='star'></ion-icon>` +
             `<ion-icon name='star'></ion-icon>` +
             ` (123) `,
-        price: `$749 MXN`,
+        price: `$749 MXN <strike>849</strike>`,
         msi: `O hasta en 6 x $124 MXN (Meses sin intereses)`,
         piece: `20 piezas`,
         details: `<li>Los circuitos integrados de los kits de memoria SPECTRIX D50 han sido cuidadosamente seleccionados y probados para garantizar una compatibilidad total con las placas base ASRock, ASUS, Gigabyte y MSI 4 DIMM. Realiza el overclocking con facilidad para lograr un mayor rendimiento y disfruta de deslumbrantes efectos de iluminación a través de 4 difusores LED.</li>` +
@@ -577,7 +575,7 @@ const products = [
             `<ion-icon name='star'></ion-icon>` +
             `<ion-icon name='star'></ion-icon>` +
             ` (8) `,
-        price: `$1,810 MXN`,
+        price: `$1,810 MXN <strike>1,990</strike>`,
         msi: `O hasta en 6 x $301 MXN (Meses sin intereses)`,
         piece: `7 piezas`,
         details: `<li>El SSD Samsung 980 PRO NVMe es un dispositivo de almacenamiento interno para PC con una capacidad de 500 GB. Este modelo cuenta con soporte TRIM y S.M.A.R.T., lo que permite optimizar el rendimiento del disco duro y monitorear su estado en tiempo real.</li>` +
@@ -611,16 +609,6 @@ function getProduct(){
     productRate.innerHTML = products[idProduct-1].rate
     // ASIGNAMOS EL PRECIO
     productPrice.innerHTML = products[idProduct-1].price
-
-    // CONDICION PARA MOSTRARLOS EL DESCUENTO
-    if(idProduct >= 15 && idProduct <= 20){
-        // COLOCAMOS EL PRECIO EN ROJO
-        productPrice.style.color =`#ff6961`
-
-    }else{
-        productPrice.style.color ="#2f3640"
-    }
-
     // ASIGNAMOS EL TEXTO MSI
     productMSI.innerHTML = products[idProduct-1].msi
     // ASIGNAMOS LA CANTIDAD RESTANTE DE PRODUCTOS
@@ -629,4 +617,20 @@ function getProduct(){
     productDetails.innerHTML = products[idProduct-1].details
     // ASIGNAMOS LAS ESPECIFICACIONES DEL PRODUCTO
     productEspecifications.innerHTML = products[idProduct-1].especifications
+    // VALIDAMOS QUE EL PRODUCTO ESTE O NO EN DESCUENTO 
+    dealProduct(idProduct)
+}
+function dealProduct(idProduct){
+    // CONDICION PARA MOSTRARLOS EL DESCUENTO
+    if(idProduct >= 15 && idProduct <= 20){
+        // OBTENEMOS EL PRECIO SIN DESCUENTO
+        const productPriceDeal = document.querySelector(".Product-Price strike")
+        // COLOCAMOS EL PRECIO EN ROJO
+        productPrice.style.color =`#ff6961`
+        // COLOCAMOS EL PRECIO EN NEGRO
+        productPriceDeal.style.color =`#2f3640`
+
+    }else{
+        productPrice.style.color ="#2f3640"
+    }
 }
