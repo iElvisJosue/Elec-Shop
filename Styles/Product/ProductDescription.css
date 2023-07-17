@@ -15,7 +15,7 @@ DEL PRODUCTOS A COMPRAR */
 .Product-Description-Image{
     grid-column: span 2;
     width: 100%;
-    height: 70rem;
+    height: 70.5rem;
     border-radius: 1.5rem;
     display: flex;
     align-items: center;
@@ -89,6 +89,7 @@ DEL PRODUCTOS A COMPRAR */
 .Product-Description-Price{
     min-height: 10rem;
     height: auto;
+    max-height: 10.1rem;
     border-bottom: 1px solid var(--BgColor2);
 }
 /* ESTILOS PARA EL TEXTO DEL PRECIO */
