@@ -29,6 +29,7 @@
     transition: .2s all;
     padding: 1rem;
     z-index: 1000;
+    transition: .5s all;
 }
 /* CLASE AGREGADA DESDE EL JS */
 .Cart-Empty.Active{
@@ -77,6 +78,7 @@
     color: var(--White);
     background-color: var(--MainColor);
     border: 2px solid var(--MainColor);
+    transition: .5s all;
 }
 .Cart-Empty-Searching:hover{
     cursor: pointer;

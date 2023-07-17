@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    transition: .5s all;
 }
 .Categories-Filter button p{
     font-weight: bold;

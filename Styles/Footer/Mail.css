@@ -39,6 +39,7 @@
     background-color: var(--White);
     border: 2px solid var(--White);
     font-weight: bold;
+    transition: .5s all;
 }
 .Newsletter form button:hover{ 
     color: var(--White);
@@ -58,6 +59,7 @@
     gap: 2rem;
 }
 .Social-Networks a:hover ion-icon{
+    transition: .5s all;
     transform: translateY(-.5rem);
 }
 .Social-Networks ion-icon{

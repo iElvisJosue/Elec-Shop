@@ -37,6 +37,7 @@
     padding: 1rem 3rem;
     border-radius: 2.5rem;
     cursor: pointer;
+    transition: .5s all;
 }
 .Banner-2-Information-Content a:hover{
     background: var(--SecundaryColor);

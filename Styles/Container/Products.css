@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    transition: .5s all;
 }
 .Products-Category button p{
     font-weight: bold;
@@ -127,6 +128,7 @@
     background-color: var(--White);
     border-radius: 2.5rem;
     font-weight: bold;
+    transition: .5s all;
 }
 .Products-List-Item-Button button:hover{
     border-color: var(--MainColor);
@@ -149,6 +151,7 @@
     cursor: pointer;
 }
 .Products-List-Item-Favorite ion-icon{
+    transition: .5s all;
     font-size: var(--Icons-2);
 }
 .Products-List-Item-Favorite:hover ion-icon{
@@ -176,6 +179,7 @@
     font-weight: bold;
     display: grid;
     place-content: center;
+    transition: .5s all;
 }
 .Products-Pagination button:nth-child(1){
     border: 2px solid var(--MainColor);

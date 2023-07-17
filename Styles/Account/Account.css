@@ -92,6 +92,7 @@ body{
     background: var(--White);
     border-radius: 1.5rem;
     z-index: 0;
+    transition: .5s all;
 }
 /* CLASES AGREGADAS DESDE EL JS */
 span.Active{
@@ -124,6 +125,7 @@ span.Active{
     border-radius: 1.5rem;
     border: 1px solid var(--Gray);
     gap: 1rem;
+    transition: .5s all;
 }
 .Form-Account-Access-Password{
     opacity: 0;
@@ -166,6 +168,7 @@ span.Active{
     color: var(--SecundaryColor);
     top: calc(50% - 1.25rem);
     opacity: 0;
+    transition: .5s all;
 }
 /* CLASES AGREGADAS DESDE EL JS */
 .Email-Correct.Check{
@@ -190,6 +193,7 @@ span.Active{
     background-color: var(--Blue);
     font-size: var(--H5);
     color: var(--White);
+    transition: .5s all;
 }
 .Form-Account-Continue:hover{
     cursor: pointer;
@@ -251,6 +255,7 @@ OPCIONES DE INICIAR SESION O REGISTRARSE */
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s all;
 }
 /* ESTILOS PARA EL BOTON DE GOOGLE */
 .Form-Account-Options button:nth-child(1){

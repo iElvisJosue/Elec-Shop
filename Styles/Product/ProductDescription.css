@@ -135,6 +135,7 @@ DEL PRODUCTOS A COMPRAR */
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid var(--BgColor2);
+    transition: .5s all;
 }
 /* ESTILOS PARA LOS BOTONES */
 .Product-Description-Colors-Buttons button:nth-child(1){
@@ -176,7 +177,6 @@ DEL PRODUCTOS A COMPRAR */
     width: 5rem;
     border: none;
     background: var(--BgColor2);
-    cursor: pointer;
 }
 /* ESTILOS PARA LOS ICONOS DE + - */
 .Product-Description-Items-Add button ion-icon{
@@ -232,6 +232,7 @@ DEL PRODUCTOS A COMPRAR */
     font-weight: bold;
     border-radius: 2.5rem;
     cursor: pointer;
+    transition: .5s all;
 }
 /* ESTILOS PARA EL BOTON DE COMPRAR */
 .Product-Description-Buy-Cart button:nth-child(1){

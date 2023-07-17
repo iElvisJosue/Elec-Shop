@@ -83,6 +83,7 @@
     background-color: var(--White);
     border-radius: 2.5rem;
     font-weight: bold;
+    transition: .5s all;
 }
 .Deals-List-Item-Button button:hover{
     border-color: var(--MainColor);
@@ -105,6 +106,7 @@
     cursor: pointer;
 }
 .Deals-List-Item-Favorite ion-icon{
+    transition: .5s all;
     font-size: var(--Icons-2);
 }
 .Deals-List-Item-Favorite:hover ion-icon{

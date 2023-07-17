@@ -53,6 +53,7 @@
     background-color: var(--White);
     border-radius: 2.5rem;
     font-weight: bold;
+    transition: .5s all;
 }
 .Categories-Products-Item-Button button:hover{
     border-color: var(--MainColor);
@@ -75,6 +76,7 @@
     cursor: pointer;
 }
 .Categories-Products-Item-Favorite ion-icon{
+    transition: .5s all;
     font-size: var(--Icons-2);
 }
 .Categories-Products-Item-Favorite:hover ion-icon{
