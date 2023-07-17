@@ -97,7 +97,7 @@ function addGraphic(){
     const graphicsDetails = [
         {
         image: "../Images/Categories/Products/Grafica1.png",
-        page: "Product7.html",
+        id: 7,
         alt: "Grafica 1",
         name: "MSI - GeForce 210",
         price: "$800 MXN",
@@ -107,12 +107,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (12) ',
-        btnpage: "Product7.html"
+            ' (12) '
         },
         {
         image: "../Images/Categories/Products/Grafica2.png",
-        page: "Product8.html",
+        id: 8,
         alt: "Grafica 2",
         name: "Gigabyte - GTX 1660",
         price: "$5,000 MXN",
@@ -122,12 +121,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-half-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (81) ',
-        btnpage: "Product8.html"
+            ' (81) '
         },
         {
         image: "../Images/Categories/Products/Grafica3.png",
-        page: "Product9.html",
+        id: 9,
         alt: "Grafica 3",
         name: "Gigabyte - RTX 3060",
         price: "$7,000 MXN",
@@ -137,12 +135,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-half-outline"></ion-icon>' +
-            ' (57) ',
-        btnpage: "Product9.html",
+            ' (57) '
         },
         {
         image: "../Images/Categories/Products/Grafica4.png",
-        page: "Product10.html",
+        id: 10,
         alt: "Grafica 4",
         name: "ASUS - RTX 3060 White",
         price: "$6,349 MXN",
@@ -152,12 +149,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (57) ',
-        btnpage: "Product10.html",
+            ' (57) '
         },
         {
         image: "../Images/Categories/Products/Grafica5.png",
-        page: "Product11.html",
+        id: 11,
         alt: "Grafica 5",
         name: "Gigabyte - RTX 4090",
         price: "$35,350 MXN",
@@ -167,12 +163,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
-            ' (1) ',
-        btnpage: "Product11.html",
+            ' (1) '
         },
         {
         image: "../Images/Categories/Products/Grafica6.png",
-        page: "Product12.html",
+        id: 12,
         alt: "Grafica 6",
         name: "Gigabyte - RX 6600",
         price: "$3,500 MXN",
@@ -182,12 +177,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
-            ' (124) ',
-        btnpage: "Product12.html",
+            ' (124) '
         },
         {
         image: "../Images/Categories/Products/Grafica7.png",
-        page: "Product13.html",
+        id: 13,
         alt: "Grafica 7",
         name: "MSI - RX 6650 XT",
         price: "$6,400 MXN",
@@ -197,12 +191,11 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star-half-outline"></ion-icon>' +
-            ' (32) ',
-        btnpage: "Product13.html",
+            ' (32) '
         },
         {
         image: "../Images/Categories/Products/Grafica8.png",
-        page: "Product14.html",
+        id: 14,
         alt: "Grafica 8",
         name: "MSI - RX 7600",
         price: "$6,449 MXN",
@@ -212,12 +205,11 @@ function addGraphic(){
             '<ion-icon name="star-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
             '<ion-icon name="star-outline"></ion-icon>' +
-            ' (5) ',
-        btnpage: "Product14.html", 
+            ' (5) '
         },
         {
         image: "../Images/Categories/Products/Grafica9.png",
-        page: "Product2.html",
+        id: 2,
         alt: "Grafica 9",
         name: "Sapphire Pulse - RX 6600",
         price: "$3,450 MXN",
@@ -228,7 +220,6 @@ function addGraphic(){
             '<ion-icon name="star"></ion-icon>' +
             '<ion-icon name="star"></ion-icon>' +
             ' (203) ',
-        btnpage: "Product2.html",
         }
     ]
     // RECORREMOS EL ARRAY DE OBJETOS
@@ -236,7 +227,7 @@ function addGraphic(){
         // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
         const graphics = 
             `<div class="Categories-Products-Item">` +
-                `<a class="Categories-Products-Item-Image" href="../Pages/Products/${Element.page}">` +
+                `<a class="Categories-Products-Item-Image" onclick="setProduct('${Element.id}')" href="../Pages/Product.html">` +
                     `<img src="${Element.image}" alt="${Element.alt}">`+
                 `</a>` +
                 `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -250,7 +241,7 @@ function addGraphic(){
                     ${Element.rate}
                 </div>` +
                 `<div class="Categories-Products-Item-Button">` +
-                    `<button onclick="window.location.href='../Pages/Products/${Element.btnpage}'">Comprar</button>` +
+                    `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Comprar</button>` +
                 `</div>` +
                 `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
             `</div>`
@@ -269,23 +260,22 @@ function addMonitor(){
     DETALLES DE CADA  MONITOR */
     const monitorDetails = [
         {
-            image: "../Images/Categories/Products/Monitor1.png",
-            page: "Product1.html",
-            alt: "Monitor 1",
-            name: "Monitor Curvo - G34WQC-A",
-            price: "$7,300 MXN",
-            description: "Resolución: 3440 x 1440 pixeles | 144Hz",
-            rate: '<ion-icon name="star"></ion-icon>' +
-                '<ion-icon name="star"></ion-icon>' +
-                '<ion-icon name="star"></ion-icon>' +
-                '<ion-icon name="star"></ion-icon>' +
-                '<ion-icon name="star-half-outline"></ion-icon>' +
-                ' (13) ',
-            btnpage: "Product1.html"
+            image: `../Images/Categories/Products/Monitor1.png`,
+            id: 1,
+            alt: `Monitor 1`,
+            name: `Monitor Curvo - G34WQC-A`,
+            price: `$7,300 MXN`,
+            description: `Resolución: 3440 x 1440 pixeles | 144Hz`,
+            rate: `<ion-icon name="star"></ion-icon>` +
+                `<ion-icon name="star"></ion-icon>` +
+                `<ion-icon name="star"></ion-icon>` +
+                `<ion-icon name="star"></ion-icon>` +
+                `<ion-icon name="star-half-outline"></ion-icon>` +
+                ` (13) `
         },
         {
             image: "../Images/Categories/Products/Monitor2.png",
-            page: "Product15.html",
+            id: 15,
             alt: "Monitor 2",
             name: "Monitor - Gigabyte G24F 2",
             price: "$2,800 MXN",
@@ -295,8 +285,7 @@ function addMonitor(){
                 '<ion-icon name="star"></ion-icon>' +
                 '<ion-icon name="star"></ion-icon>' +
                 '<ion-icon name="star"></ion-icon>' +
-                ' (13) ',
-            btnpage: "Product15.html"
+                ' (13) '
         }
     ]
     // RECORREMOS EL ARRAY DE OBJETOS
@@ -304,7 +293,7 @@ function addMonitor(){
         // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
         const monitor = 
             `<div class="Categories-Products-Item">` +
-                `<a class="Categories-Products-Item-Image" href="../Pages/Products/${Element.page}">` +
+                `<a class="Categories-Products-Item-Image" onclick="setProduct('${Element.id}')" href="../Pages/Product.html">` +
                     `<img src="${Element.image}" alt="${Element.alt}">`+
                 `</a>` +
                 `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -318,7 +307,7 @@ function addMonitor(){
                     ${Element.rate}
                 </div>` +
                 `<div class="Categories-Products-Item-Button">` +
-                    `<button onclick="window.location.href='../Pages/Products/${Element.btnpage}'">Comprar</button>` +
+                    `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Comprar</button>` +
                 `</div>` +
                 `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
             `</div>`
@@ -336,7 +325,7 @@ function addCPU(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const cpu = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product17.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('17')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/Procesador.png" alt="Procesador">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -359,7 +348,7 @@ function addCPU(){
             ` (19) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product17.html'">Comprar</button>` +
+            `<button onclick="setProduct('17'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -376,7 +365,7 @@ function addRAM(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const ram = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product19.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('19')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/RAM.png" alt="RAM">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -399,7 +388,7 @@ function addRAM(){
             ` (123) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product19.html'">Comprar</button>` +
+            `<button onclick="setProduct('19'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -416,7 +405,7 @@ function addStorage(){
     const storageDetails = [
         {
             image: "../Images/Categories/Products/Almacenamiento1.png",
-            page: "Product4.html",
+            id: 4,
             alt: "Almacenamiento 1",
             name: "DDI - Seagate Barracuda 3.5",
             price: "$789 MXN",
@@ -426,12 +415,11 @@ function addStorage(){
                 '<ion-icon name="star"></ion-icon>' +
                 '<ion-icon name="star"></ion-icon>' +
                 '<ion-icon name="star"></ion-icon>' +
-                ' (13) ',
-            btnpage: "Product4.html"
+                ' (13) '
         },
         {
             image: "../Images/Categories/Products/Almacenamiento2.png",
-            page: "Product20.html",
+            id: 20,
             alt: "Almacenamiento 2",
             name: "SSD | Samsung 980 PRO",
             price: "$1,810 MXN",
@@ -441,8 +429,7 @@ function addStorage(){
                 '<ion-icon name="star"></ion-icon>' +
                 '<ion-icon name="star"></ion-icon>' +
                 '<ion-icon name="star"></ion-icon>' +
-                ' (8) ',
-            btnpage: "Product20.html"
+                ' (8) '
         }
     ]
     // RECORREMOS EL ARRAY DE OBJETOS
@@ -450,7 +437,8 @@ function addStorage(){
         // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
         const storage = 
         `<div class="Categories-Products-Item">` +
-            `<a class="Categories-Products-Item-Image" href="../Pages/Products/${Element.page}">` +
+            `<div class="Categories-Products-Item">` +
+            `<a class="Categories-Products-Item-Image" onclick="setProduct('${Element.id}')" href="../Pages/Product.html">` +
                 `<img src="${Element.image}" alt="${Element.alt}">`+
             `</a>` +
             `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -464,7 +452,7 @@ function addStorage(){
                 ${Element.rate}
             </div>` +
             `<div class="Categories-Products-Item-Button">` +
-                `<button onclick="window.location.href='../Pages/Products/${Element.btnpage}'">Comprar</button>` +
+                `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Comprar</button>` +
             `</div>` +
             `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
         `</div>`
@@ -482,7 +470,7 @@ function addTower(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const tower = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product5.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('5')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/Gabinete.png" alt="Gabinete">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -505,7 +493,7 @@ function addTower(){
             ` (45) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product5.html'">Comprar</button>` +
+            `<button onclick="setProduct('5'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -522,7 +510,7 @@ function addMotherboard(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const motherboard = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product16.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('16')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/Placa.png" alt="Tarjeta Madre">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -545,7 +533,7 @@ function addMotherboard(){
             ` (1) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product16.html'">Comprar</button>` +
+            `<button onclick="setProduct('16'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -562,7 +550,7 @@ function addPSU(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const psu = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product18.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('18')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/PSU.png" alt="Fuente de Poder">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -585,7 +573,7 @@ function addPSU(){
             ` (23) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product18.html'">Comprar</button>` +
+            `<button onclick="setProduct('18'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -602,7 +590,7 @@ function addChair(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const chair = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product6.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('6')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/Silla.png" alt="Silla Gamer">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -625,7 +613,7 @@ function addChair(){
             ` (53) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product6.html'">Comprar</button>` +
+            `<button onclick="setProduct('6'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -642,7 +630,7 @@ function addCooler(){
     // CREAMOS EL NUEVO COTENIDO Y LO ALMACENAMOS
     const cooler = 
     `<div class="Categories-Products-Item">` +
-        `<a class="Categories-Products-Item-Image" href="../Pages/Products/Product3.html">` +
+        `<a class="Categories-Products-Item-Image" onclick="setProduct('3')" href="../Pages/Product.html">` +
             `<img src="../Images/Categories/Products/Cooler.png" alt="Enfriamiento Liquido">`+
         `</a>` +
         `<div class="Categories-Products-Item-Name-And-Price">` +
@@ -665,7 +653,7 @@ function addCooler(){
             ` (4) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="window.location.href='../Pages/Products/Product3.html'">Comprar</button>` +
+            `<button onclick="setProduct('3'); window.location.href='../Pages/Product.html'">Comprar</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
