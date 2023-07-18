@@ -241,7 +241,7 @@ function addGraphic(){
                     ${Element.rate}
                 </div>` +
                 `<div class="Categories-Products-Item-Button">` +
-                    `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+                    `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
                 `</div>` +
                 `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
             `</div>`
@@ -307,7 +307,7 @@ function addMonitor(){
                     ${Element.rate}
                 </div>` +
                 `<div class="Categories-Products-Item-Button">` +
-                    `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+                    `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
                 `</div>` +
                 `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
             `</div>`
@@ -348,7 +348,7 @@ function addCPU(){
             ` (19) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('17'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('17'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -388,7 +388,7 @@ function addRAM(){
             ` (123) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('19'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('19'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -452,7 +452,7 @@ function addStorage(){
                 ${Element.rate}
             </div>` +
             `<div class="Categories-Products-Item-Button">` +
-                `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+                `<button onclick="setProduct('${Element.id}'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
             `</div>` +
             `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
         `</div>`
@@ -493,7 +493,7 @@ function addTower(){
             ` (45) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('5'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('5'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -533,7 +533,7 @@ function addMotherboard(){
             ` (1) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('16'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('16'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -573,7 +573,7 @@ function addPSU(){
             ` (23) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('18'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('18'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -613,7 +613,7 @@ function addChair(){
             ` (53) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('6'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('6'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
@@ -653,7 +653,7 @@ function addCooler(){
             ` (4) `+
         `</div>` +
         `<div class="Categories-Products-Item-Button">` +
-            `<button onclick="setProduct('3'); window.location.href='../Pages/Product.html'">Comprar</button>` +
+            `<button onclick="setProduct('3'); window.location.href='../Pages/Product.html'">Ver Producto</button>` +
         `</div>` +
         `<button class="Categories-Products-Item-Favorite"><ion-icon name="heart-outline"></ion-icon></button>` +
     `</div>`
