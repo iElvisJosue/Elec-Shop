@@ -65,6 +65,7 @@ DETALLES DEL PRODUCTO */
     justify-content: space-between;
     font-size: var(--H5) !important;
     font-weight: bold;
+    color: var(--Red);
 }
 .Checkout-Forms-Preview-Product-Details-Text-NameAndPrice b{
     display: flex;
@@ -72,6 +73,7 @@ DETALLES DEL PRODUCTO */
     min-height: 5rem;
     height: auto;
     font-size: var(--H4);
+    color: var(--Black);
 }
 .Checkout-Forms-Preview-Product-Details-Text-Quantity{
     text-align: right;
@@ -260,10 +262,18 @@ DE ENVIO */
     font-weight: bold;
     min-height: 6.5rem;
     border-bottom: 1px solid var(--BgColor2);
+    color: var(--Black);
 }
 /* ESTILOS PARA LOS TITULOS DE LOS INPUTS */
 .Title-Inputs-Text{
     height: auto;
     font-size: var(--H6);
     font-weight: bold;
+}
+/* CAMBIAMOS EL COLOR DE LAS CANTIDADES */
+.SubTotal,
+.Coupon,
+.Delivery,
+.Total{
+    color: var(--Red);
 }
