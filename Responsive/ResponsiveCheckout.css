@@ -24,6 +24,20 @@
         min-height: 25rem;
     }
 }
+@media (max-width: 850px){
+    /* SEPARAMOS UN POCO EL TEXTO */
+    .Checkout-Forms-Preview-Product-Details-Text{
+        gap: 2rem;
+    }
+    /* ADAPTAMOS EL TEXTO DEL PRECIO, NOMBRE Y CANTIDAD*/
+    .Checkout-Forms-Preview-Product-Details-Text-NameAndPrice{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Checkout-Forms-Preview-Product-Details-Text-Quantity{
+        text-align: center;
+    }
+}
 @media (max-width: 750px){
     /* ADAPTAMOS LOS FORMULARIOS */
     .Checkout-Forms{
