@@ -1,0 +1,51 @@
+@media (max-width: 1550px){
+    /* ADAPTAMOS AL 100% DE LA PANTALLA NUESTRO LARGO */
+    .Checkout{
+        width: 100% !important;
+    }
+    /* ASIGNAMOS UN PADDING PARA QUE NO QUEDE TODO PEGADO  */
+    .Checkout-Forms-Preview,
+    .Checkout-Forms-Order{ 
+        padding: 1rem;
+    }
+}
+@media (max-width: 1300px){
+    /* LA VISTRA PREVIA LA MOSTRAREMOS EN COLUMNAS */
+    .Checkout-Forms-Preview-Product-Details{
+        flex-direction: column;
+    }
+    /* CAMBIAMOS EL TAMAÑO DEL CONTENEDOR DEL TEXTO
+    DEL PRODUCTO */
+    .Checkout-Forms-Preview-Product-Details-Text{
+        min-height: 1rem;
+    }
+    .Checkout-Forms-Preview-Product-Details-Image{
+        width: 100%;
+        min-height: 25rem;
+    }
+}
+@media (max-width: 750px){
+    /* ADAPTAMOS LOS FORMULARIOS */
+    .Checkout-Forms{
+        grid-template-areas: "Checkout-Forms-Preview"
+        "Checkout-Forms-Preview-Delivery"
+        "Checkout-Forms-Order";
+    }
+}
+@media (max-width: 400px){
+    /* ASIGNAMOS UN TAMAÑO DEL 100% A LOS LOGOS DE
+    LAS EMPRESAS DE PAGO */
+    .Checkout-Forms-Order-Types-Images{
+        width: 100%;
+    }
+    .Checkout-Forms-Preview-Delivery-GroupInputs,
+    .Checkout-Forms-Order-GroupInputs{
+        flex-direction: column;
+    }
+}
+@media (max-width: 300px){
+    /* ELIMINAMOS EL BOTON DEL CUPON */
+    .Checkout-Forms-Order-Coupon button{
+        display: none;
+    }
+}

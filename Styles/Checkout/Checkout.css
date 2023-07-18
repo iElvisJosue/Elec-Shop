@@ -1,0 +1,30 @@
+/* IMPORTAMOS LAS VARIABLES */
+@import url(../../Styles/GeneralSettings/Variables.css);
+/* IMPORTAMOS LA CONFIGURACION  */
+@import url(../../Styles/GeneralSettings/Settings.css);
+/* IMPORTAMOS EL DISEÑO DEL HEADER */
+@import url(../../Styles/Header/Header.css);
+/* IMPORTAMOS EL DISEÑO DEL CARRITO */
+@import url(../../Styles/Cart/Cart.css);
+/* IMPORTAMOS TODAS LAS SECCIONES DE CHECKOUT*/
+@import url(CheckoutPreview.css);
+/* IMPORTAMOS LA SECCION DE TENDENCIAS */
+@import url(../../Styles/Container/Trending.css);
+/* IMPORTAMOS EL FOOTER */
+@import url(../../Styles/Footer/Footer.css);
+/* IMPORTAMOS LOS ESTILOS RESPONSIVOS */
+@import url(../../Responsive/ResponsiveIndex.css);
+@import url(../../Responsive/ResponsiveCheckout.css);
+
+.Checkout{
+    width: 150rem;
+    min-height: 50rem;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.Header-Option-Categories{
+    display: flex;
+}

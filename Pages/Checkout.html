@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTAMOS LA FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- PONES EL ICONO DEL SITIO -->
+    <link rel="shortcut icon" href="../Images/Logo.ico">
+    <!-- IMPORTAMOS LOS ESTILOS -->
+    <link rel="stylesheet" href="../Styles/Checkout/Checkout.css">
+    <title>Elec-Shop | Pagar</title>
+</head>
+<body>
+    <!-- EMPIEZA EL HEADER -->
+    <header class="Header">
+        <nav class="Navbar">
+            <a href="../index.html" class="Header-Logo">
+                <img src="../Images/Logo.png" alt="Elec-Shop Logo">
+                <p>
+                    Elec-Shop
+                </p>
+            </a>
+            <div class="Header-Options">
+                <div class="Header-Option-Search">
+                    <input type="text" class="Header-Option-Seach-Input" name="Search-Product" placeholder="Buscar producto">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <a href="../Pages/Categories.html" class="Header-Option-Categories">
+                    <ion-icon name="apps-outline"></ion-icon>
+                    <p>
+                        Categorías
+                    </p>
+                </a>
+                <a href="../Pages/Account.html" class="Header-Option-Account">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <p>
+                        Cuenta
+                    </p>
+                </a>
+                <div class="Header-Option-Cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <p>
+                        Carrito
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- TERMINA EL HEADER -->
+
+    <!-- EMPIEZA LAYOUT TRANSPARENTE -->
+    <div class="Layout">
+    </div>
+    <!-- TERMINA LAYOUT TRANSPARENTE -->
+
+    <!-- SE CREA LA SECCION DEL CARRITO -->
+    <div class="Cart-Empty">
+        <div class="Cart-Empty-Title">
+            <p>Tu carrito de compras (0)</p>
+            <ion-icon name="close-sharp" class="Cart-Empty-Close"></ion-icon>
+        </div>
+        <img src="../Images/Cart/CarritoVacio.png" alt="Carrtio Vacio">
+        <p>Tu carrito esta vacío</p>
+        <button class="Cart-Empty-Searching">Seguir buscando</button>
+    </div>
+    <!-- TERMINA SECCION DEL CARRITO -->
+
+    <!-- EMPIEZA EL MAIN -->
+    <main class="Checkout">
+        <!-- EMPIEZA SECCTION DE VISTA PREVIA DEL PRODUCTO A PAGAR -->
+        <div class="Checkout-Forms">
+            <section class="Checkout-Forms-Preview">
+                <div class="Checkout-Forms-Preview-Product">
+                    <p class="Title-Sections-Text">Revisar articulo y envió</p>
+                    <div class="Checkout-Forms-Preview-Product-Details">
+                        <div class="Checkout-Forms-Preview-Product-Details-Image">
+                            <img src="" alt="Vista previa">
+                        </div>
+                        <div class="Checkout-Forms-Preview-Product-Details-Text">
+                            <p class="Checkout-Forms-Preview-Product-Details-Text-NameAndPrice">
+                                <b>Nombre del producto</b> Precio
+                            </p>
+                            <p class="Checkout-Forms-Preview-Product-Details-Text-Quantity">
+                                Cantidad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Checkout-Forms-Preview-Delivery">
+                    <p class="Title-Sections-Text">
+                        Información de entrega
+                    </p>
+                    <div class="Checkout-Forms-Preview-Delivery-GroupInputs">
+                        <div class="Checkout-Forms-Preview-Delivery-Inputs">
+                            <p class="Title-Inputs-Text">Nombre(s) *</p>
+                            <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" maxlength="75">
+                        </div>
+                        <div class="Checkout-Forms-Preview-Delivery-Inputs">
+                            <p class="Title-Inputs-Text">Apellidos *</p>
+                            <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingresa tus apellidos" maxlength="75">
+                        </div>
+                    </div>
+                    <div class="Checkout-Forms-Preview-Delivery-Inputs">
+                        <p class="Title-Inputs-Text">Dirección *</p>
+                        <input type="text" name="Direccion" id="Direccion" placeholder="Ingresa tu dirección" maxlength="500">
+                    </div>
+                    <div class="Checkout-Forms-Preview-Delivery-GroupInputs">
+                        <div class="Checkout-Forms-Preview-Delivery-Inputs FirstName">
+                            <p class="Title-Inputs-Text">Ciudad *</p>
+                            <input type="text" name="Ciudad" id="Ciudad" placeholder="Ingresa tu ciudad" maxlength="100">
+                        </div>
+                        <div class="Checkout-Forms-Preview-Delivery-Inputs LastName">
+                            <p class="Title-Inputs-Text">Código Postal *</p>
+                            <input type="text" name="CP" id="CP" placeholder="Ingresa tus código postal" maxlength="5">
+                        </div>
+                    </div>
+                    <div class="Checkout-Forms-Preview-Delivery-GroupInputs">
+                        <div class="Checkout-Forms-Preview-Delivery-Inputs FirstName">
+                            <p class="Title-Inputs-Text">Número Celular/Télefono *</p>
+                            <input type="text" name="Numero" id="Numero" placeholder="Ingresa tu número" maxlength="10">
+                        </div>
+                        <div class="Checkout-Forms-Preview-Delivery-Inputs LastName">
+                            <p class="Title-Inputs-Text">Correo electrónico *</p>
+                            <input type="text" name="Correo" id="Correo" placeholder="Ingresa tus correo electrónico">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Checkout-Forms-Order">
+                <div class="Checkout-Forms-Order-Container">
+                    <p class="Title-Sections-Text">Resumen del pedido</p>
+                    <div class="Checkout-Forms-Order-Coupon">
+                        <input type="text" name="Cupon" id="Cupon" placeholder="Ingresa tu cupón" maxlength="25">
+                        <button>Aplicar cupón</button>
+                    </div>
+                    <p class="Checkout-Details-Title">Detalles de pago</p>
+                    <ul class="Checkout-Forms-Order-Payment">
+                        <li><label for="Paypal"><input type="radio" name="Payment" id="Paypal">PayPal</label></li>
+                        <li><label for="Deposito"><input type="radio" name="Payment" id="Deposito">Depósito</label></li>
+                        <li><label for="Card"><input type="radio" name="Payment" id="Card">Crédito o Débito</label></li>
+                    </ul>
+                    <div class="Checkout-Forms-Order-Types">
+                        <div class="Checkout-Forms-Order-Types-Images">
+                            <img src="../Images/Checkout/Amazon.png" alt="Amazon pay">
+                        </div>
+                        <div class="Checkout-Forms-Order-Types-Images">
+                            <img src="../Images/Checkout/Mastercard.png" alt="Mastercard">
+                        </div>
+                        <div class="Checkout-Forms-Order-Types-Images">
+                            <img src="../Images/Checkout/Visa.png" alt="Visa">
+                        </div>
+                    </div>
+                    <div class="Checkout-Forms-Order-Inputs">
+                        <p class="Title-Inputs-Text">Correo electrónico *</p>
+                        <input type="text" name="Direccion" id="Direccion" placeholder="Ingresa tu correo electrónico" maxlength="500">
+                    </div>
+                    <div class="Checkout-Forms-Order-Inputs">
+                        <p class="Title-Inputs-Text">Nombre del titular de la tarjeta *</p>
+                        <input type="text" name="Titutal" id="Titutal" placeholder="Ingresa el nombre" maxlength="150">
+                    </div>
+                    <div class="Checkout-Forms-Order-Inputs">
+                        <p class="Title-Inputs-Text">Número de la tarjeta *</p>
+                        <input type="text" name="Titutal" id="Titutal" placeholder="0000********1234" maxlength="16">
+                    </div>
+                    <div class="Checkout-Forms-Order-GroupInputs">
+                        <div class="Checkout-Forms-Order-Inputs">
+                            <p class="Title-Inputs-Text">Expiración *</p>
+                            <input type="text" name="Expiracion" id="Expiracion" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="Checkout-Forms-Order-Inputs">
+                            <p class="Title-Inputs-Text">CVV *</p>
+                            <input type="text" name="CVV" id="CVV" placeholder="000" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="Checkout-Forms-Order-ToPay">
+                        <div class="Checkout-Forms-Order-ToPay-Text">
+                            <p class="ToPay-Text">Sub Total</p>
+                            <p class="ToPay-Text">$0</p>
+                        </div>
+                        <div class="Checkout-Forms-Order-ToPay-Text">
+                            <p class="ToPay-Text">IVA</p>
+                            <p class="ToPay-Text">$0</p>
+                        </div>
+                        <div class="Checkout-Forms-Order-ToPay-Text">
+                            <p class="ToPay-Text">Cupón de Descuento</p>
+                            <p class="ToPay-Text">$0</p>
+                        </div>
+                        <div class="Checkout-Forms-Order-ToPay-Text">
+                            <p class="ToPay-Text">Costo de envío</p>
+                            <p class="ToPay-Text">$0</p>
+                        </div>
+                        <div class="Checkout-Forms-Order-ToPay-Text">
+                            <p class="ToPay-Text">Total</p>
+                            <p class="ToPay-Text">$0</p>
+                        </div>
+                        <div class="Checkout-Forms-Order-ToPay-Button">
+                            <button>Pagar $0</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- TERMINA EL MAIN -->
+
+    <!-- EMPIEZA EL PIE DE PAGINA -->
+    <footer class="Footer">
+        <div class="Newsletter">
+            <p>
+                Recibe nuestras promociones
+            </p>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="TuCorreo@correo.com" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div class="Social-Networks">
+                <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.twitch.tv/" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+    <!-- TERMINA EL PIE DE PAGINA -->
+
+    <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
+    <script src="../Functions/Cart.js"></script>
+    <script src="Functions/SetProduct.js"></script>
+    <!-- <script>
+        var win = window,
+    doc = document,
+    docElem = doc.documentElement,
+    body = doc.getElementsByTagName('body')[0],
+    x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+    y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+alert(x + ' × ' + y);
+    </script> -->
+</body>
+</html>
