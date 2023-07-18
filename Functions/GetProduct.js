@@ -599,26 +599,30 @@ const products = [
 function getProduct(){
     // CONVERTIMOS NUESTRO ID EN UN NUMERO
     let idProduct = Number(localStorage.getItem('idProduct'))
-    // ASIGNAMOS LA IMAGEN
-    productImage.src = products[idProduct-1].image
-    // ASIGNAMOS EL ALT
-    productImage.alt = products[idProduct-1].alt
-    // ASIGNAMOS EL NOMBRE DEL PRODUCTO
-    productName.innerHTML = products[idProduct-1].name
-    // ASIGNAMOS LA VALORACION
-    productRate.innerHTML = products[idProduct-1].rate
-    // ASIGNAMOS EL PRECIO
-    productPrice.innerHTML = products[idProduct-1].price
-    // ASIGNAMOS EL TEXTO MSI
-    productMSI.innerHTML = products[idProduct-1].msi
-    // ASIGNAMOS LA CANTIDAD RESTANTE DE PRODUCTOS
-    productLeft.innerHTML = products[idProduct-1].piece
-    // ASIGNAMOS LOS DETALLES DEL PRODUCTO
-    productDetails.innerHTML = products[idProduct-1].details
-    // ASIGNAMOS LAS ESPECIFICACIONES DEL PRODUCTO
-    productEspecifications.innerHTML = products[idProduct-1].especifications
-    // VALIDAMOS QUE EL PRODUCTO ESTE O NO EN DESCUENTO 
-    dealProduct(idProduct)
+    if(idProduct > 0){
+        // ASIGNAMOS LA IMAGEN
+        productImage.src = products[idProduct-1].image
+        // ASIGNAMOS EL ALT
+        productImage.alt = products[idProduct-1].alt
+        // ASIGNAMOS EL NOMBRE DEL PRODUCTO
+        productName.innerHTML = products[idProduct-1].name
+        // ASIGNAMOS LA VALORACION
+        productRate.innerHTML = products[idProduct-1].rate
+        // ASIGNAMOS EL PRECIO
+        productPrice.innerHTML = products[idProduct-1].price
+        // ASIGNAMOS EL TEXTO MSI
+        productMSI.innerHTML = products[idProduct-1].msi
+        // ASIGNAMOS LA CANTIDAD RESTANTE DE PRODUCTOS
+        productLeft.innerHTML = products[idProduct-1].piece
+        // ASIGNAMOS LOS DETALLES DEL PRODUCTO
+        productDetails.innerHTML = products[idProduct-1].details
+        // ASIGNAMOS LAS ESPECIFICACIONES DEL PRODUCTO
+        productEspecifications.innerHTML = products[idProduct-1].especifications
+        // VALIDAMOS QUE EL PRODUCTO ESTE O NO EN DESCUENTO 
+        dealProduct(idProduct)
+    }else{
+        window.location.href = "../index.html"
+    }
 }
 function dealProduct(idProduct){
     // CONDICION PARA MOSTRARLOS EL DESCUENTO

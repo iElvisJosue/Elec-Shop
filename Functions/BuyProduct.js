@@ -139,21 +139,25 @@ DEL PRODUCTO A COMPRAR*/
 function SeePreviewProduct(){
     // OBTENEMOS EL ID DEL PRODUCTO Y LO CONVERTIRMOS A NUMERO
     let previewIdProduct = Number(localStorage.getItem('idProduct'))
-    // ASIGNAMOS LA IMAGEN DEL PRODUCTO
-    previewImage.src = previewProduct[previewIdProduct-1].image
-    // ASIGNAMOS EL NOMBRE Y PRECIO DEL PRODUCTO
-    previewTitle.innerHTML = previewProduct[previewIdProduct-1].title
-    // OBTENEMOS LA CANTIDAD DE PRODUCTOS
-    let previewAmountProducts = Number(localStorage.getItem('amountProducts'))
-    // ASIGNAMOS LA CANTIDAD DE PRODUCTOS
-    previewAmount.innerHTML = `Cantidad: ${previewAmountProducts}`
-    checkTotal(previewIdProduct, previewAmountProducts)
-    // ASIGNAMOS EL SUBTOTAL A PAGAR
-    previewSubTotal.innerHTML = `$${Total}`
-    // ASIGNAMOS EL TOTAL A PAGAR
-    previewTotal.innerHTML = `$${Total}`
-    // ASIGNAMOS EL TOTAL A PAGAR AL BOTON
-    previewBtnPay.innerHTML = `Pagar $${Total}`
+    if(previewIdProduct > 0){
+        // ASIGNAMOS LA IMAGEN DEL PRODUCTO
+        previewImage.src = previewProduct[previewIdProduct-1].image
+        // ASIGNAMOS EL NOMBRE Y PRECIO DEL PRODUCTO
+        previewTitle.innerHTML = previewProduct[previewIdProduct-1].title
+        // OBTENEMOS LA CANTIDAD DE PRODUCTOS
+        let previewAmountProducts = Number(localStorage.getItem('amountProducts'))
+        // ASIGNAMOS LA CANTIDAD DE PRODUCTOS
+        previewAmount.innerHTML = `Cantidad: ${previewAmountProducts}`
+        checkTotal(previewIdProduct, previewAmountProducts)
+        // ASIGNAMOS EL SUBTOTAL A PAGAR
+        previewSubTotal.innerHTML = `$${Total}`
+        // ASIGNAMOS EL TOTAL A PAGAR
+        previewTotal.innerHTML = `$${Total}`
+        // ASIGNAMOS EL TOTAL A PAGAR AL BOTON
+        previewBtnPay.innerHTML = `Pagar $${Total}`
+    }else{
+        window.location.href = "../index.html"
+    }
 }
 function checkTotal(id, aproduct){
     // VERIFICAMOS EL TOTAL 
