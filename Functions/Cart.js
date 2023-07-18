@@ -7,7 +7,6 @@ const CartEmpty = document.querySelector(".Cart-Empty")
 // OBTENEMOS LOS BOTONES QUE CERRARAN NUESTRO CARRITO
 const CartClose = document.querySelectorAll(".Cart-Empty-Close, .Cart-Empty-Searching")
 
-
 /* CON ESTA FUNCION MOSTRAMOS EL LAYOUT TRANSPARENTE 
 Y DESPUES DE 2MILISEGUNDOS MOSTRAMOS LA SECCION DEL
 CARRITO DE COMPRAS*/
@@ -37,4 +36,3 @@ CartClose.forEach(e => {
         CartEmpty.classList.remove("Active")
     })
 })
-
