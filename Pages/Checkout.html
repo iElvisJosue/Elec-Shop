@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../Styles/Checkout/Checkout.css">
     <title>Elec-Shop | Pagar</title>
 </head>
-<body>
+<body onload="SeePreviewProduct()">
     <!-- EMPIEZA EL HEADER -->
     <header class="Header">
         <nav class="Navbar">
@@ -178,26 +178,22 @@
                     <div class="Checkout-Forms-Order-ToPay">
                         <div class="Checkout-Forms-Order-ToPay-Text">
                             <p class="ToPay-Text">Sub Total</p>
-                            <p class="ToPay-Text">$0</p>
-                        </div>
-                        <div class="Checkout-Forms-Order-ToPay-Text">
-                            <p class="ToPay-Text">IVA</p>
-                            <p class="ToPay-Text">$0</p>
+                            <p class="ToPay-Text SubTotal">$0</p>
                         </div>
                         <div class="Checkout-Forms-Order-ToPay-Text">
                             <p class="ToPay-Text">Cupón de Descuento</p>
-                            <p class="ToPay-Text">$0</p>
+                            <p class="ToPay-Text Coupon">$0</p>
                         </div>
                         <div class="Checkout-Forms-Order-ToPay-Text">
                             <p class="ToPay-Text">Costo de envío</p>
-                            <p class="ToPay-Text">$0</p>
+                            <p class="ToPay-Text Delivery">$0</p>
                         </div>
                         <div class="Checkout-Forms-Order-ToPay-Text">
                             <p class="ToPay-Text">Total</p>
-                            <p class="ToPay-Text">$0</p>
+                            <p class="ToPay-Text Total">$0</p>
                         </div>
                         <div class="Checkout-Forms-Order-ToPay-Button">
-                            <button>Pagar $0</button>
+                            <button class="Button-ToPay">Pagar $0</button>
                         </div>
                     </div>
                 </div>
@@ -231,15 +227,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
     <script src="../Functions/Cart.js"></script>
-    <script src="Functions/SetProduct.js"></script>
-    <!-- <script>
-        var win = window,
-    doc = document,
-    docElem = doc.documentElement,
-    body = doc.getElementsByTagName('body')[0],
-    x = win.innerWidth || docElem.clientWidth || body.clientWidth,
-    y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
-alert(x + ' × ' + y);
-    </script> -->
+    <!-- IMPORTAMOS LAS FUNCIONES PARA COMPRAR EL PRODUCTO -->
+    <script src="../Functions/BuyProduct.js"></script>
 </body>
 </html>

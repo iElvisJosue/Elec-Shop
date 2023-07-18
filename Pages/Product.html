@@ -108,9 +108,9 @@
                 </div>
                 <div class="Product-Description-Items">
                     <div class="Product-Description-Items-Add">
-                        <button><ion-icon name="remove"></ion-icon></button>
-                        <p>1</p>
-                        <button><ion-icon name="add"></ion-icon></button>
+                        <button class="Product-Subtract"><ion-icon name="remove"></ion-icon></button>
+                        <p class="Amount-Products">1</p>
+                        <button class="Product-Add"><ion-icon name="add"></ion-icon></button>
                     </div>
                     <div class="Product-Description-Items-Text">
                         <p>¡Solo quedan <b class="Product-ItemsLeft">Cantidad</b> disponibles!</p>
@@ -118,8 +118,8 @@
                     </div>
                 </div>
                 <div class="Product-Description-Buy-Cart">
-                    <button>Comprar ahora</button>
-                    <button>Agregar al carrito</button>
+                    <button class="Btn-BuyNow">Comprar ahora</button>
+                    <button class="Btn-ToCart">Agregar al carrito</button>
                 </div>
                 <div class="Product-Description-Delivery">
                     <div class="Product-Description-Delivery-Free">
@@ -367,5 +367,8 @@
     <!-- IMPORTAMOS LA FUNCION QUE NOS PERMITE ALMACENAR EL PRODUCTO
     QUE FUE SELECCIONADO -->
     <script src="../Functions/SetProduct.js"></script>
+    <!-- IMPORTAMOS LA FUNCION QUE NOS PERMITE ALMACENAR LA CANTIDAD 
+    DE PRODUCTOS QUE FUERON SELECCIONADOS -->
+    <script src="../Functions/AddProducts.js"></script>
 </body>
 </html>
