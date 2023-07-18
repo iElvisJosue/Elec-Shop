@@ -18,7 +18,10 @@ buyNow.addEventListener("click", () => {
 })
 // ALMACENAMOS LA CANTIDAD DE PRODUCTOS AL CARRITO
 addToCart.addEventListener("click", () => {
-    localStorage.setItem('cartProducts', String(amount))
+    // ALMACENAMOS EL ID DEL PRODUCTO
+    let idProductToCart = localStorage.getItem('idProduct')
+    // CREAMOS UN NUEVO PRODUCTO AL CARRITO
+    localStorage.setItem(`productCart${idProductToCart}`, idProductToCart +','+ String(amount))
 })
 // AUMENTAMOS LA CANTIDAD DE ITEMS PERO UN MAXIMO DE 5
 productAdd.addEventListener("click", () => {
