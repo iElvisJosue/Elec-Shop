@@ -148,7 +148,8 @@ function SeePreviewProduct(){
         let previewAmountProducts = Number(localStorage.getItem('amountProducts'))
         // ASIGNAMOS LA CANTIDAD DE PRODUCTOS
         previewAmount.innerHTML = `Cantidad: ${previewAmountProducts}`
-        checkTotal(previewIdProduct, previewAmountProducts)
+        // OBTENEMOS EL TOTAL
+        const Total = checkTotal(previewIdProduct, previewAmountProducts)
         // ASIGNAMOS EL SUBTOTAL A PAGAR
         previewSubTotal.innerHTML = `$${Total}`
         // ASIGNAMOS EL TOTAL A PAGAR
@@ -160,14 +161,18 @@ function SeePreviewProduct(){
     }
 }
 function checkTotal(id, aproduct){
-    // VERIFICAMOS EL TOTAL 
-    Total = Number(previewProduct[id-1].price) * aproduct
-    /* CONVERTIMOS NUESTRO TOTAL EN STRING
-    PARA QUE PODAMOS AGREGARLE UNA SEPARACION*/
-    if(Total > 999){
-        let totalArray = Total.toString().split('')
+    // VERIFICAMOS EL SUBTOTAL 
+    subTotal = Number(previewProduct[id-1].price) * aproduct
+    // CONDICION PARA AGREGAR O NO LA ,
+    if(subTotal > 999){
+        /* CONVERTIMOS NUESTRO SUBTOTAL EN STRING
+        PARA QUE PODAMOS AGREGARLE UNA SEPARACION*/
+        let subTotalArray = subTotal.toString().split('')
         // AGREGAMOS LA , DESPUES DE 3 NUMEROS
-        totalArray.splice(-3, 0, ',')
-        Total = String(totalArray.join(''))
+        subTotalArray.splice(-3, 0, ',')
+        // UNIMOS EL ARRAY Y LO CONVERTIMOS EN STRING
+        subTotal = String(subTotalArray.join(''))
     }
+    // RETORNAMOS EL SUBTOTAL
+    return subTotal
 }

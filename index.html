@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Elec-Shop</title>
 </head>
-<body>
+<body onload="checkCartProducts()">
     <!-- EMPIEZA EL HEADER -->
     <header class="Header">
         <nav class="Navbar">
@@ -65,12 +65,15 @@
     <!-- SE CREA LA SECCION DEL CARRITO -->
     <div class="Cart-Empty">
         <div class="Cart-Empty-Title">
-            <p>Tu carrito de compras (0)</p>
+            <p class="Cart-Empty-Amount"></p>
             <ion-icon name="close-sharp" class="Cart-Empty-Close"></ion-icon>
         </div>
-        <img src="Images/Cart/CarritoVacio.png" alt="Carrtio Vacio">
-        <p>Tu carrito esta vacío</p>
+        <div class="Cart-Empty-Product">
+        </div>
+        <img src="../Images/Cart/CarritoVacio.png" class="Cart-Empty-Image" alt="Carrito Vacío">
+        <p class="Cart-Empty-Text">Tu carrito esta vacío</p>
         <button class="Cart-Empty-Searching">Seguir buscando</button>
+        <button class="Cart-Empty-Pay">Ir a pagar</button>
     </div>
     <!-- TERMINA SECCION DEL CARRITO -->
 
@@ -792,9 +795,11 @@
     <!-- IMPORTAMOS LA LIBRERIA DE LOS ICONOS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
-    <script src="Functions/Cart.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES DE ANIMACION DEL CARRITO -->
+    <script src="Functions/AnimationsCart.js"></script>
     <!-- IMPORTAMOS LAS FUNCIONES PARA GUARDAR EL PRODUCTO -->
     <script src="Functions/SetProduct.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES PARA VER LOS PRODUCTOS DEL CARRITOS -->
+    <script src="Functions/GetCart.js"></script>
 </body>
 </html>

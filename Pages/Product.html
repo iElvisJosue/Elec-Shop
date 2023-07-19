@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="../Styles/Product/Product.css">
     <title>Elec-Shop - Producto</title>
 </head>
-<body onload="getProduct()">
+<body onload="getProduct(); checkCartProducts()">
+    <!-- EMPIEZA NOTIFICACION DE PRODUCTO AGREGAGO AL CARRITO -->
+    <p class="Cart-Notification">Producto agregado al carrito<ion-icon name="checkmark-circle-outline"></ion-icon></p>
+    <!-- TERMINA NOTIFICACION DE PRODUCTO AGREGAGO AL CARRITO -->
+    
     <!-- EMPIEZA EL HEADER -->
     <header class="Header">
         <nav class="Navbar">
@@ -44,7 +48,7 @@
                         Cuenta
                     </p>
                 </a>
-                <div class="Header-Option-Cart">
+                <div class="Header-Option-Cart" onclick="checkCartProducts()">
                     <ion-icon name="cart-outline"></ion-icon>
                     <p>
                         Carrito
@@ -63,12 +67,15 @@
     <!-- SE CREA LA SECCION DEL CARRITO -->
     <div class="Cart-Empty">
         <div class="Cart-Empty-Title">
-            <p>Tu carrito de compras (0)</p>
+            <p class="Cart-Empty-Amount"></p>
             <ion-icon name="close-sharp" class="Cart-Empty-Close"></ion-icon>
         </div>
-        <img src="../Images/Cart/CarritoVacio.png" alt="Carrtio Vacio">
-        <p>Tu carrito esta vacío</p>
+        <div class="Cart-Empty-Product">
+        </div>
+        <img src="../Images/Cart/CarritoVacio.png" class="Cart-Empty-Image" alt="Carrito Vacío">
+        <p class="Cart-Empty-Text">Tu carrito esta vacío</p>
         <button class="Cart-Empty-Searching">Seguir buscando</button>
+        <button class="Cart-Empty-Pay">Ir a pagar</button>
     </div>
     <!-- TERMINA SECCION DEL CARRITO -->
 
@@ -119,7 +126,7 @@
                 </div>
                 <div class="Product-Description-Buy-Cart">
                     <button class="Btn-BuyNow">Comprar ahora</button>
-                    <button class="Btn-ToCart">Agregar al carrito</button>
+                    <button class="Btn-ToCart" onclick="checkCartProducts(); showNotification()">Agregar al carrito</button>
                 </div>
                 <div class="Product-Description-Delivery">
                     <div class="Product-Description-Delivery-Free">
@@ -359,7 +366,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- IMPORTAMOS LAS FUNCIONES DEL CARRITO -->
-    <script src="../Functions/Cart.js"></script>
+    <script src="../Functions/AnimationsCart.js"></script>
     <!-- IMPORTAMOS LA FUNCION QUE NOS PERMITE OBTENER EL PRODUCTO
     QUE FUE SELECCIONADO -->
     <script src="../Functions/GetProduct.js"></script>
@@ -369,5 +376,7 @@
     <!-- IMPORTAMOS LA FUNCION QUE NOS PERMITE ALMACENAR LA CANTIDAD 
     DE PRODUCTOS QUE FUERON SELECCIONADOS -->
     <script src="../Functions/AddProducts.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES PARA VER LOS PRODUCTOS DEL CARRITOS -->
+    <script src="../Functions/GetCart.js"></script>
 </body>
 </html>

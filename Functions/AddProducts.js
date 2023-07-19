@@ -24,7 +24,6 @@ addToCart.addEventListener("click", () => {
     let idProductToCart = localStorage.getItem('idProduct')
     // CREAMOS UN NUEVO PRODUCTO AL CARRITO
     localStorage.setItem(`productCart${idProductToCart}`, idProductToCart +','+ String(amount))
-    getCart()
 })
 // AUMENTAMOS LA CANTIDAD DE ITEMS PERO UN MAXIMO DE 5
 productAdd.addEventListener("click", () => {
@@ -40,14 +39,3 @@ productSubtract.addEventListener("click", () => {
         productAmount.innerHTML = amount
     }
 })
-
-// CON ESTA FUNCION OBTENEMOS TODOS LO PRODUCTOS DEL CARRITO
-function getCart(){
-    let arrCart = []
-    for(i = 1; i < 21; i++){
-        if(localStorage.getItem(`productCart${i}`)){
-            arrCart.push(localStorage.getItem(`productCart${i}`))
-        }
-    }
-    console.log(arrCart);
-}
