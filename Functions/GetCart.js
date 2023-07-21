@@ -50,7 +50,8 @@ const cartProductDetails = [
         price: `5,000`
     },
     {
-        image: `../Images/Product/Product9.png`,
+        image: `Images/Product/Product9.png`,
+        image2: `../Images/Product/Product9.png`,
         name: `Gigabyte - RTX 3060`,
         price: `7,000`
     },
