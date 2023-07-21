@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../Styles/Categories/Categories.css">
     <title>Elec-Shop - Categorías</title>
 </head>
-<body onload="checkCartProducts()">
+<body onload="checkCartProducts(2)">
     <!-- EMPIEZA EL HEADER -->
     <header class="Header">
         <nav class="Navbar">
@@ -34,7 +34,7 @@
                         Cuenta
                     </p>
                 </a>
-                <div class="Header-Option-Cart">
+                <div class="Header-Option-Cart" onclick="checkCartProducts(2)">
                     <ion-icon name="cart-outline"></ion-icon>
                     <p>
                         Carrito

@@ -208,7 +208,7 @@ function addCartProducts(cartProducts, num){
                     `<p class="Cart-Empty-Product-Price-Product">$${cartProductDetails[idProduct].price} x ${element[element.length-1]}</p>`+
                     `<p class="Cart-Empty-Product-Total-Product">Total: $${totalCart}</p>`+
                 `</div>`+
-                `<button onclick="deleteItem(${idProduct})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
+                `<button onclick="deleteItem(${idProduct},${num})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
             `</div>`
         }
         if(num === 2){
@@ -222,18 +222,18 @@ function addCartProducts(cartProducts, num){
                 `<p class="Cart-Empty-Product-Price-Product">$${cartProductDetails[idProduct].price} x ${element[element.length-1]}</p>`+
                 `<p class="Cart-Empty-Product-Total-Product">Total: $${totalCart}</p>`+
             `</div>`+
-            `<button onclick="deleteItem(${idProduct})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
+            `<button onclick="deleteItem(${idProduct},${num})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
         `</div>`
         }
     })
 }
 
 /* CON ESTA FUNCION ELIMINAMOS EL ITEM CORRESPONDIENTE */
-function deleteItem(idItem){
+function deleteItem(idItem, num){
     // ELIMINAMOS EL ITEM SELECCIONADO
     localStorage.removeItem(`productCart${idItem+1}`)
     // RECARGAMOS EL CONTENIDO DEL CARRITO
-    checkCartProducts()
+    checkCartProducts(num)
 }
 /* CON ESTA FUNCION MOSTRAMOS EL CARRITO VACIO */
 function emptyCart(){
