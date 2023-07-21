@@ -81,7 +81,7 @@
 .Cart-Empty-Product{
     margin-top: 1.5rem;
     height: auto;
-    max-height: calc(100% - 140px);
+    max-height: calc(100% - 130px);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -148,9 +148,6 @@
 }
 /* ESTILOS BOTON DE PAGAR */
 .Cart-Empty-Pay{
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 5rem;
     font-size: var(--H5);
