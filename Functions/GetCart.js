@@ -1,43 +1,51 @@
 // CREAMOS UN ARRAY DE OBJETOS CON LAS CARACTERISTICAS A UTILIZAR DE LOS PRODUCTOS
 const cartProductDetails = [
     {
-        image: `../Images/Product/Product1.png`,
+        image: `Images/Product/Product1.png`,
+        image2: `../Images/Product/Product1.png`,
         name: `Monitor Curvo - G34WQC-A`,
         price: `7,300`
     },
     {
-        image: `../Images/Product/Product2.png`,
+        image: `Images/Product/Product2.png`,
+        image2: `../Images/Product/Product2.png`,
         name: `Sapphire Pulse - RX 6600`,
         price: `3,450`
     },
     {
-        image: `../Images/Product/Product3.png`,
+        image: `Images/Product/Product3.png`,
+        image2: `../Images/Product/Product3.png`,
         name: `Game Factor - Enfriamiento Liquido`,
         price: `789`
     },
     {
-        image: `../Images/Product/Product4.png`,
+        image: `Images/Product/Product4.png`,
+        image2: `../Images/Product/Product4.png`,
         name: `DDI - Seagate Barracuda 3.5`,
         title: `<b>DDI - Seagate Barracuda 3.5</b> 789 MXN`,
         price: `789`
     },
     {
-        image: `../Images/Product/Product5.png`,
+        image: `Images/Product/Product5.png`,
+        image2: `../Images/Product/Product5.png`,
         name: `Gabinete - Aerocool HIVE-G-BK-V1`,
         price: `909`
     },
     {
-        image: `../Images/Product/Product6.png`,
+        image: `Images/Product/Product6.png`,
+        image2: `../Images/Product/Product6.png`,
         name: `Silla Gamer - ROG Destrier Ergo`,
         price: `8,669`
     },
     {
-        image: `../Images/Product/Product7.png`,
+        image: `Images/Product/Product7.png`,
+        image2: `../Images/Product/Product7.png`,
         name: `MSI - GeForce 210`,
         price: `800`
     },
     {
-        image: `../Images/Product/Product8.png`,
+        image: `Images/Product/Product8.png`,
+        image2: `../Images/Product/Product8.png`,
         name: `Gigabyte - GTX 1660`,
         price: `5,000`
     },
@@ -47,57 +55,68 @@ const cartProductDetails = [
         price: `7,000`
     },
     {
-        image: `../Images/Product/Product10.png`,
+        image: `Images/Product/Product10.png`,
+        image2: `../Images/Product/Product10.png`,
         name: `ASUS - RTX 3060 White`,
         price: `6,349`
     },
     {
-        image: `../Images/Product/Product11.png`,
+        image: `Images/Product/Product11.png`,
+        image2: `../Images/Product/Product11.png`,
         name: `Gigabyte - RTX 4090`,
         price: `35,350`
     },
     {
-        image: `../Images/Product/Product12.png`,
+        image: `Images/Product/Product12.png`,
+        image2: `../Images/Product/Product12.png`,
         name: `Gigabyte - RX 6600`,
         price: `3,500`
     },
     {
-        image: `../Images/Product/Product13.png`,
+        image: `Images/Product/Product13.png`,
+        image2: `../Images/Product/Product13.png`,
         name: `MSI - RX 6650 XT`,
         price: `6,400`
     },
     {
-        image: `../Images/Product/Product14.png`,
+        image: `Images/Product/Product14.png`,
+        image2: `../Images/Product/Product14.png`,
         name: `MSI - RX 7600`,
         price: `6,449`
     },
     {
-        image: `../Images/Product/Product15.png`,
+        image: `Images/Product/Product15.png`,
+        image2: `../Images/Product/Product15.png`,
         name: `Monitor - Gigabyte G24F 2`,
         price: `2,800`
     },
     {
-        image: `../Images/Product/Product16.png`,
+        image: `Images/Product/Product16.png`,
+        image2: `../Images/Product/Product16.png`,
         name: `Tarjeta Madre - Gigabyte A520M`,
         price: `1,149`
     },
     {
-        image: `../Images/Product/Product17.png`,
+        image: `Images/Product/Product17.png`,
+        image2: `../Images/Product/Product17.png`,
         name: `Procesador - Ryzen 5 5600G`,
         price: `1,939`
     },
     {
-        image: `../Images/Product/Product18.png`,
+        image: `Images/Product/Product18.png`,
+        image2: `../Images/Product/Product18.png`,
         name: `Fuente de Poder - XPG PYLON 80`,
         price: `949`
     },
     {
-        image: `../Images/Product/Product19.png`,
+        image: `Images/Product/Product19.png`,
+        image2: `../Images/Product/Product19.png`,
         name: `Kit RAM - XPG Spectrix`,
         price: `749`
     },
     {
-        image: `../Images/Product/Product20.png`,
+        image: `Images/Product/Product20.png`,
+        image2: `../Images/Product/Product20.png`,
         name: `SSD | Samsung 980 PRO`,
         price: `1,810`
     },
@@ -120,7 +139,7 @@ const cartHeader = document.querySelectorAll(".Header-Option-Cart ion-icon, .Hea
 
 /* CON ESTA FUNCION CHECAREMOS SI HAY  
 PRODUCTOS EN EL CARRITO*/
-function checkCartProducts(){
+function checkCartProducts(num){
     /* CREAMOS UNA ARRAY VACIO, EL CUAL ALMACENARA TODOS
     LOS PRODUCTOS DENTRO DEL CARRITO*/
     let arrCart = []
@@ -132,11 +151,11 @@ function checkCartProducts(){
             arrCart.push(localStorage.getItem(`productCart${i}`))
         }
     }
-    arrCart.length > 0 ? addCartProducts(arrCart) : emptyCart()
+    arrCart.length > 0 ? addCartProducts(arrCart, num) : emptyCart()
 } 
 /* CON ESTA FUNCION MOSTRAREMOS TODOS LOS 
 PRODUCTOS EN EL CARRITO*/
-function addCartProducts(cartProducts){
+function addCartProducts(cartProducts, num){
     // CAMBIAMOS EL ICONO DEL CARRITO 
     cartHeader[0].setAttribute("name", "cart")
     // ASIGNAMOS UN COLOR AL ICONO DEL CARRITO
@@ -177,10 +196,24 @@ function addCartProducts(cartProducts){
         /* 4.6 UNIMOS EL ARRAY */
         let totalCart = arrSubTotalCart.join('')
         /* 4.7 AGREGAMOS LOS PRODUCTOS*/
-        productsCartContent.innerHTML += 
+        if(num === 1){
+            productsCartContent.innerHTML += 
+            `<div class="Cart-Empty-Product-Items">`+
+                `<div class="Cart-Empty-Product-Image">`+
+                    `<img src="${cartProductDetails[idProduct].image}" alt="${cartProductDetails[idProduct].name}">`+
+                `</div>`+
+                `<div class="Cart-Empty-Product-Name">`+
+                    `<p class="Cart-Empty-Product-Name-Product">${cartProductDetails[idProduct].name}</p>`+
+                    `<p class="Cart-Empty-Product-Price-Product">$${cartProductDetails[idProduct].price} x ${element[element.length-1]}</p>`+
+                    `<p class="Cart-Empty-Product-Total-Product">Total: $${totalCart}</p>`+
+                `</div>`+
+                `<button onclick="deleteItem(${idProduct})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
+            `</div>`
+        }else{
+            productsCartContent.innerHTML += 
         `<div class="Cart-Empty-Product-Items">`+
             `<div class="Cart-Empty-Product-Image">`+
-                `<img src="${cartProductDetails[idProduct].image}" alt="${cartProductDetails[idProduct].name}">`+
+                `<img src="${cartProductDetails[idProduct].image2}" alt="${cartProductDetails[idProduct].name}">`+
             `</div>`+
             `<div class="Cart-Empty-Product-Name">`+
                 `<p class="Cart-Empty-Product-Name-Product">${cartProductDetails[idProduct].name}</p>`+
@@ -189,6 +222,7 @@ function addCartProducts(cartProducts){
             `</div>`+
             `<button onclick="deleteItem(${idProduct})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
         `</div>`
+        }
     })
 }
 
