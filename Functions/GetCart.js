@@ -144,7 +144,7 @@ function addCartProducts(cartProducts){
     // ASIGNAMOS UN COLOR AL TEXTO
     cartHeader[1].style.color = "#ff6961"
     // MOSTRAMOS EL BOTON DE PAGAR 
-    cartPay.style.visibility = "visible"
+    cartPay.style.display = "block"
     // OCULTAMOS LOS ELEMENTOS DEL CARRITO VACIO
     cartEmptyContent.forEach(element => {
         element.style.display = "none"
@@ -208,7 +208,7 @@ function emptyCart(){
     // REESTABLECEMOS EL COLOR DEL TEXTO DEL CARRITO
     cartHeader[1].style.color = "#2f3640"
     // OCULTAMOS EL BOTON DE PAGAR 
-    cartPay.style.visibility = "hidden"
+    cartPay.style.display = "none"
     // OCULTAMOS EL CONTENEDOR DEL CARRITO CON PRODUCTOS
     productsCartContent.style.visibility = "hidden"
     // ASIGNAMOS EL TEXTO DE 0 A LA CANTIDAD DE PRODUCTOS

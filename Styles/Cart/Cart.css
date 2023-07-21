@@ -158,7 +158,7 @@
     background-color: var(--MainColor);
     border: 2px solid var(--MainColor);
     transition: .5s all;
-    visibility: hidden;
+    display: none;
 }
 .Cart-Empty-Pay:hover{
     cursor: pointer;
