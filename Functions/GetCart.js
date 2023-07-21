@@ -209,7 +209,8 @@ function addCartProducts(cartProducts, num){
                 `</div>`+
                 `<button onclick="deleteItem(${idProduct})" class="Cart-Empty-Delete-Item"><ion-icon name="trash-outline"></ion-icon></button>`+
             `</div>`
-        }else{
+        }
+        if(num === 2){
             productsCartContent.innerHTML += 
         `<div class="Cart-Empty-Product-Items">`+
             `<div class="Cart-Empty-Product-Image">`+
