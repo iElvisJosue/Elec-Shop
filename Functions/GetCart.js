@@ -105,16 +105,12 @@ const cartProductDetails = [
 // OBTENEMOS EL CONTENEDOR DEL CARRITO DE COMPRAS VACIO
 const cartEmptyContainer = document.querySelector(".Cart-Empty")
 // OBTENEMOS LA ETIQUETA QUE CONTIENE LA CANTIDAD DE PRODUCTOS EN EL CARRITO
-const amountProductCart = document.querySelector(".Cart-Empty-Amount")
+const cartEmptyTitle = document.querySelector(".Cart-Empty-Title")
 // OBTENEMOS CONTENIDO DEL CARRITO VACIO
 const cartEmptyContent = document.querySelectorAll(".Cart-Empty-Image, .Cart-Empty-Text, .Cart-Empty-Searching")
 /* ---------------------------------------------------------------------------------------- */
 // OBTENEMOS EL CONTENEDOR DEL CARRITO DE COMPRAS CON PRODUCTOS
 const productsCartContent = document.querySelector(".Cart-Empty-Product")
-// OBTENEMOS EL CONTENEDOR DEL CARRITO DE COMPRAR
-const cartEmptyProductsContainer = document.querySelector(".Cart-Empty-Product-Items")
-// OBTENEMOS EL CONTENIDO DEL CARRITO CON PRODUCTOS
-const cartProductsContent = document.querySelectorAll(".Cart-Empty-Product-Image img, .Cart-Empty-Product-Name-Product, .Cart-Empty-Product-Price-Product, .Cart-Empty-Product-Total-Product")
 // OBTENEMOS EL BOTON DE PAGAR CARRITO 
 const cartPay = document.querySelector(".Cart-Empty-Pay")
 // OBTENEMOS LA NOTIFICACION DE PRODUCTO AGREGADO
@@ -148,26 +144,22 @@ function addCartProducts(cartProducts){
     // ASIGNAMOS UN COLOR AL TEXTO
     cartHeader[1].style.color = "#ff6961"
     // MOSTRAMOS EL BOTON DE PAGAR 
-    cartPay.style.display = "inline-block"
+    cartPay.style.visibility = "visible"
     // OCULTAMOS LOS ELEMENTOS DEL CARRITO VACIO
     cartEmptyContent.forEach(element => {
         element.style.display = "none"
     })
     // MOSTRAMOS EL CONTENIDO DEL CARRITO
-    productsCartContent.style.display = "flex"
+    productsCartContent.style.visibility = "visible"
     // VACIAMOS EL CONTENIDO PARA QUE NO SE REPITAN
     productsCartContent.innerHTML = ""
-    /* 1.- OCULTAMOS EL CONTENIDO DEL CARRITO VACIO */
-    cartEmptyContent.forEach(element => {
-        element.style.display = "none"
-    })
     /* 2- SUMAMOS LA CANTIDAD DE PRODUCTOS EN EL CARRITO */
     let totalCartProducts = 0
     cartProducts.forEach(element => {
         totalCartProducts = totalCartProducts + Number(element[element.length-1])
     })
     /* 3.- COLOCAMOS LA CANTIDAD DE PRODUCTOS EN EL CARRITO */
-    amountProductCart.innerHTML = `Tu carrito de compras (${totalCartProducts})`
+    cartEmptyTitle.innerHTML = `Tu carrito de compras (${totalCartProducts})`
     /* 4.- AGREGAMOS LOS PRODUCTOS AL CARRITO */
     cartProducts.forEach(element => {
         /* 4.1 CREAMOS EL ID DEL PRODUCTO */
@@ -179,7 +171,9 @@ function addCartProducts(cartProducts){
         /* 4.4 CREAMOS UN ARRAY DEL SUBTOTAL PARA AGREGARLE LA , */
         let arrSubTotalCart = String(subTotalCart).split('')
         /* 4.5 AGREGAMOS LA , */
-        arrSubTotalCart.splice(arrSubTotalCart.length-3, 0, ",")
+        if(arrSubTotalCart.length > 3){
+            arrSubTotalCart.splice(arrSubTotalCart.length-3, 0, ",")
+        }
         /* 4.6 UNIMOS EL ARRAY */
         let totalCart = arrSubTotalCart.join('')
         /* 4.7 AGREGAMOS LOS PRODUCTOS*/
@@ -214,11 +208,11 @@ function emptyCart(){
     // REESTABLECEMOS EL COLOR DEL TEXTO DEL CARRITO
     cartHeader[1].style.color = "#2f3640"
     // OCULTAMOS EL BOTON DE PAGAR 
-    cartPay.style.display = "none"
+    cartPay.style.visibility = "hidden"
     // OCULTAMOS EL CONTENEDOR DEL CARRITO CON PRODUCTOS
-    productsCartContent.style.display = "none"
+    productsCartContent.style.visibility = "hidden"
     // ASIGNAMOS EL TEXTO DE 0 A LA CANTIDAD DE PRODUCTOS
-    amountProductCart.innerHTML = "Tu carrito de compras (0)"
+    cartEmptyTitle.innerHTML = "Tu carrito de compras (0)"
     // MOSTRAMOS LOS ELEMENTOS DEL CARRITO VACIO
     cartEmptyContent.forEach(element => {
         element.style.display = "block"
