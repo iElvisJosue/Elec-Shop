@@ -96,35 +96,35 @@
                     <div class="Checkout-Forms-Preview-Delivery-GroupInputs">
                         <div class="Checkout-Forms-Preview-Delivery-Inputs">
                             <p class="Title-Inputs-Text">Nombre(s) *</p>
-                            <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" maxlength="75">
+                            <input type="text" name="Nombre" id="NombreCliente" placeholder="Ingresa tu nombre" maxlength="75">
                         </div>
                         <div class="Checkout-Forms-Preview-Delivery-Inputs">
                             <p class="Title-Inputs-Text">Apellidos *</p>
-                            <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingresa tus apellidos" maxlength="75">
+                            <input type="text" name="Apellidos" id="ApellidosCliente" placeholder="Ingresa tus apellidos" maxlength="75">
                         </div>
                     </div>
                     <div class="Checkout-Forms-Preview-Delivery-Inputs">
                         <p class="Title-Inputs-Text">Dirección *</p>
-                        <input type="text" name="Direccion" id="Direccion" placeholder="Ingresa tu dirección" maxlength="500">
+                        <input type="text" name="Direccion" id="DireccionCliente" placeholder="Ingresa tu dirección" maxlength="500">
                     </div>
                     <div class="Checkout-Forms-Preview-Delivery-GroupInputs">
                         <div class="Checkout-Forms-Preview-Delivery-Inputs FirstName">
                             <p class="Title-Inputs-Text">Ciudad *</p>
-                            <input type="text" name="Ciudad" id="Ciudad" placeholder="Ingresa tu ciudad" maxlength="100">
+                            <input type="text" name="Ciudad" id="CiudadCliente" placeholder="Ingresa tu ciudad" maxlength="100">
                         </div>
                         <div class="Checkout-Forms-Preview-Delivery-Inputs LastName">
                             <p class="Title-Inputs-Text">Código Postal *</p>
-                            <input type="text" name="CP" id="CP" placeholder="Ingresa tus código postal" maxlength="5">
+                            <input type="text" name="CP" id="CPCliente" placeholder="Ingresa tus código postal" maxlength="5">
                         </div>
                     </div>
                     <div class="Checkout-Forms-Preview-Delivery-GroupInputs">
                         <div class="Checkout-Forms-Preview-Delivery-Inputs FirstName">
                             <p class="Title-Inputs-Text">Número Celular/Télefono *</p>
-                            <input type="text" name="Numero" id="Numero" placeholder="Ingresa tu número" maxlength="10">
+                            <input type="text" name="Numero" id="NumeroCliente" placeholder="Ingresa tu número" maxlength="10">
                         </div>
                         <div class="Checkout-Forms-Preview-Delivery-Inputs LastName">
                             <p class="Title-Inputs-Text">Correo electrónico *</p>
-                            <input type="text" name="Correo" id="Correo" placeholder="Ingresa tus correo electrónico">
+                            <input type="text" name="Correo" id="CorreoCliente" placeholder="Ingresa tus correo electrónico">
                         </div>
                     </div>
                 </div>
@@ -155,24 +155,24 @@
                     </div>
                     <div class="Checkout-Forms-Order-Inputs">
                         <p class="Title-Inputs-Text">Correo electrónico *</p>
-                        <input type="text" name="Direccion" id="Direccion" placeholder="Ingresa tu correo electrónico" maxlength="500">
+                        <input type="text" name="Direccion" id="CorreoTarjeta" placeholder="Ingresa tu correo electrónico" maxlength="500">
                     </div>
                     <div class="Checkout-Forms-Order-Inputs">
                         <p class="Title-Inputs-Text">Nombre del titular de la tarjeta *</p>
-                        <input type="text" name="Titutal" id="Titutal" placeholder="Ingresa el nombre" maxlength="150">
+                        <input type="text" name="Titular" id="TitularTarjeta" placeholder="Ingresa el nombre" maxlength="150">
                     </div>
                     <div class="Checkout-Forms-Order-Inputs">
                         <p class="Title-Inputs-Text">Número de la tarjeta *</p>
-                        <input type="text" name="Titutal" id="Titutal" placeholder="0000********1234" maxlength="16">
+                        <input type="text" name="Tarjeta" id="NumeroTarjeta" placeholder="0000********1234" maxlength="16">
                     </div>
                     <div class="Checkout-Forms-Order-GroupInputs">
                         <div class="Checkout-Forms-Order-Inputs">
                             <p class="Title-Inputs-Text">Expiración *</p>
-                            <input type="text" name="Expiracion" id="Expiracion" placeholder="MM/YY" maxlength="5">
+                            <input type="text" name="Expiracion" id="ExpiracionTarjeta" placeholder="MM/YY" maxlength="5">
                         </div>
                         <div class="Checkout-Forms-Order-Inputs">
                             <p class="Title-Inputs-Text">CVV *</p>
-                            <input type="text" name="CVV" id="CVV" placeholder="000" maxlength="3">
+                            <input type="text" name="CVV" id="CVVTarjeta" placeholder="000" maxlength="3">
                         </div>
                     </div>
                     <div class="Checkout-Forms-Order-ToPay">
@@ -231,5 +231,7 @@
     <script src="../Functions/BuyProduct.js"></script>
     <!-- IMPORTAMOS LAS FUNCIONES PARA VER LOS PRODUCTOS DEL CARRITOS -->
     <script src="../Functions/GetCart.js"></script>
+    <!-- IMPORTAMOS LAS FUNCIONES PARA VALIDAR LOS CAMPOS -->
+    <script src="../Functions/Checkout.js"></script>
 </body>
 </html>
