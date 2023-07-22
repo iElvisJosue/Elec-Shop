@@ -294,3 +294,34 @@ DE ENVIO */
 .Error{
     border: 1px solid var(--Red) !important;
 }
+.Success{
+    border: 1px solid var(--SecundaryColor) !important;
+}
+/* NOTIFICACION DE INPUTS */
+.Product-Notification{
+    position: fixed;
+    left: calc(50% - 15rem);
+    top: -100%;
+    width: 30rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    color: var(--White);
+    font-size: var(--H5);
+    font-weight: bold;
+    background: var(--SecundaryColor);
+    z-index: 1000;
+    transition: .5s all;
+}
+.Product-Notification ion-icon{
+    margin-left: .5rem;
+    font-size: var(--H4);
+    transform: translateY(.5rem);
+}
+.Product-Notification.Success{
+    top: 0;
+}
+.Product-Notification.Error{
+    background: var(--Red);
+    top: 0;
+}
